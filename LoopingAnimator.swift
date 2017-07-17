@@ -8,7 +8,7 @@ import Foundation
 class LoopingAnimator:Animator{
     var repeatCount:Int/*<--zero means infinite, not at the moment it seems*/
     var curRepeatCount:Int = 0
-    init(_ animatable:IAnimatable, _ repeatCount:Int = 0,_ duration:CGFloat = 0.5, _ from:CGFloat, _ to:CGFloat, _ callBack:@escaping (CGFloat)->Void, _ easing:@escaping (CGFloat,CGFloat,CGFloat,CGFloat)->CGFloat = Linear.ease){
+    init(_ animatable:Animatable, _ repeatCount:Int = 0,_ duration:CGFloat = 0.5, _ from:CGFloat, _ to:CGFloat, _ callBack:@escaping FrameTick, _ easing:@escaping EasingEquation = Linear.ease){
         self.repeatCount = repeatCount
         super.init(animatable, duration, from, to, callBack, easing)
     }
@@ -17,13 +17,12 @@ class LoopingAnimator:Animator{
      */
     override func onFrame(){
         let val:CGFloat = easing(currentFrameCount, from, to-from, framesToEnd)
-        callBack(val)//call the callBack method
+        callBack(val)/*call the FrameTick method*/
         if(currentFrameCount >= framesToEnd){
-            //Swift.print("end of anim")/*when the count becomes 0 the frame ticker stops*/
-            self.currentFrameCount = 0//<--reset
+            self.currentFrameCount = 0/*reset*/
             if(curRepeatCount >= repeatCount){/*The loop ended*/
-                curRepeatCount = 0//<--reset
-                stop()//<--stop animation
+                curRepeatCount = 0/*reset*/
+                stop()/*stop animation*/
                 super.onEvent(AnimEvent(AnimEvent.completed,self))
             }
             curRepeatCount += 1
