@@ -1,6 +1,7 @@
 import Foundation
 /**
  * TODO: Try to get rid of the :class by making the var's mutable somehow
+ * This class exists so that Springer and Easer can have fewer vars, by instead accessing vars through getters and setters that derive their values from tuples 
  */
 protocol PhysicsAnimationKind:class{
     associatedtype argType
@@ -16,13 +17,9 @@ protocol PhysicsAnimationKind:class{
     var stopVelocity:argType {get set}
     /*Event related*/
     var callBack:(argType)->Void {get set}/*The closure method that is called on every "frame-tick" and changes the property, you can use a var closure or a regular method, probably even an inline closure*/
-    /*Core Methods*/
-    //func updatePosition()->Void
-    //var assertStop:Bool {get}
-    //func stop()->Void
 }
 /**
- * Getters and setters
+ * Getters and setters for the value tuples
  */
 extension PhysicsAnimationKind{
     var targetValue:argType {get{return initValues.targetValue}set{initValues.targetValue = newValue}}
