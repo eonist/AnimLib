@@ -66,7 +66,7 @@ After a couple more steps, the object goes right past the target to an x positio
 
 
 #### Easing:
-when you use easing to move an object into position, it automatically takes on a very natural appearance. One of the coolest things is that simple easing is actually very easy to do. In fact, it’s prob- ably easier than figuring out the angle, the vx, and the vy, and moving at a fixed speed.
+when you use easing to move an object into position, it automatically takes on a very natural appearance. One of the coolest things is that simple easing is actually very easy to do. In fact, it’s probably easier than figuring out the angle, the vx, and the vy, and moving at a fixed speed.
 
 <img width="398" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Easer_4.gif">
 
@@ -83,9 +83,18 @@ Here are the steps for easing:
 5. Add the velocity value to the current position.
 6. Repeat steps 3 through 5 until the object is at the target.
 
+#### Why can't we just use UIViewPropertyAnimator?
+
+In iOS 10 apple gave us "UIViewPropertyAnimator" Which was a big level up in the interruptible animation genre. However this too is limited in nature. And leaves a lot to be desired:
+
+1. You don't have a onProgress callBack method when using UIViewPropertyAnimator 
+
+2. Many of the layer’s properties are unsupported. (shadow, border, 3d transform) (won’t support arc)
+
+3. Also the animations are limited to UIView Animatable Properties, which are: frame, bounds, center, transform, alpha, backgroundColor, contentStretch
+
+4. No keyframe based animation
 
 #### Final remarks:
 
 There is also NumberSpringer and NumberEaser which can be used to manipulate CGFloat. Which enables you to animate color transition. Rotation, shadow, gradient, 3d perspectives or any other variable. unlike apples built in animation system this Animation lib enables you to animate any property you desire. You can also Extend the Easer or Springer class with your own Custom class so that it can have more custom logic. Say you want to do something with Point3D and need to account for the z value as well. The possibilities are endless. AnimLib also does more stock like animations similar to Apples Animation classes. I will attempt to do some examples and write another article about these features at a later date. Until then any feedback is always welcomed. Thanks for reading.
-
-The AnimLib is Open-source MIT and can be downloaded here: [https://github.com/eonist/swift-utils](https://github.com/eonist/swift-utils) 
