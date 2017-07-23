@@ -1,23 +1,22 @@
 import Cocoa
 /**
- * NOTE: This view class serves as a basis for frame animation. 
+ * You can only setup 1 CVDisplayLink as such you can only have 1 AnimProxy class to controll it
+ * NOTE: This view class serves as a basis for frame animation.
  * NOTE: Override the onFrame method to do frame animations
  * NOTE: Start and stop with CVDisplayLinkStart(displayLink) and CVDisplayLinkStop(displayLink) and CVDisplayLinkIsRunning(displayLink) to assert if the displayLink is running
- * TODO: ⚠️️ You can probably use NSObject instead of NSView. As NSObject has the performSelector method
- * TODO: ⚠️️ Package these classes as it's own lib. Kinetic. Bump. mc2. Other names? 🚫 👉 I think Animation is an appropriate name 👈
  */
-class Animation:NSView,Animatable{/*apparently the class needs to be NSView in order for the performSelector to work*///<---TODO: you can delete the IAnimatable
-    static let sharedInstance = Animation()//TODO: rename to .shared
+class AnimProxy2:NSObject,AnimProxyKind2{/*Apparently the class needs to be NSView in order for the performSelector to work*///<---TODO: ⚠️️ you can probably delete the IAnimatable, as nothing extends this class anyway
+    static let shared = AnimProxy2()
     lazy var displayLink:CVDisplayLink = self.setUpDisplayLink()/*This is the instance that enables frame animation, lazying this value will probably haunt me later, playing with fire*/
-    var animators:[BaseAnimation] = []/*Stores the animators*/
+    lazy var animators:[FrameAnimator2] = []/*Stores the animators*/
     /**
      * Fires on every screen refresh at 60 FPS, or device speed
      */
     func onFrame(){
-        self.performSelector(onMainThread: #selector(Animation.onFrameOnMainThread), with:nil, waitUntilDone:false)//upgreaded to swift 3
+        self.performSelector(onMainThread: #selector(onFrameOnMainThread), with:nil, waitUntilDone:false)
     }
     /**
-     * Tick every animator on every frame tick
+     * Tick every animator on every frame tick (This is called on the MainThread)
      */
     func onFrameOnMainThread(){
         animators.forEach{$0.onFrame()}
@@ -32,15 +31,13 @@ class Animation:NSView,Animatable{/*apparently the class needs to be NSView in o
         status = CVDisplayLinkCreateWithActiveCGDisplays(&displayLink)
         /* Set up DisplayLink. */
         func displayLinkOutputCallback(displayLink:CVDisplayLink,_ inNow: UnsafePointer<CVTimeStamp>, _ inOutputTime: UnsafePointer<CVTimeStamp>,_ flagsIn: CVOptionFlags, _ flagsOut: UnsafeMutablePointer<CVOptionFlags>,_ displayLinkContext: UnsafeMutableRawPointer?) -> CVReturn{
-            unsafeBitCast(displayLinkContext, to:Animation.self).onFrame()
+            unsafeBitCast(displayLinkContext, to:AnimProxy.self).onFrame()
             return kCVReturnSuccess
         }
         if let displayLink = displayLink {
-            let outputStatus = CVDisplayLinkSetOutputCallback(displayLink, displayLinkOutputCallback, UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque()))
-            _ = outputStatus
+            /*let outputStatus */  _ = CVDisplayLinkSetOutputCallback(displayLink, displayLinkOutputCallback, UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque()))
             let displayID = CGMainDisplayID()
-            let displayIDStatus = CVDisplayLinkSetCurrentCGDisplay(displayLink, displayID)
-            _ = displayIDStatus
+            /*let displayIDStatus*/_ = CVDisplayLinkSetCurrentCGDisplay(displayLink, displayID)
             return displayLink
         }else{
             fatalError("unable to setup displayLink")
