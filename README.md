@@ -35,7 +35,7 @@ When springing, the acceleration is proportional to the distance. If the item is
 ```swift
 func progress(value:CGPoint){/*This method gets called 60FPS, add the values to be manipulated here*/
     disableAnim {/*Important so that you don't get the apple "auto" anim as well*/
-        ellipse.graphic.layer?.position = value*We manipulate the layer because it is GPU accelerated as oppose to setting the view.position which is slow*/
+        ellipse.graphic.layer?.position = value/*We manipulate the layer because it is GPU accelerated as oppose to setting the view.position which is slow*/
     }
 }
 let animator = PointSpringer(progress, PointSpringer.initValues,PointSpringer.initConfig)/*Setup interruptible animator*/
