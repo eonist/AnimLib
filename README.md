@@ -112,3 +112,45 @@ The above animation can be achieved by including the simple line bellow in the p
 let color = NSColor.green.interpolate(.blue, 0.5)
 ```
 
+**Animation composition:**
+
+<img width="195" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/modal_anim.gif">
+
+Code example for the above animation:
+
+```swift
+let anim1 = Animator2.init(initValues:(dur:0.6,from:0,to:1), easing:Easing.expo.easeOut) { value in
+	disableAnim {
+		let closure = { fillet, color, size, position in
+			/*Fillet*/
+			roundRect.fillet = fillet
+			
+			/*Color*/
+			roundRect.graphic.fillStyle = FillStyle(color)
+			
+			/*Size*/
+			roundRect.size = startRect.size.interpolate(size, value)
+			
+			/*Position*/
+			roundRect.graphic.layer?.position = startRect.origin.interpolate(position, value)
+			
+			/*Draw it all*/
+			roundRect.draw()
+		}
+		/*roundRect1*/
+		closure(
+		    Fillet(50+(-25*value)),
+		    NSColor.blue.interpolate(.red, value),
+		    CGSize(150,50),
+		    CGPoint(25,25)
+		)
+		/*roundRect2*/
+		closure(
+		    Fillet((25*value)),
+		    NSColor.green.interpolate(NSColor.green.alpha(1), value),
+		    CGSize(150,150),
+		    CGPoint(25,100)
+		)
+	}
+}
+```

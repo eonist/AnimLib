@@ -11,14 +11,14 @@ class LoopAnimator2:Animator2{
     var curRepeatCount:Int = 0
     init(initValues:LoopAnimator2.InitLoopValues = LoopAnimator2.initLoopValues, easing:@escaping EasingEquation = Easing.linear.ease, closure: @escaping FrameTick = {_ in}) {
         self.repeatCount = initValues.repeatCount
-        super.init(initValues: (initValues.duration,initValues.from,initValues.to), easing: easing, closure: closure)
+        super.init(initValues: (initValues.duration,initValues.from,initValues.to), easing: easing, onFrame: closure)
     }
     /**
      * Fires on every frame tick
      */
-    override func onFrame(){
+    override func onFrameTick(){
         let val:CGFloat = easing(currentFrameCount, from, to-from, framesToEnd)
-        frameTick(val)/*call the FrameTick method*/
+        onFrame(val)/*call the FrameTick method*/
         if(currentFrameCount >= framesToEnd){
             self.currentFrameCount = 0/*reset*/
             if(curRepeatCount >= repeatCount){/*The loop ended*/
