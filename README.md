@@ -2,7 +2,11 @@
 
 <img width="100" alt="img" src="https://rawgit.com/stylekit/img/master/AnimLib.svg">
 
+#### Introduction:
+
 Animator is an attempt at striking a balance between the 4 areas of programmatic animation: Ease-of use, Customizability, Features and Performance.
+
+#### Features:
 
 - Supports all common easing equations
 - Interactive spring dynamics. Friction, SpringStrength etc. 
@@ -80,21 +84,21 @@ In iOS 10 apple gave us "UIViewPropertyAnimator" Which was a big level up in the
 
 4. No keyframe based animation
 
-#### Final remarks:
+#### How does it work?:
 
-There is also NumberSpringer and NumberEaser which can be used to manipulate CGFloat. Which enables you to animate color transition. Rotation, shadow, gradient, 3d perspectives or any other variable. unlike apples built in animation system this Animation lib enables you to animate any property you desire. You can also Extend the Easer or Springer class with your own Custom class so that it can have more custom logic. Say you want to do something with Point3D and need to account for the z value as well. The possibilities are endless. AnimLib also does more stock like animations similar to Apples Animation classes. I will attempt to do some examples and write another article about these features at a later date. Until then any feedback is always welcomed. Thanks for reading.
+Springer and Easer can be used to manipulate any value. Which enables you to animate color transition. Rotation, shadow, gradient, 3d perspectives or any other variable. unlike apples built in animation system this Animation lib enables you to animate any property you desire as long as you extend this value type with Animatable. You can also Extend the Easer or Springer class with your own Custom class so that it can have more custom logic. Say you want to add some log10 friction or add a few constraints. The possibilities are endless. Animator also does more stock like animations similar to Apples Animation classes. 
 
 
 #### More examples: 
 
-**Interpolation:**
+**Elastic Zoom effect:**  
+[Code for the bellow example](https://gist.github.com/eonist/b625aa8b3dff8b9ea9d9baad355132f7)   
+<img width="195" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/zoom_elastic.gif">  
 
-<img width="100" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/color_interpolation_take_three.gif">
-
-The above animation can be achieved by including the simple line bellow in the progress method 
 
 ```swift
-let color = NSColor.green.interpolate(.blue, 0.5)
+var anim = Animator{let color = NSColor.red.interpolate(.blue, $0)}.start()
+anim.onComplete{anim.setTarget(anim.target == 0 ? 1 : 0).start()}
 ```
 
 **Animation composition:**
@@ -104,7 +108,7 @@ let color = NSColor.green.interpolate(.blue, 0.5)
 Code example for the above animation:
 
 ```swift
-let anim1 = Animator2.init(initValues:(dur:0.6,from:0,to:1), easing:Easing.expo.easeOut) { value in
+let anim1 = Animator((dur:0.6,from:0,to:1), easing:Easing.expo.easeOut) { value in
 	let closure = { fillet, color, size, position in
 		/*Fillet*/
 		roundRect.fillet = fillet
@@ -138,9 +142,11 @@ let anim1 = Animator2.init(initValues:(dur:0.6,from:0,to:1), easing:Easing.expo.
 }
 ```
 
-**Elastic Zoom effect:**  
-[Code for the bellow example](https://gist.github.com/eonist/b625aa8b3dff8b9ea9d9baad355132f7)   
-<img width="195" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/zoom_elastic.gif">  
+**Interpolation:**
+
+<img width="100" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/color_interpolation_take_three.gif">
+
+The above animation can be achieved by the 2 lines of code:
 
 
 #### Making animations repeat:
@@ -172,3 +178,8 @@ bgSleep(4/*<-seconds*/){/*bgSleep is a global method that pauses things with out
     animator.start
 }
 ```
+
+
+#### Final note:
+
+I'm working on shipping Animator as a standalone package with support for SPM, CocoaPod, Carthage. More animation examples and code snippets will come. I will also try to make a video tutorial on how you can setup Animator in XCode playground as a UI/UX [prototyping tool](http://eon.codes/blog/2017/01/16/playground-and-framework/). If you have a feature request or questions please let me know in Issues. 💙
