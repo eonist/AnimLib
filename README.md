@@ -2,11 +2,11 @@
 
 <img width="100" alt="img" src="https://rawgit.com/stylekit/img/master/AnimLib.svg">
 
-#### Introduction:
+### Introduction:
 
 Animator is an attempt at striking a balance between the 4 areas of programmatic animation: Ease-of use, Customizability, Features and Performance.
 
-#### Features:
+### Features:
 
 - Supports all common easing equations
 - Interactive spring dynamics. Friction, SpringStrength etc. 
@@ -19,7 +19,7 @@ Animator is an attempt at striking a balance between the 4 areas of programmatic
 
 <img width="226" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/video_iphone.gif?maxAge=2512168">
 
-#### Springing:
+### Springing:
 
 When springing, the acceleration is proportional to the distance. If the item is far away from the target, a lot of acceleration is applied, increasing the velocity quickly. As the object gets closer to its target, less acceleration is applied, but it’s still accelerating! It flies right past the target, and then acceleration pulls it back. Eventually, friction causes it to settle down.
 
@@ -72,7 +72,7 @@ Here are the steps for easing:
 5. Add the velocity value to the current position.
 6. Repeat steps 3 through 5 until the object is at the target.
 
-#### Why can't we just use UIViewPropertyAnimator?
+### Why can't we just use UIViewPropertyAnimator?
 
 In iOS 10 apple gave us "UIViewPropertyAnimator" Which was a big level up in the interruptible animation genre. However this too is limited in nature. And leaves a lot to be desired:
 
@@ -84,12 +84,12 @@ In iOS 10 apple gave us "UIViewPropertyAnimator" Which was a big level up in the
 
 4. No keyframe based animation
 
-#### How does it work?:
+### How does it work?:
 
 Springer and Easer can be used to manipulate any value. Which enables you to animate color transition. Rotation, shadow, gradient, 3d perspectives or any other variable. unlike apples built in animation system this Animation lib enables you to animate any property you desire as long as you extend this value type with Animatable. You can also Extend the Easer or Springer class with your own Custom class so that it can have more custom logic. Say you want to add some log10 friction or add a few constraints. The possibilities are endless. Animator also does more stock like animations similar to Apples Animation classes. 
 
 
-#### More examples: 
+### More examples: 
 
 **Elastic Zoom effect:**  
 [Code for the bellow example](https://gist.github.com/eonist/b625aa8b3dff8b9ea9d9baad355132f7)   
@@ -149,7 +149,7 @@ let anim1 = Animator((dur:0.6,from:0,to:1), easing:Easing.expo.easeOut) { value 
 The above animation can be achieved by the 2 lines of code:
 
 
-#### Making animations repeat:
+### Making animations repeat:
 
 In the example bellow, a clock pointer rotates 3 times: 
 
@@ -169,7 +169,7 @@ var onComplete = {
 animator.start()
 ```
 
-#### Pausing animation:
+### Pausing animation:
 
 I try to keep Animator as simple as possible so its easy to extend and do exotic animations. So instead of building everything into Animator you can use ad-hock tools to add features, such as pausing and starting:
 ```swift
@@ -180,6 +180,6 @@ bgSleep(4/*<-seconds*/){/*bgSleep is a global method that pauses things with out
 ```
 
 
-#### Final note:
+### Final note:
 
-I'm working on shipping Animator as a standalone package with support for SPM, CocoaPod, Carthage. More animation examples and code snippets will come. I will also try to make a video tutorial on how you can setup Animator in XCode playground as a UI/UX [prototyping tool](http://eon.codes/blog/2017/01/16/playground-and-framework/). If you have a feature request or questions please let me know in Issues. 💙
+I'm working on shipping Animator as a standalone package with support for SPM, CocoaPod, Carthage. More animation examples and code snippets will come. I will also try to make a video tutorial on how you can setup Animator in XCode playground as a UI/UX [prototyping tool](http://eon.codes/blog/2017/01/16/playground-and-framework/). If you have a feature request or questions please let me know in Issues. Thanks for your support 💙
