@@ -1,10 +1,12 @@
-# **AnimLib** 
+# **Animator** 
 
 <img width="100" alt="img" src="https://rawgit.com/stylekit/img/master/AnimLib.svg">
 
 ### Introduction:
 
 Animator is an attempt at striking a balance between the 4 areas of programmatic animation: Ease-of use, Customizability, Features and Performance.
+
+<img width="226" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/video_iphone.gif?maxAge=2512168">
 
 ### Features:
 
@@ -16,8 +18,6 @@ Animator is an attempt at striking a balance between the 4 areas of programmatic
 - Small footprint (Just a few functions and classes)
 - Supports all the regular call-backs (onComplete etc)
 - CPU friendly. Stops when there is no animation etc
-
-<img width="226" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/video_iphone.gif?maxAge=2512168">
 
 ### Springing:
 
@@ -182,4 +182,4 @@ bgSleep(4/*<-seconds*/){/*bgSleep is a global method that pauses things with out
 
 ### Final note:
 
-I'm working on shipping Animator as a standalone package with support for SPM, CocoaPod, Carthage. More animation examples and code snippets will come. I will also try to make a video tutorial on how you can setup Animator in XCode playground as a UI/UX [prototyping tool](http://eon.codes/blog/2017/01/16/playground-and-framework/). If you have a feature request or questions please let me know in Issues. Thanks for your support 💙
+I'm working on shipping Animator as a standalone package with support for SPM, CocoaPod, Carthage. More animation examples and code snippets will come. I will also try to make a video tutorial on how you can setup Animator in XCode playground as a UI/UX. If you have a feature request or questions please let me know in Issues. Thanks for your support 💙
