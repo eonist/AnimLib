@@ -11,6 +11,8 @@
 - Supports all the regular call-backs (onComplete etc)
 - CPU friendly. Stops when there is no animation etc
 
+<img width="226" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/video_iphone.gif?maxAge=2512168">
+
 In the example bellow, a clock pointer rotates 3 times: 
 
 ```swift
