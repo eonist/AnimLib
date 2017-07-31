@@ -2,7 +2,7 @@
 
 <img width="100" alt="img" src="https://rawgit.com/stylekit/img/master/AnimLib.svg">
 
-Animator is an attempt at striking a balance between the 4 pillars of programmatic animation: Ease-of use, Customizability, Features and Performance.
+Animator is an attempt at striking a balance between the 4 areas of programmatic animation: Ease-of use, Customizability, Features and Performance.
 
 - Supports all common easing equations
 - Interactive spring dynamics. Friction, SpringStrength etc. 
