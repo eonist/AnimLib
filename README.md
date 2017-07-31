@@ -24,19 +24,13 @@ When springing, the acceleration is proportional to the distance. If the item is
 **Here is the code for the above example:**
 
 ```swift
-func progress(value:CGPoint){/*This method gets called 60FPS, add the values to be manipulated here*/
-    disableAnim {/*Important so that you don't get the apple "auto" anim as well*/
-        ellipse.graphic.layer?.position = value/*We manipulate the layer because it is GPU accelerated as oppose to setting the view.position which is slow*/
-    }
+
+let animator = Springer<CGPoint>(progress, PointSpringer.initValues,PointSpringer.initConfig) value in {/*Setup interruptible animator, This method gets called 60FPS, add the values to be manipulated here*/
+    ellipse.graphic.layer?.position = value/*We manipulate the layer because it is GPU accelerated as oppose to setting the view.position which is slow*/
 }
-let animator = PointSpringer(progress, PointSpringer.initValues,PointSpringer.initConfig)/*Setup interruptible animator*/
-func onViewEvent(_ event:Event) {/*This is the click on window event handler*/
-    if event.type == ButtonEvent.upInside {
-        animator.targetValue = bg!.localPos()/*Set the position of where you want the anim to go*/
-        if animator.stopped {animator.start()}/*We only need to start the animation if it has already stopped*/
-    }
+bg?.addHandler(ButtonEvent.upInside) (event:ButtonEvent) in {/*This is the click on window event handler*/
+    animator.setTarget(bg!.localPos()).start()/*Set the position of where you want the anim to go*/
 }
-bg?.event = onViewEvent
 ```
 
 To explain how springing works, let’s simulate it with some sample numbers. Let’s say the x position is 0, vx
