@@ -111,38 +111,36 @@ Code example for the above animation:
 
 ```swift
 let anim1 = Animator2.init(initValues:(dur:0.6,from:0,to:1), easing:Easing.expo.easeOut) { value in
-	disableAnim {
-		let closure = { fillet, color, size, position in
-			/*Fillet*/
-			roundRect.fillet = fillet
-			
-			/*Color*/
-			roundRect.graphic.fillStyle = FillStyle(color)
-			
-			/*Size*/
-			roundRect.size = startRect.size.interpolate(size, value)
-			
-			/*Position*/
-			roundRect.graphic.layer?.position = startRect.origin.interpolate(position, value)
-			
-			/*Draw it all*/
-			roundRect.draw()
-		}
-		/*roundRect1*/
-		closure(
-		    Fillet(50+(-25*value)),
-		    NSColor.blue.interpolate(.red, value),
-		    CGSize(150,50),
-		    CGPoint(25,25)
-		)
-		/*roundRect2*/
-		closure(
-		    Fillet((25*value)),
-		    NSColor.green.interpolate(NSColor.green.alpha(1), value),
-		    CGSize(150,150),
-		    CGPoint(25,100)
-		)
+	let closure = { fillet, color, size, position in
+		/*Fillet*/
+		roundRect.fillet = fillet
+		
+		/*Color*/
+		roundRect.graphic.fillStyle = FillStyle(color)
+		
+		/*Size*/
+		roundRect.size = startRect.size.interpolate(size, value)
+		
+		/*Position*/
+		roundRect.graphic.layer?.position = startRect.origin.interpolate(position, value)
+		
+		/*Draw it all*/
+		roundRect.draw()
 	}
+	/*roundRect1*/
+	closure(
+	    Fillet(50+(-25*value)),
+	    NSColor.blue.interpolate(.red, value),
+	    CGSize(150,50),
+	    CGPoint(25,25)
+	)
+	/*roundRect2*/
+	closure(
+	    Fillet((25*value)),
+	    NSColor.green.interpolate(NSColor.green.alpha(1), value),
+	    CGSize(150,150),
+	    CGPoint(25,100)
+	)
 }
 ```
 
@@ -151,15 +149,32 @@ let anim1 = Animator2.init(initValues:(dur:0.6,from:0,to:1), easing:Easing.expo.
 <img width="195" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/zoom_elastic.gif">  
 
 
+#### Making animations repeat:
+
 In the example bellow, a clock pointer rotates 3 times: 
 
 ```swift
 let line:LineGraphic = addSubView(LineGraphic())
-let animator = LoopingAnimator(Animation.sharedInstance,3,1,0,1,progress,Linear.ease)
-func progress(value:CGFloat){
+let animator = Animator (value:CGFloat) in {
    let angle = π * 2  * value
    line.p2 = line.p1.polarPoint(50,angle)
    line.draw()
 }
+var i:CGFloat = 0
+let max:Int = 3
+var onComplete = {
+    if i < max {animator.completed = onComplete}
+    animator.start()
+}
 animator.start()
+```
+
+#### Pausing animation:
+
+I try to keep Animator as simple as possible so its easy to extend and do exotic animations. So instead of building everything into Animator you can use ad-hock tools to add features, such as pausing and starting:
+```swift
+animator.stop()
+bgSleep(4/*<-seconds*/){/*bgSleep is a global method that pauses things with out freezing UI, its basically just sleep() on a background thread*/
+    animator.start
+}
 ```
