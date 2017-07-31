@@ -6,8 +6,6 @@
 
 Animator is an attempt at striking a balance between the 4 areas of programmatic animation: Ease-of use, Customizability, Features and Performance.
 
-<img width="226" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/video_iphone.gif?maxAge=2512168">
-
 ### Features:
 
 - Supports all common easing equations
@@ -18,6 +16,8 @@ Animator is an attempt at striking a balance between the 4 areas of programmatic
 - Small footprint (Just a few functions and classes)
 - Supports all the regular call-backs (onComplete etc)
 - CPU friendly. Stops when there is no animation etc
+
+<img width="226" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/video_iphone.gif?maxAge=2512168">
 
 ### Springing:
 
