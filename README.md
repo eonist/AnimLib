@@ -2,6 +2,8 @@
 
 <img width="100" alt="img" src="https://rawgit.com/stylekit/img/master/AnimLib.svg">
 
+Animator is an attempt at striking a balance between the 4 areas of programmatic animation: Ease-of use, Customizability, Features and Performance.
+
 - Supports all common easing equations
 - Interactive spring dynamics. Friction, SpringStrength etc. 
 - The Spring solver has a small footprint and is easily customizable. 
@@ -11,18 +13,7 @@
 - Supports all the regular call-backs (onComplete etc)
 - CPU friendly. Stops when there is no animation etc
 
-In the example bellow, a clock pointer rotates 3 times: 
-
-```swift
-let line:LineGraphic = addSubView(LineGraphic())
-let animator = LoopingAnimator(Animation.sharedInstance,3,1,0,1,progress,Linear.ease)
-func progress(value:CGFloat){
-   let angle = π * 2  * value
-   line.p2 = line.p1.polarPoint(50,angle)
-   line.draw()
-}
-animator.start()
-```
+<img width="226" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/video_iphone.gif?maxAge=2512168">
 
 #### Springing:
 
@@ -153,4 +144,22 @@ let anim1 = Animator2.init(initValues:(dur:0.6,from:0,to:1), easing:Easing.expo.
 		)
 	}
 }
+```
+
+**Elastic Zoom effect:**  
+[Code for the bellow example](https://gist.github.com/eonist/b625aa8b3dff8b9ea9d9baad355132f7)   
+<img width="195" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/zoom_elastic.gif">  
+
+
+In the example bellow, a clock pointer rotates 3 times: 
+
+```swift
+let line:LineGraphic = addSubView(LineGraphic())
+let animator = LoopingAnimator(Animation.sharedInstance,3,1,0,1,progress,Linear.ease)
+func progress(value:CGFloat){
+   let angle = π * 2  * value
+   line.p2 = line.p1.polarPoint(50,angle)
+   line.draw()
+}
+animator.start()
 ```
