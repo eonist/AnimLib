@@ -95,12 +95,6 @@ Springer and Easer can be used to manipulate any value. Which enables you to ani
 [Code for the bellow example](https://gist.github.com/eonist/b625aa8b3dff8b9ea9d9baad355132f7)   
 <img width="195" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/zoom_elastic.gif">  
 
-
-```swift
-var anim = Animator{let color = NSColor.red.interpolate(.blue, $0)}.start()
-anim.onComplete{anim.setTarget(anim.target == 0 ? 1 : 0).start()}
-```
-
 **Animation composition:**
 
 <img width="195" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/modal_anim.gif">
@@ -147,6 +141,12 @@ let anim1 = Animator((dur:0.6,from:0,to:1), easing:Easing.expo.easeOut) { value 
 <img width="100" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/color_interpolation_take_three.gif">
 
 The above animation can be achieved by the 2 lines of code:
+
+
+```swift
+var anim = Animator{let color = NSColor.red.interpolate(.blue, $0)}.start()
+anim.onComplete{anim.setTarget(anim.target == 0 ? 1 : 0).start()}
+```
 
 
 ### Making animations repeat:
