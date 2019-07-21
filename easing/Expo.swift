@@ -2,13 +2,22 @@ import Foundation
 /**
  * Exponential
  */
-class Expo{
+class Expo {
+   /*
+    * easeIn
+    */
     static func easeIn(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)-> CGFloat{
         return (t==0) ? b : c * pow(2, 10 * (t/d - 1)) + b
     }
+    /*
+    * easeOut
+    */
     static func easeOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)-> CGFloat{
         return (t==d) ? b+c : c * (-pow(2, -10 * t/d) + 1) + b
     }
+    /*
+    * easeInOut
+    */
     static func easeInOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)-> CGFloat{
         var t = t
         if (t == 0) {return b}
@@ -18,6 +27,9 @@ class Expo{
         t = t - 1
         return c/2 * (-pow(2, -10 * t) + 2) + b
     }
+    /*
+    * easeOutIn
+    */
     static func easeOutIn (_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)-> CGFloat{
         if t < d / 2 {
             return easeOut(t * 2, b,  c / 2,  d)
@@ -26,4 +38,3 @@ class Expo{
         }
     }
 }
-

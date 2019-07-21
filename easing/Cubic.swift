@@ -3,16 +3,25 @@ import Foundation
  * Cubic
  */
 class Cubic {
+   /*
+    * easeIn
+    */
     static func easeIn(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         var t = t
         t = t / d
         return c * pow(t, 3) + b
     }
+    /*
+    * easeOut
+    */
     static func easeOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         var t = t
         t = t / d - 1
         return c * (pow(t, 3) + 1) + b
     }
+    /*
+    * easeInOut
+    */
     static func easeInOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         var t = t
         t = t / d * 2
@@ -23,6 +32,9 @@ class Cubic {
             return c / 2 * ( t * t * t + 2 ) + b
         }
     }
+    /*
+    * easeOutIn
+    */
     static func easeOutIn (_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         if t < d / 2 {
             return easeOut(t * 2,  b,  c / 2,  d)

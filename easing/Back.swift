@@ -3,6 +3,9 @@ import Foundation
  * Back
  */
 class Back {
+   /**
+    * easeIn
+    */
     static func easeIn(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         var s:CGFloat? = nil
         if s == nil { s = 1.70158 }
@@ -10,6 +13,9 @@ class Back {
         t = t / d
         return c * t * t * ((s! + 1 ) * t - s!) + b
     }
+    /*
+    * easeOut
+    */
     static func easeOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         var s:CGFloat? = nil
         if s == nil { s = 1.70158 }
@@ -17,6 +23,9 @@ class Back {
         t = t / d - 1
         return c * (t * t * ((s! + 1) * t + s!) + 1) + b
     }
+    /*
+    * easeInOut
+    */
     static func easeInOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         var s:CGFloat? = nil
         if s == nil { s = 1.70158 }

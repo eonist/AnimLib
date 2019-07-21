@@ -1,4 +1,4 @@
-# **Animator** 
+# **Animator**
 
 <img width="100" alt="img" src="https://rawgit.com/stylekit/img/master/AnimLib.svg">
 
@@ -9,8 +9,8 @@ Animator is an attempt at striking a balance between the 4 areas of programmatic
 ### Features:
 
 - Supports all common easing equations
-- Interactive spring dynamics. Friction, SpringStrength etc. 
-- The Spring solver has a small footprint and is easily customizable. 
+- Interactive spring dynamics. Friction, SpringStrength etc.
+- The Spring solver has a small footprint and is easily customisable.
 - 60FPS (CVDisplayLink)
 - Works with interaction (This is rare on apple platforms)
 - Small footprint (Just a few functions and classes)
@@ -76,7 +76,7 @@ Here are the steps for easing:
 
 In iOS 10 apple gave us "UIViewPropertyAnimator" Which was a big level up in the interruptible animation genre. However this too is limited in nature. And leaves a lot to be desired:
 
-1. You don't have a onProgress callBack method when using UIViewPropertyAnimator 
+1. You don't have a onProgress callBack method when using UIViewPropertyAnimator
 
 2. Many of the layer’s properties are unsupported. (shadow, border, 3d transform) (won’t support arc)
 
@@ -86,10 +86,10 @@ In iOS 10 apple gave us "UIViewPropertyAnimator" Which was a big level up in the
 
 ### How does it work?:
 
-Springer and Easer can be used to manipulate any value. Which enables you to animate color transition. Rotation, shadow, gradient, 3d perspectives or any other variable. unlike apples built in animation system this Animation lib enables you to animate any property you desire as long as you extend this value type with Animatable. You can also Extend the Easer or Springer class with your own Custom class so that it can have more custom logic. Say you want to add some log10 friction or add a few constraints. The possibilities are endless. Animator also does more stock like animations similar to Apples Animation classes. 
+Springer and Easer can be used to manipulate any value. Which enables you to animate color transition. Rotation, shadow, gradient, 3d perspectives or any other variable. unlike apples built in animation system this Animation lib enables you to animate any property you desire as long as you extend this value type with Animatable. You can also Extend the Easer or Springer class with your own Custom class so that it can have more custom logic. Say you want to add some log10 friction or add a few constraints. The possibilities are endless. Animator also does more stock like animations similar to Apples Animation classes.
 
 
-### More examples: 
+### More examples:
 
 **Elastic Zoom effect:**  
 [Code for the bellow example](https://gist.github.com/eonist/b625aa8b3dff8b9ea9d9baad355132f7)   
@@ -106,16 +106,16 @@ let anim1 = Animator((dur:0.6,from:0,to:1), easing:Easing.expo.easeOut) { value 
 	let closure = { fillet, color, size, position in
 		/*Fillet*/
 		roundRect.fillet = fillet
-		
+
 		/*Color*/
 		roundRect.graphic.fillStyle = FillStyle(color)
-		
+
 		/*Size*/
 		roundRect.size = startRect.size.interpolate(size, value)
-		
+
 		/*Position*/
 		roundRect.graphic.layer?.position = startRect.origin.interpolate(position, value)
-		
+
 		/*Draw it all*/
 		roundRect.draw()
 	}
@@ -151,7 +151,7 @@ anim.onComplete{anim.setTarget(anim.target == 0 ? 1 : 0).start()}
 
 ### Making animations repeat:
 
-In the example bellow, a clock pointer rotates 3 times: 
+In the example bellow, a clock pointer rotates 3 times:
 
 ```swift
 let line:LineGraphic = addSubView(LineGraphic())
