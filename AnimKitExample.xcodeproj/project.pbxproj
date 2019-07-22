@@ -60,17 +60,17 @@
 		F18716D022E5C8BD00CF946B /* PhysicsAnimKind5+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187168422E5C8BD00CF946B /* PhysicsAnimKind5+Access.swift */; };
 		F18716D122E5C8BD00CF946B /* PhysicsAnimKind5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187168522E5C8BD00CF946B /* PhysicsAnimKind5.swift */; };
 		F18716E122E5C92F00CF946B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E022E5C92F00CF946B /* View.swift */; };
-		F18716E622E5D17700CF946B /* RubberBand+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E522E5D17700CF946B /* RubberBand+Default.swift */; };
 		F18716E722E5D20F00CF946B /* RubberBand+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E322E5D06400CF946B /* RubberBand+Access.swift */; };
 		F18716EC22E5D28300CF946B /* RubberBand+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E822E5D24E00CF946B /* RubberBand+Core.swift */; };
 		F18716ED22E5D2A200CF946B /* RubberBand+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716EA22E5D25B00CF946B /* RubberBand+Helper.swift */; };
 		F18716F322E5F9BB00CF946B /* ArraySugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F122E5F98100CF946B /* ArraySugar.swift */; };
 		F18716F622E605F500CF946B /* FrameAnimator2+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F422E605C400CF946B /* FrameAnimator2+Action.swift */; };
-		F18716F822E6061F00CF946B /* Mover+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F722E6061F00CF946B /* Mover+Core.swift */; };
 		F187170522E62D0A00CF946B /* CGFloatSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F922E62A5F00CF946B /* CGFloatSugar.swift */; };
 		F187170622E62D0B00CF946B /* CGPointSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716FC22E62B7000CF946B /* CGPointSugar.swift */; };
 		F187170722E62D0B00CF946B /* CGSizeSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716FE22E62C3600CF946B /* CGSizeSugar.swift */; };
 		F187170A22E62F4F00CF946B /* CGRectSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187170822E62E9F00CF946B /* CGRectSugar.swift */; };
+		F187170B22E66C9C00CF946B /* Mover+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F722E6061F00CF946B /* Mover+Core.swift */; };
+		F187171022E66CA400CF946B /* RubberBand+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E522E5D17700CF946B /* RubberBand+Default.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -697,9 +697,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18716F822E6061F00CF946B /* Mover+Core.swift in Sources */,
 				F18716E122E5C92F00CF946B /* View.swift in Sources */,
-				F18716E622E5D17700CF946B /* RubberBand+Default.swift in Sources */,
 				F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,6 +722,7 @@
 				F18716A822E5C8BD00CF946B /* Sine.swift in Sources */,
 				F187170622E62D0B00CF946B /* CGPointSugar.swift in Sources */,
 				F18716C822E5C8BD00CF946B /* Advancable5+Type.swift in Sources */,
+				F187170B22E66C9C00CF946B /* Mover+Core.swift in Sources */,
 				F18716B822E5C8BD00CF946B /* Animator2+Default.swift in Sources */,
 				F18716BB22E5C8BD00CF946B /* LoopAnimator2+Default.swift in Sources */,
 				F18716F322E5F9BB00CF946B /* ArraySugar.swift in Sources */,
@@ -748,6 +747,7 @@
 				F18716AB22E5C8BD00CF946B /* EasingEquation.swift in Sources */,
 				F18716A322E5C8BD00CF946B /* Back.swift in Sources */,
 				F18716B222E5C8BD00CF946B /* FrameAnimator2+Core.swift in Sources */,
+				F187171022E66CA400CF946B /* RubberBand+Default.swift in Sources */,
 				F18716AF22E5C8BD00CF946B /* AnimProxy.swift in Sources */,
 				F18716BA22E5C8BD00CF946B /* LoopAnimator2+Type.swift in Sources */,
 				F18716ED22E5D2A200CF946B /* RubberBand+Helper.swift in Sources */,

@@ -2,7 +2,7 @@ import Foundation
 /**
  * Protocol for the Advancer
  */
-protocol Advancable5 { // :Comparable
+protocol Advancable5 { 
     static func +(lhs: Self, rhs: Self) -> Self
     static func -(lhs: Self, rhs: Self) -> Self
     static func *(lhs: Self, rhs: Self) -> Self

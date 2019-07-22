@@ -2,7 +2,7 @@ import Cocoa
 /**
  * TODO: override stop and set the stop there instead
  */
-class Friction:Mover{
+class Friction:Mover{ // 🏀
     var frictionStrength:CGFloat/*This value is the strength of the friction*/
     var lastValue:CGFloat = 0/*this value is a temporary value that is used when checking if the motion is about to stop*/
     var slowDownFriction:CGFloat = 1/*slowDownFriction is basically an inactive friction value, unless you change it to something else than 1, this variable can also be named easing*/

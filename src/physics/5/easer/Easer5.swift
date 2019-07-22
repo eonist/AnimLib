@@ -8,16 +8,37 @@ import Foundation
  * - Fixme: ⚠️️ Rename to Advancer ?
  */
 class Easer5<T: Advancable5>: FrameAnimator2, PhysicsAnimKind5 {
-    var easing: T // This can be customized by setting the value but not via init
-    var state: AnimState5<T>
-    var onFrame: FrameTickSignature // Fixme: ⚠️️ rename to onFrameTick, onFrameCallback?
-    var onComplete: OnComplete = {} // add external onComplete closures when needed
-//    var updatePos:(()->Void) = {_ in} // might have to make this lazy
-    init(state: AnimState5<T>, easing: T, onFrame:@escaping FrameTickSignature) {
-        self.state = state
-        self.easing = easing
-        self.onFrame = onFrame
-        super.init()
-//        self.updatePos = updatePosition
-    }
+   var easing: T // This can be customized by setting the value but not via init
+   var state: AnimState5<T>
+   var onFrame: FrameTickSignature // Fixme: ⚠️️ rename to onFrameTick, onFrameCallback, frameTick?
+   var onComplete: OnComplete = {} // add external onComplete closures when needed
+   //    var updatePos:(()->Void) = {_ in} // might have to make this lazy
+   init(state: AnimState5<T>, easing: T, onFrame:@escaping FrameTickSignature) {
+      self.state = state
+      self.easing = easing
+      self.onFrame = onFrame
+      super.init()
+      //        self.updatePos = updatePosition
+   }
+   /**
+    * - Abstract: This is called on every frame tick (60 FPS)
+    */
+   override func onFrameTick() {
+      self.updatePosition()
+      self.onFrame(value)
+   }
+   /**
+    * - Abstract In charge of updating the velocity and value of the animation instance (also calls onCOmplete)
+    */
+   func updatePosition() {
+      velocity = (targetValue - value) * easing
+      value = value + velocity
+      if assertStop {
+         value = targetValue // set the final value
+         stop() // stop the animation
+         onComplete() // call onComplete to notify callback that this animation instance completed
+         onComplete = { } // resets onComplete closure, onComplete can only happen one time
+      }
+   }
 }
+

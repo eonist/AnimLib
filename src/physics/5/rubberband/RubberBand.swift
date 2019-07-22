@@ -15,23 +15,23 @@ import Cocoa
  */
 class RubberBand: Mover {
     // Initial values
-    var maskFrame: Frame // Represents the visible part of the content
-    var contentFrame: Frame // Represents the total size of the content
-    var config: Config // The init settings of the RubberbBand
+    var maskFrame: Frame
+    var contentFrame: Frame
+    var config: Config
     // Interim values
-    var result: CGFloat = 0 // Output value, this is the value that external callers can use, its the var value after friction etc has been applied, it cannot be set from outside but can only be read from outside
+    var result: CGFloat = 0 // Output value, this is the value that external callers can use, it's the var value after friction etc has been applied, it cannot be set from outside but can only be read from outside
     var hasStopped: Bool = true // Indicates that the motion has stopped //Fixme: ⚠️️ try to move this into the mover
    /**
     * - Parameter callBack: Called on every FPS tick
-    * - Parameter maskFrame: Represents the clipping area
+    * - Parameter maskFrame: Represents the visible part of the content
     * - Parameter contentFrame: Represents the total size of the content
-    * - Parameter config: 
+    * - Parameter config: Contains the configuration of the elastic effect (friction, springyness, limit etc)
     */
     init(_ callBack:@escaping FrameTick, _ maskFrame: Frame, _ contentFrame: Frame, _ config: Config) {
         self.maskFrame = maskFrame
         self.contentFrame = contentFrame
         self.config = config
-        super.init(AnimProxy.shared, callBack, 0, 0)
+        super.init(AnimProxy2.shared, callBack, 0, 0)
     }
 }
 

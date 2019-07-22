@@ -6,7 +6,7 @@ class Elastic {
    /*
     * easeIn
     */
-    static func easeIn(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
+    static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
         var t = t
         var a: CGFloat? = nil
         var p: CGFloat? = nil
@@ -27,7 +27,7 @@ class Elastic {
     /*
     * easeOut
     */
-    static func easeOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
+    static func easeOut(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
         var t = t
         var a: CGFloat? = nil
         var p: CGFloat? = nil
@@ -40,14 +40,14 @@ class Elastic {
             a = c
             s = p! / 4
         } else {
-            s = p! / (2 * CGFloat(Double.pi)) * asin(c/a!)
+            s = p! / (2 * CGFloat(Double.pi)) * asin(c / a!)
         }
         return a! * pow(2, -10 * t) * sin((t * d - s) * (2 * CGFloat(Double.pi)) / p!) + c + b
     }
     /*
     * easeInOut
     */
-    static func easeInOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
+    static func easeInOut(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
         var t = t
         var a: CGFloat? = nil
         var p: CGFloat? = nil
@@ -62,7 +62,7 @@ class Elastic {
             a = c
             s = p! / 4
         } else {
-            s = p! / (2 * CGFloat(Double.pi)) * asin(c/a!)
+            s = p! / (2 * CGFloat(Double.pi)) * asin(c / a!)
         }
 
         if t < 1 {

@@ -5,7 +5,7 @@ extension Mover {
     * - Abstract: In charge of incrementing the value
     * - Fixme ⚠️️ I'm not sure if the param direct is needed. also maybe rename to isDirect?
     */
-   func updatePosition(_ direct: Bool = false) {
+   @objc func updatePosition(_ direct: Bool = false) {
       value += velocity
    }
    /**
