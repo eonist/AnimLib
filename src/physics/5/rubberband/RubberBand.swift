@@ -27,7 +27,7 @@ class RubberBand: Mover {
     * - Parameter contentFrame: Represents the total size of the content
     * - Parameter config: Contains the configuration of the elastic effect (friction, springyness, limit etc)
     */
-    init(_ callBack:@escaping FrameTick, _ maskFrame: Frame, _ contentFrame: Frame, _ config: Config) {
+    init(_ callBack:@escaping FrameTick, _ maskFrame: Frame, _ contentFrame: Frame, _ config: Config = RubberBand.defaultConfig) {
         self.maskFrame = maskFrame
         self.contentFrame = contentFrame
         self.config = config
