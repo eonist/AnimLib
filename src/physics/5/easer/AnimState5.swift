@@ -1,6 +1,7 @@
 import Foundation
 /**
- *  - Fixme: ⚠️️ ⚠️️ ⚠️️ consider removing stopVelocity or make it optional, you can increase epsilon to do the same job, etc
+ * - Abstract: This can represent a CGFloat, point, rect or size, anything that adhers to the Advancable Protocol
+ * - Fixme: ⚠️️ ⚠️️ ⚠️️ consider removing stopVelocity or make it optional, you can increase epsilon to do the same job, etc
  */
 struct AnimState5<T: Advancable5> {
     var value: T // The current value of the animation  Fixme: ⚠️️ rename to initial

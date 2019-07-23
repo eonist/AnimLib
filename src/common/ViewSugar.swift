@@ -5,7 +5,7 @@ import Cocoa
  * ## Examples:
  * disableAnim { view.isHidden = true } // Default animation is now disabled, Basically whatever you put inside the closure is not animated
  */
-func disableAnim(_ closure: () -> Void) {
+public func disableAnim(_ closure: () -> Void) {
    CATransaction.begin()
    CATransaction.setDisableActions(true)
    closure()

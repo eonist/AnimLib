@@ -69,7 +69,12 @@
 		F187170A22E62F4F00CF946B /* CGRectSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187170822E62E9F00CF946B /* CGRectSugar.swift */; };
 		F187170B22E66C9C00CF946B /* Mover+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F722E6061F00CF946B /* Mover+Core.swift */; };
 		F187171022E66CA400CF946B /* RubberBand+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E522E5D17700CF946B /* RubberBand+Default.swift */; };
-		F187171322E71FEF00CF946B /* ViewSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171222E71FEF00CF946B /* ViewSugar.swift */; };
+		F187171822E748AF00CF946B /* ViewSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171222E71FEF00CF946B /* ViewSugar.swift */; };
+		F187171922E748AF00CF946B /* ThreadingSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171622E7486F00CF946B /* ThreadingSugar.swift */; };
+		F187171D22E776EA00CF946B /* View+BounceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171C22E776EA00CF946B /* View+BounceTest.swift */; };
+		F187171F22E7771A00CF946B /* View+MovingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171E22E7771A00CF946B /* View+MovingTest.swift */; };
+		F187172022E77C4600CF946B /* MoverGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167222E5C8BD00CF946B /* MoverGroup.swift */; };
+		F187172322E77CD900CF946B /* Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172122E77C8F00CF946B /* Dir.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +189,10 @@
 		F18716FE22E62C3600CF946B /* CGSizeSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeSugar.swift; sourceTree = "<group>"; };
 		F187170822E62E9F00CF946B /* CGRectSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectSugar.swift; sourceTree = "<group>"; };
 		F187171222E71FEF00CF946B /* ViewSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSugar.swift; sourceTree = "<group>"; };
+		F187171622E7486F00CF946B /* ThreadingSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadingSugar.swift; sourceTree = "<group>"; };
+		F187171C22E776EA00CF946B /* View+BounceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+BounceTest.swift"; sourceTree = "<group>"; };
+		F187171E22E7771A00CF946B /* View+MovingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+MovingTest.swift"; sourceTree = "<group>"; };
+		F187172122E77C8F00CF946B /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +238,7 @@
 			children = (
 				F187162022E5C49F00CF946B /* AppDelegate.swift */,
 				F18716E022E5C92F00CF946B /* View.swift */,
+				F187171B22E776EA00CF946B /* test */,
 				F187162222E5C4A100CF946B /* Assets.xcassets */,
 				F187162422E5C4A100CF946B /* MainMenu.xib */,
 				F187162722E5C4A100CF946B /* Info.plist */,
@@ -396,13 +406,13 @@
 		F187167022E5C8BD00CF946B /* rubberband */ = {
 			isa = PBXGroup;
 			children = (
+				F18716E222E5CF2100CF946B /* group */,
 				F187167122E5C8BD00CF946B /* RubberBand.swift */,
 				F18716E822E5D24E00CF946B /* RubberBand+Core.swift */,
 				F18716EA22E5D25B00CF946B /* RubberBand+Helper.swift */,
 				F18716E522E5D17700CF946B /* RubberBand+Default.swift */,
 				F18716E322E5D06400CF946B /* RubberBand+Access.swift */,
 				F187167322E5C8BD00CF946B /* RubberBand+Type.swift */,
-				F18716E222E5CF2100CF946B /* group */,
 			);
 			path = rubberband;
 			sourceTree = "<group>";
@@ -552,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				F187167222E5C8BD00CF946B /* MoverGroup.swift */,
+				F187172122E77C8F00CF946B /* Dir.swift */,
 			);
 			path = group;
 			sourceTree = "<group>";
@@ -582,8 +593,18 @@
 				F18716FE22E62C3600CF946B /* CGSizeSugar.swift */,
 				F187170822E62E9F00CF946B /* CGRectSugar.swift */,
 				F187171222E71FEF00CF946B /* ViewSugar.swift */,
+				F187171622E7486F00CF946B /* ThreadingSugar.swift */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		F187171B22E776EA00CF946B /* test */ = {
+			isa = PBXGroup;
+			children = (
+				F187171C22E776EA00CF946B /* View+BounceTest.swift */,
+				F187171E22E7771A00CF946B /* View+MovingTest.swift */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -699,7 +720,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F18716E122E5C92F00CF946B /* View.swift in Sources */,
-				F187171322E71FEF00CF946B /* ViewSugar.swift in Sources */,
+				F187171D22E776EA00CF946B /* View+BounceTest.swift in Sources */,
+				F187171F22E7771A00CF946B /* View+MovingTest.swift in Sources */,
 				F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -714,7 +736,9 @@
 				F187170722E62D0B00CF946B /* CGSizeSugar.swift in Sources */,
 				F18716A622E5C8BD00CF946B /* Expo.swift in Sources */,
 				F18716A922E5C8BD00CF946B /* Linear.swift in Sources */,
+				F187172322E77CD900CF946B /* Dir.swift in Sources */,
 				F18716D022E5C8BD00CF946B /* PhysicsAnimKind5+Access.swift in Sources */,
+				F187171822E748AF00CF946B /* ViewSugar.swift in Sources */,
 				F18716C722E5C8BD00CF946B /* AnimState5.swift in Sources */,
 				F18716B922E5C8BD00CF946B /* Animator2+Type.swift in Sources */,
 				F18716CB22E5C8BD00CF946B /* Easer5.swift in Sources */,
@@ -738,6 +762,7 @@
 				F18716C422E5C8BD00CF946B /* RubberBand+Type.swift in Sources */,
 				F18716A422E5C8BD00CF946B /* Circ.swift in Sources */,
 				F18716C622E5C8BD00CF946B /* Springer5.swift in Sources */,
+				F187171922E748AF00CF946B /* ThreadingSugar.swift in Sources */,
 				F187170A22E62F4F00CF946B /* CGRectSugar.swift in Sources */,
 				F18716A022E5C8BD00CF946B /* Elastic.swift in Sources */,
 				F18716A522E5C8BD00CF946B /* Bounce.swift in Sources */,
@@ -745,6 +770,7 @@
 				F18716AC22E5C8BD00CF946B /* AnimProxyKind2.swift in Sources */,
 				F18716AD22E5C8BD00CF946B /* AnimProxy2+Core.swift in Sources */,
 				F18716B622E5C8BD00CF946B /* Animator2.swift in Sources */,
+				F187172022E77C4600CF946B /* MoverGroup.swift in Sources */,
 				F18716BD22E5C8BD00CF946B /* LoopAnimator2+Core.swift in Sources */,
 				F18716AB22E5C8BD00CF946B /* EasingEquation.swift in Sources */,
 				F18716A322E5C8BD00CF946B /* Back.swift in Sources */,
