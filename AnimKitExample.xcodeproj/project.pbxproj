@@ -13,68 +13,69 @@
 		F187163722E5C54800CF946B /* AnimKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F187163522E5C54800CF946B /* AnimKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F187163A22E5C54800CF946B /* AnimKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F187163322E5C54800CF946B /* AnimKit.framework */; };
 		F187163B22E5C54800CF946B /* AnimKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F187163322E5C54800CF946B /* AnimKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F187169F22E5C8BD00CF946B /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164222E5C8BC00CF946B /* Easing.swift */; };
-		F18716A022E5C8BD00CF946B /* Elastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164422E5C8BC00CF946B /* Elastic.swift */; };
-		F18716A122E5C8BD00CF946B /* Cubic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164522E5C8BC00CF946B /* Cubic.swift */; };
-		F18716A222E5C8BD00CF946B /* Quint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164622E5C8BD00CF946B /* Quint.swift */; };
-		F18716A322E5C8BD00CF946B /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164722E5C8BD00CF946B /* Back.swift */; };
-		F18716A422E5C8BD00CF946B /* Circ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164822E5C8BD00CF946B /* Circ.swift */; };
-		F18716A522E5C8BD00CF946B /* Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164922E5C8BD00CF946B /* Bounce.swift */; };
-		F18716A622E5C8BD00CF946B /* Expo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164A22E5C8BD00CF946B /* Expo.swift */; };
-		F18716A722E5C8BD00CF946B /* Quart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164B22E5C8BD00CF946B /* Quart.swift */; };
-		F18716A822E5C8BD00CF946B /* Sine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164C22E5C8BD00CF946B /* Sine.swift */; };
-		F18716A922E5C8BD00CF946B /* Linear.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164D22E5C8BD00CF946B /* Linear.swift */; };
-		F18716AA22E5C8BD00CF946B /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164E22E5C8BD00CF946B /* Quad.swift */; };
-		F18716AB22E5C8BD00CF946B /* EasingEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187164F22E5C8BD00CF946B /* EasingEquation.swift */; };
-		F18716AC22E5C8BD00CF946B /* AnimProxyKind2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165122E5C8BD00CF946B /* AnimProxyKind2.swift */; };
-		F18716AD22E5C8BD00CF946B /* AnimProxy2+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165222E5C8BD00CF946B /* AnimProxy2+Core.swift */; };
-		F18716AE22E5C8BD00CF946B /* AnimProxy2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165322E5C8BD00CF946B /* AnimProxy2.swift */; };
-		F18716B122E5C8BD00CF946B /* FrameAnimatable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165922E5C8BD00CF946B /* FrameAnimatable2.swift */; };
-		F18716B222E5C8BD00CF946B /* FrameAnimator2+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165A22E5C8BD00CF946B /* FrameAnimator2+Core.swift */; };
-		F18716B322E5C8BD00CF946B /* FrameAnimator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165B22E5C8BD00CF946B /* FrameAnimator2.swift */; };
-		F18716B422E5C8BD00CF946B /* FrameAnimator2+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165C22E5C8BD00CF946B /* FrameAnimator2+Access.swift */; };
-		F18716B522E5C8BD00CF946B /* Animator2+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165E22E5C8BD00CF946B /* Animator2+Core.swift */; };
-		F18716B622E5C8BD00CF946B /* Animator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165F22E5C8BD00CF946B /* Animator2.swift */; };
-		F18716B722E5C8BD00CF946B /* Animator2+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187166022E5C8BD00CF946B /* Animator2+Access.swift */; };
-		F18716B822E5C8BD00CF946B /* Animator2+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187166122E5C8BD00CF946B /* Animator2+Default.swift */; };
-		F18716B922E5C8BD00CF946B /* Animator2+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187166222E5C8BD00CF946B /* Animator2+Type.swift */; };
-		F18716BA22E5C8BD00CF946B /* LoopAnimator2+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187166422E5C8BD00CF946B /* LoopAnimator2+Type.swift */; };
-		F18716BB22E5C8BD00CF946B /* LoopAnimator2+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187166522E5C8BD00CF946B /* LoopAnimator2+Default.swift */; };
-		F18716BC22E5C8BD00CF946B /* LoopAnimator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187166622E5C8BD00CF946B /* LoopAnimator2.swift */; };
-		F18716BD22E5C8BD00CF946B /* LoopAnimator2+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187166722E5C8BD00CF946B /* LoopAnimator2+Core.swift */; };
-		F18716C222E5C8BD00CF946B /* RubberBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167122E5C8BD00CF946B /* RubberBand.swift */; };
-		F18716C422E5C8BD00CF946B /* RubberBand+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167322E5C8BD00CF946B /* RubberBand+Type.swift */; };
-		F18716C522E5C8BD00CF946B /* Mover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167522E5C8BD00CF946B /* Mover.swift */; };
-		F18716C622E5C8BD00CF946B /* Springer5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167722E5C8BD00CF946B /* Springer5.swift */; };
-		F18716C722E5C8BD00CF946B /* AnimState5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167822E5C8BD00CF946B /* AnimState5.swift */; };
-		F18716C822E5C8BD00CF946B /* Advancable5+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167922E5C8BD00CF946B /* Advancable5+Type.swift */; };
-		F18716C922E5C8BD00CF946B /* Easer5+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167B22E5C8BD00CF946B /* Easer5+Core.swift */; };
-		F18716CA22E5C8BD00CF946B /* Easer5+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167C22E5C8BD00CF946B /* Easer5+Type.swift */; };
-		F18716CB22E5C8BD00CF946B /* Easer5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167D22E5C8BD00CF946B /* Easer5.swift */; };
-		F18716CC22E5C8BD00CF946B /* Easer5+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167E22E5C8BD00CF946B /* Easer5+Default.swift */; };
-		F18716CD22E5C8BD00CF946B /* Advancable5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167F22E5C8BD00CF946B /* Advancable5.swift */; };
-		F18716CE22E5C8BD00CF946B /* CustomFriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187168122E5C8BD00CF946B /* CustomFriction.swift */; };
-		F18716CF22E5C8BD00CF946B /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187168222E5C8BD00CF946B /* Friction.swift */; };
-		F18716D022E5C8BD00CF946B /* PhysicsAnimKind5+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187168422E5C8BD00CF946B /* PhysicsAnimKind5+Access.swift */; };
-		F18716D122E5C8BD00CF946B /* PhysicsAnimKind5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187168522E5C8BD00CF946B /* PhysicsAnimKind5.swift */; };
 		F18716E122E5C92F00CF946B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E022E5C92F00CF946B /* View.swift */; };
-		F18716E722E5D20F00CF946B /* RubberBand+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E322E5D06400CF946B /* RubberBand+Access.swift */; };
-		F18716EC22E5D28300CF946B /* RubberBand+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E822E5D24E00CF946B /* RubberBand+Core.swift */; };
-		F18716ED22E5D2A200CF946B /* RubberBand+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716EA22E5D25B00CF946B /* RubberBand+Helper.swift */; };
-		F18716F322E5F9BB00CF946B /* ArraySugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F122E5F98100CF946B /* ArraySugar.swift */; };
-		F18716F622E605F500CF946B /* FrameAnimator2+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F422E605C400CF946B /* FrameAnimator2+Action.swift */; };
-		F187170522E62D0A00CF946B /* CGFloatSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F922E62A5F00CF946B /* CGFloatSugar.swift */; };
-		F187170622E62D0B00CF946B /* CGPointSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716FC22E62B7000CF946B /* CGPointSugar.swift */; };
-		F187170722E62D0B00CF946B /* CGSizeSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716FE22E62C3600CF946B /* CGSizeSugar.swift */; };
-		F187170A22E62F4F00CF946B /* CGRectSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187170822E62E9F00CF946B /* CGRectSugar.swift */; };
-		F187170B22E66C9C00CF946B /* Mover+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F722E6061F00CF946B /* Mover+Core.swift */; };
-		F187171022E66CA400CF946B /* RubberBand+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E522E5D17700CF946B /* RubberBand+Default.swift */; };
-		F187171822E748AF00CF946B /* ViewSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171222E71FEF00CF946B /* ViewSugar.swift */; };
-		F187171922E748AF00CF946B /* ThreadingSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171622E7486F00CF946B /* ThreadingSugar.swift */; };
 		F187171D22E776EA00CF946B /* View+BounceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171C22E776EA00CF946B /* View+BounceTest.swift */; };
 		F187171F22E7771A00CF946B /* View+MovingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171E22E7771A00CF946B /* View+MovingTest.swift */; };
-		F187172022E77C4600CF946B /* MoverGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187167222E5C8BD00CF946B /* MoverGroup.swift */; };
-		F187172322E77CD900CF946B /* Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172122E77C8F00CF946B /* Dir.swift */; };
+		F187177522E79E2F00CF946B /* ArraySugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172822E79E2E00CF946B /* ArraySugar.swift */; };
+		F187177622E79E2F00CF946B /* CGSizeSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172922E79E2E00CF946B /* CGSizeSugar.swift */; };
+		F187177722E79E2F00CF946B /* CGFloatSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172A22E79E2E00CF946B /* CGFloatSugar.swift */; };
+		F187177822E79E2F00CF946B /* CGRectSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172B22E79E2E00CF946B /* CGRectSugar.swift */; };
+		F187177922E79E2F00CF946B /* ViewSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172C22E79E2E00CF946B /* ViewSugar.swift */; };
+		F187177A22E79E2F00CF946B /* ThreadingSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172D22E79E2E00CF946B /* ThreadingSugar.swift */; };
+		F187177B22E79E2F00CF946B /* CGPointSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187172E22E79E2E00CF946B /* CGPointSugar.swift */; };
+		F187177C22E79E2F00CF946B /* RubberBand+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173122E79E2E00CF946B /* RubberBand+Core.swift */; };
+		F187177D22E79E2F00CF946B /* RubberBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173222E79E2E00CF946B /* RubberBand.swift */; };
+		F187177E22E79E2F00CF946B /* MoverGroup+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173422E79E2E00CF946B /* MoverGroup+Access.swift */; };
+		F187177F22E79E2F00CF946B /* MoverGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173522E79E2E00CF946B /* MoverGroup.swift */; };
+		F187178022E79E2F00CF946B /* Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173622E79E2E00CF946B /* Dir.swift */; };
+		F187178122E79E2F00CF946B /* RubberBand+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173722E79E2E00CF946B /* RubberBand+Default.swift */; };
+		F187178222E79E2F00CF946B /* RubberBand+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173822E79E2E00CF946B /* RubberBand+Type.swift */; };
+		F187178322E79E2F00CF946B /* RubberBand+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173922E79E2E00CF946B /* RubberBand+Access.swift */; };
+		F187178422E79E2F00CF946B /* RubberBand+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173A22E79E2E00CF946B /* RubberBand+Helper.swift */; };
+		F187178522E79E2F00CF946B /* Mover+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173C22E79E2E00CF946B /* Mover+Core.swift */; };
+		F187178622E79E2F00CF946B /* Mover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173D22E79E2E00CF946B /* Mover.swift */; };
+		F187178722E79E2F00CF946B /* Springer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173F22E79E2E00CF946B /* Springer.swift */; };
+		F187178822E79E2F00CF946B /* Easer+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174122E79E2E00CF946B /* Easer+Type.swift */; };
+		F187178922E79E2F00CF946B /* Easer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174222E79E2E00CF946B /* Easer.swift */; };
+		F187178A22E79E2F00CF946B /* AnimState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174322E79E2E00CF946B /* AnimState.swift */; };
+		F187178B22E79E2F00CF946B /* Easer+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174422E79E2E00CF946B /* Easer+Default.swift */; };
+		F187178C22E79E2F00CF946B /* Easer+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174522E79E2E00CF946B /* Easer+Core.swift */; };
+		F187178D22E79E2F00CF946B /* CustomFriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174722E79E2E00CF946B /* CustomFriction.swift */; };
+		F187178E22E79E2F00CF946B /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174822E79E2E00CF946B /* Friction.swift */; };
+		F187178F22E79E2F00CF946B /* Advancable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174A22E79E2E00CF946B /* Advancable.swift */; };
+		F187179022E79E2F00CF946B /* Advancable+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174B22E79E2E00CF946B /* Advancable+Type.swift */; };
+		F187179122E79E2F00CF946B /* PhysicsAnimKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174D22E79E2E00CF946B /* PhysicsAnimKind.swift */; };
+		F187179222E79E2F00CF946B /* PhysicsAnimKind+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174E22E79E2E00CF946B /* PhysicsAnimKind+Access.swift */; };
+		F187179322E79E2F00CF946B /* FrameAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175122E79E2E00CF946B /* FrameAnimator.swift */; };
+		F187179422E79E2F00CF946B /* FrameAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175322E79E2E00CF946B /* FrameAnimatable.swift */; };
+		F187179522E79E2F00CF946B /* FrameAnimator+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175422E79E2E00CF946B /* FrameAnimator+Action.swift */; };
+		F187179622E79E2F00CF946B /* FrameAnimator+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175522E79E2E00CF946B /* FrameAnimator+Access.swift */; };
+		F187179722E79E2F00CF946B /* FrameAnimator+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175622E79E2E00CF946B /* FrameAnimator+Core.swift */; };
+		F187179822E79E2F00CF946B /* Animator+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175822E79E2E00CF946B /* Animator+Type.swift */; };
+		F187179922E79E2F00CF946B /* Animator+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175922E79E2E00CF946B /* Animator+Access.swift */; };
+		F187179A22E79E2F00CF946B /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175A22E79E2E00CF946B /* Animator.swift */; };
+		F187179B22E79E2F00CF946B /* Animator+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175B22E79E2E00CF946B /* Animator+Default.swift */; };
+		F187179C22E79E2F00CF946B /* Animator+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175C22E79E2E00CF946B /* Animator+Core.swift */; };
+		F187179D22E79E2F00CF946B /* LoopAnimator+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175E22E79E2E00CF946B /* LoopAnimator+Core.swift */; };
+		F187179E22E79E2F00CF946B /* LoopAnimator+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187175F22E79E2E00CF946B /* LoopAnimator+Default.swift */; };
+		F187179F22E79E2F00CF946B /* LoopAnimator+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176022E79E2E00CF946B /* LoopAnimator+Type.swift */; };
+		F18717A022E79E2F00CF946B /* LoopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176122E79E2E00CF946B /* LoopAnimator.swift */; };
+		F18717A122E79E2F00CF946B /* AnimProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176322E79E2E00CF946B /* AnimProxy.swift */; };
+		F18717A222E79E2F00CF946B /* AnimProxyKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176422E79E2E00CF946B /* AnimProxyKind.swift */; };
+		F18717A322E79E2F00CF946B /* AnimProxy+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176522E79E2E00CF946B /* AnimProxy+Core.swift */; };
+		F18717A422E79E2F00CF946B /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176722E79E2E00CF946B /* Easing.swift */; };
+		F18717A522E79E2F00CF946B /* Elastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176922E79E2F00CF946B /* Elastic.swift */; };
+		F18717A622E79E2F00CF946B /* Cubic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176A22E79E2F00CF946B /* Cubic.swift */; };
+		F18717A722E79E2F00CF946B /* Quint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176B22E79E2F00CF946B /* Quint.swift */; };
+		F18717A822E79E2F00CF946B /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176C22E79E2F00CF946B /* Back.swift */; };
+		F18717A922E79E2F00CF946B /* Circ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176D22E79E2F00CF946B /* Circ.swift */; };
+		F18717AA22E79E2F00CF946B /* Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176E22E79E2F00CF946B /* Bounce.swift */; };
+		F18717AB22E79E2F00CF946B /* Expo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176F22E79E2F00CF946B /* Expo.swift */; };
+		F18717AC22E79E2F00CF946B /* Quart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177022E79E2F00CF946B /* Quart.swift */; };
+		F18717AD22E79E2F00CF946B /* Sine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177122E79E2F00CF946B /* Sine.swift */; };
+		F18717AE22E79E2F00CF946B /* Linear.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177222E79E2F00CF946B /* Linear.swift */; };
+		F18717AF22E79E2F00CF946B /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177322E79E2F00CF946B /* Quad.swift */; };
+		F18717B022E79E2F00CF946B /* EasingEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177422E79E2F00CF946B /* EasingEquation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,88 +112,69 @@
 		F187163322E5C54800CF946B /* AnimKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F187163522E5C54800CF946B /* AnimKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimKit.h; sourceTree = "<group>"; };
 		F187163622E5C54800CF946B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F187164222E5C8BC00CF946B /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
-		F187164422E5C8BC00CF946B /* Elastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elastic.swift; sourceTree = "<group>"; };
-		F187164522E5C8BC00CF946B /* Cubic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cubic.swift; sourceTree = "<group>"; };
-		F187164622E5C8BD00CF946B /* Quint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quint.swift; sourceTree = "<group>"; };
-		F187164722E5C8BD00CF946B /* Back.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
-		F187164822E5C8BD00CF946B /* Circ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circ.swift; sourceTree = "<group>"; };
-		F187164922E5C8BD00CF946B /* Bounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounce.swift; sourceTree = "<group>"; };
-		F187164A22E5C8BD00CF946B /* Expo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expo.swift; sourceTree = "<group>"; };
-		F187164B22E5C8BD00CF946B /* Quart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quart.swift; sourceTree = "<group>"; };
-		F187164C22E5C8BD00CF946B /* Sine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sine.swift; sourceTree = "<group>"; };
-		F187164D22E5C8BD00CF946B /* Linear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linear.swift; sourceTree = "<group>"; };
-		F187164E22E5C8BD00CF946B /* Quad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quad.swift; sourceTree = "<group>"; };
-		F187164F22E5C8BD00CF946B /* EasingEquation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingEquation.swift; sourceTree = "<group>"; };
-		F187165122E5C8BD00CF946B /* AnimProxyKind2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimProxyKind2.swift; sourceTree = "<group>"; };
-		F187165222E5C8BD00CF946B /* AnimProxy2+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimProxy2+Core.swift"; sourceTree = "<group>"; };
-		F187165322E5C8BD00CF946B /* AnimProxy2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimProxy2.swift; sourceTree = "<group>"; };
-		F187165522E5C8BD00CF946B /* AnimProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimProxy.swift; sourceTree = "<group>"; };
-		F187165622E5C8BD00CF946B /* AnimProxyKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimProxyKind.swift; sourceTree = "<group>"; };
-		F187165922E5C8BD00CF946B /* FrameAnimatable2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameAnimatable2.swift; sourceTree = "<group>"; };
-		F187165A22E5C8BD00CF946B /* FrameAnimator2+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FrameAnimator2+Core.swift"; sourceTree = "<group>"; };
-		F187165B22E5C8BD00CF946B /* FrameAnimator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameAnimator2.swift; sourceTree = "<group>"; };
-		F187165C22E5C8BD00CF946B /* FrameAnimator2+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FrameAnimator2+Access.swift"; sourceTree = "<group>"; };
-		F187165E22E5C8BD00CF946B /* Animator2+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animator2+Core.swift"; sourceTree = "<group>"; };
-		F187165F22E5C8BD00CF946B /* Animator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator2.swift; sourceTree = "<group>"; };
-		F187166022E5C8BD00CF946B /* Animator2+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animator2+Access.swift"; sourceTree = "<group>"; };
-		F187166122E5C8BD00CF946B /* Animator2+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animator2+Default.swift"; sourceTree = "<group>"; };
-		F187166222E5C8BD00CF946B /* Animator2+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animator2+Type.swift"; sourceTree = "<group>"; };
-		F187166422E5C8BD00CF946B /* LoopAnimator2+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoopAnimator2+Type.swift"; sourceTree = "<group>"; };
-		F187166522E5C8BD00CF946B /* LoopAnimator2+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoopAnimator2+Default.swift"; sourceTree = "<group>"; };
-		F187166622E5C8BD00CF946B /* LoopAnimator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopAnimator2.swift; sourceTree = "<group>"; };
-		F187166722E5C8BD00CF946B /* LoopAnimator2+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoopAnimator2+Core.swift"; sourceTree = "<group>"; };
-		F187166A22E5C8BD00CF946B /* AnimatorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorExtensions.swift; sourceTree = "<group>"; };
-		F187166B22E5C8BD00CF946B /* FrameAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameAnimator.swift; sourceTree = "<group>"; };
-		F187166C22E5C8BD00CF946B /* LoopingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopingAnimator.swift; sourceTree = "<group>"; };
-		F187166D22E5C8BD00CF946B /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
-		F187167122E5C8BD00CF946B /* RubberBand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubberBand.swift; sourceTree = "<group>"; };
-		F187167222E5C8BD00CF946B /* MoverGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoverGroup.swift; sourceTree = "<group>"; };
-		F187167322E5C8BD00CF946B /* RubberBand+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RubberBand+Type.swift"; sourceTree = "<group>"; };
-		F187167522E5C8BD00CF946B /* Mover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mover.swift; sourceTree = "<group>"; };
-		F187167722E5C8BD00CF946B /* Springer5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Springer5.swift; sourceTree = "<group>"; };
-		F187167822E5C8BD00CF946B /* AnimState5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimState5.swift; sourceTree = "<group>"; };
-		F187167922E5C8BD00CF946B /* Advancable5+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Advancable5+Type.swift"; sourceTree = "<group>"; };
-		F187167B22E5C8BD00CF946B /* Easer5+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer5+Core.swift"; sourceTree = "<group>"; };
-		F187167C22E5C8BD00CF946B /* Easer5+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer5+Type.swift"; sourceTree = "<group>"; };
-		F187167D22E5C8BD00CF946B /* Easer5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easer5.swift; sourceTree = "<group>"; };
-		F187167E22E5C8BD00CF946B /* Easer5+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer5+Default.swift"; sourceTree = "<group>"; };
-		F187167F22E5C8BD00CF946B /* Advancable5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advancable5.swift; sourceTree = "<group>"; };
-		F187168122E5C8BD00CF946B /* CustomFriction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFriction.swift; sourceTree = "<group>"; };
-		F187168222E5C8BD00CF946B /* Friction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friction.swift; sourceTree = "<group>"; };
-		F187168422E5C8BD00CF946B /* PhysicsAnimKind5+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhysicsAnimKind5+Access.swift"; sourceTree = "<group>"; };
-		F187168522E5C8BD00CF946B /* PhysicsAnimKind5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsAnimKind5.swift; sourceTree = "<group>"; };
-		F187168822E5C8BD00CF946B /* Easer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easer.swift; sourceTree = "<group>"; };
-		F187168922E5C8BD00CF946B /* PhysicsAnimationKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsAnimationKind.swift; sourceTree = "<group>"; };
-		F187168A22E5C8BD00CF946B /* Springer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Springer.swift; sourceTree = "<group>"; };
-		F187168C22E5C8BD00CF946B /* Advancable4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advancable4.swift; sourceTree = "<group>"; };
-		F187168D22E5C8BD00CF946B /* Springer4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Springer4.swift; sourceTree = "<group>"; };
-		F187168E22E5C8BD00CF946B /* Easer4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easer4.swift; sourceTree = "<group>"; };
-		F187168F22E5C8BD00CF946B /* PhysicsAnimKind4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsAnimKind4.swift; sourceTree = "<group>"; };
-		F187169122E5C8BD00CF946B /* Advancable3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advancable3.swift; sourceTree = "<group>"; };
-		F187169222E5C8BD00CF946B /* AnimationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationState.swift; sourceTree = "<group>"; };
-		F187169322E5C8BD00CF946B /* Easer3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easer3.swift; sourceTree = "<group>"; };
-		F187169422E5C8BD00CF946B /* PhysicsAnimKind3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsAnimKind3.swift; sourceTree = "<group>"; };
-		F187169922E5C8BD00CF946B /* DEPRECATEDFrameTicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DEPRECATEDFrameTicker.swift; sourceTree = "<group>"; };
-		F187169C22E5C8BD00CF946B /* SnapFriction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapFriction.swift; sourceTree = "<group>"; };
-		F187169E22E5C8BD00CF946B /* AnimEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimEvent.swift; sourceTree = "<group>"; };
 		F18716E022E5C92F00CF946B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		F18716E322E5D06400CF946B /* RubberBand+Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RubberBand+Access.swift"; sourceTree = "<group>"; };
-		F18716E522E5D17700CF946B /* RubberBand+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RubberBand+Default.swift"; sourceTree = "<group>"; };
-		F18716E822E5D24E00CF946B /* RubberBand+Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RubberBand+Core.swift"; sourceTree = "<group>"; };
-		F18716EA22E5D25B00CF946B /* RubberBand+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RubberBand+Helper.swift"; sourceTree = "<group>"; };
-		F18716F122E5F98100CF946B /* ArraySugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySugar.swift; sourceTree = "<group>"; };
-		F18716F422E605C400CF946B /* FrameAnimator2+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FrameAnimator2+Action.swift"; sourceTree = "<group>"; };
-		F18716F722E6061F00CF946B /* Mover+Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mover+Core.swift"; sourceTree = "<group>"; };
-		F18716F922E62A5F00CF946B /* CGFloatSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatSugar.swift; sourceTree = "<group>"; };
-		F18716FC22E62B7000CF946B /* CGPointSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointSugar.swift; sourceTree = "<group>"; };
-		F18716FE22E62C3600CF946B /* CGSizeSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeSugar.swift; sourceTree = "<group>"; };
-		F187170822E62E9F00CF946B /* CGRectSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectSugar.swift; sourceTree = "<group>"; };
-		F187171222E71FEF00CF946B /* ViewSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSugar.swift; sourceTree = "<group>"; };
-		F187171622E7486F00CF946B /* ThreadingSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadingSugar.swift; sourceTree = "<group>"; };
 		F187171C22E776EA00CF946B /* View+BounceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+BounceTest.swift"; sourceTree = "<group>"; };
 		F187171E22E7771A00CF946B /* View+MovingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+MovingTest.swift"; sourceTree = "<group>"; };
-		F187172122E77C8F00CF946B /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
+		F187172822E79E2E00CF946B /* ArraySugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySugar.swift; sourceTree = "<group>"; };
+		F187172922E79E2E00CF946B /* CGSizeSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeSugar.swift; sourceTree = "<group>"; };
+		F187172A22E79E2E00CF946B /* CGFloatSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatSugar.swift; sourceTree = "<group>"; };
+		F187172B22E79E2E00CF946B /* CGRectSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectSugar.swift; sourceTree = "<group>"; };
+		F187172C22E79E2E00CF946B /* ViewSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSugar.swift; sourceTree = "<group>"; };
+		F187172D22E79E2E00CF946B /* ThreadingSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadingSugar.swift; sourceTree = "<group>"; };
+		F187172E22E79E2E00CF946B /* CGPointSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointSugar.swift; sourceTree = "<group>"; };
+		F187173122E79E2E00CF946B /* RubberBand+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RubberBand+Core.swift"; sourceTree = "<group>"; };
+		F187173222E79E2E00CF946B /* RubberBand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubberBand.swift; sourceTree = "<group>"; };
+		F187173422E79E2E00CF946B /* MoverGroup+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoverGroup+Access.swift"; sourceTree = "<group>"; };
+		F187173522E79E2E00CF946B /* MoverGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoverGroup.swift; sourceTree = "<group>"; };
+		F187173622E79E2E00CF946B /* Dir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
+		F187173722E79E2E00CF946B /* RubberBand+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RubberBand+Default.swift"; sourceTree = "<group>"; };
+		F187173822E79E2E00CF946B /* RubberBand+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RubberBand+Type.swift"; sourceTree = "<group>"; };
+		F187173922E79E2E00CF946B /* RubberBand+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RubberBand+Access.swift"; sourceTree = "<group>"; };
+		F187173A22E79E2E00CF946B /* RubberBand+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RubberBand+Helper.swift"; sourceTree = "<group>"; };
+		F187173C22E79E2E00CF946B /* Mover+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mover+Core.swift"; sourceTree = "<group>"; };
+		F187173D22E79E2E00CF946B /* Mover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mover.swift; sourceTree = "<group>"; };
+		F187173F22E79E2E00CF946B /* Springer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Springer.swift; sourceTree = "<group>"; };
+		F187174122E79E2E00CF946B /* Easer+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer+Type.swift"; sourceTree = "<group>"; };
+		F187174222E79E2E00CF946B /* Easer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easer.swift; sourceTree = "<group>"; };
+		F187174322E79E2E00CF946B /* AnimState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimState.swift; sourceTree = "<group>"; };
+		F187174422E79E2E00CF946B /* Easer+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer+Default.swift"; sourceTree = "<group>"; };
+		F187174522E79E2E00CF946B /* Easer+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer+Core.swift"; sourceTree = "<group>"; };
+		F187174722E79E2E00CF946B /* CustomFriction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFriction.swift; sourceTree = "<group>"; };
+		F187174822E79E2E00CF946B /* Friction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friction.swift; sourceTree = "<group>"; };
+		F187174A22E79E2E00CF946B /* Advancable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advancable.swift; sourceTree = "<group>"; };
+		F187174B22E79E2E00CF946B /* Advancable+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Advancable+Type.swift"; sourceTree = "<group>"; };
+		F187174D22E79E2E00CF946B /* PhysicsAnimKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsAnimKind.swift; sourceTree = "<group>"; };
+		F187174E22E79E2E00CF946B /* PhysicsAnimKind+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhysicsAnimKind+Access.swift"; sourceTree = "<group>"; };
+		F187175122E79E2E00CF946B /* FrameAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameAnimator.swift; sourceTree = "<group>"; };
+		F187175322E79E2E00CF946B /* FrameAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameAnimatable.swift; sourceTree = "<group>"; };
+		F187175422E79E2E00CF946B /* FrameAnimator+Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FrameAnimator+Action.swift"; sourceTree = "<group>"; };
+		F187175522E79E2E00CF946B /* FrameAnimator+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FrameAnimator+Access.swift"; sourceTree = "<group>"; };
+		F187175622E79E2E00CF946B /* FrameAnimator+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FrameAnimator+Core.swift"; sourceTree = "<group>"; };
+		F187175822E79E2E00CF946B /* Animator+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animator+Type.swift"; sourceTree = "<group>"; };
+		F187175922E79E2E00CF946B /* Animator+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animator+Access.swift"; sourceTree = "<group>"; };
+		F187175A22E79E2E00CF946B /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		F187175B22E79E2E00CF946B /* Animator+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animator+Default.swift"; sourceTree = "<group>"; };
+		F187175C22E79E2E00CF946B /* Animator+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animator+Core.swift"; sourceTree = "<group>"; };
+		F187175E22E79E2E00CF946B /* LoopAnimator+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoopAnimator+Core.swift"; sourceTree = "<group>"; };
+		F187175F22E79E2E00CF946B /* LoopAnimator+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoopAnimator+Default.swift"; sourceTree = "<group>"; };
+		F187176022E79E2E00CF946B /* LoopAnimator+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoopAnimator+Type.swift"; sourceTree = "<group>"; };
+		F187176122E79E2E00CF946B /* LoopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopAnimator.swift; sourceTree = "<group>"; };
+		F187176322E79E2E00CF946B /* AnimProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimProxy.swift; sourceTree = "<group>"; };
+		F187176422E79E2E00CF946B /* AnimProxyKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimProxyKind.swift; sourceTree = "<group>"; };
+		F187176522E79E2E00CF946B /* AnimProxy+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimProxy+Core.swift"; sourceTree = "<group>"; };
+		F187176722E79E2E00CF946B /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		F187176922E79E2F00CF946B /* Elastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elastic.swift; sourceTree = "<group>"; };
+		F187176A22E79E2F00CF946B /* Cubic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cubic.swift; sourceTree = "<group>"; };
+		F187176B22E79E2F00CF946B /* Quint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quint.swift; sourceTree = "<group>"; };
+		F187176C22E79E2F00CF946B /* Back.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
+		F187176D22E79E2F00CF946B /* Circ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circ.swift; sourceTree = "<group>"; };
+		F187176E22E79E2F00CF946B /* Bounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounce.swift; sourceTree = "<group>"; };
+		F187176F22E79E2F00CF946B /* Expo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expo.swift; sourceTree = "<group>"; };
+		F187177022E79E2F00CF946B /* Quart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quart.swift; sourceTree = "<group>"; };
+		F187177122E79E2F00CF946B /* Sine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sine.swift; sourceTree = "<group>"; };
+		F187177222E79E2F00CF946B /* Linear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linear.swift; sourceTree = "<group>"; };
+		F187177322E79E2F00CF946B /* Quad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quad.swift; sourceTree = "<group>"; };
+		F187177422E79E2F00CF946B /* EasingEquation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingEquation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,343 +241,13 @@
 		F187164022E5C8BC00CF946B /* src */ = {
 			isa = PBXGroup;
 			children = (
-				F18716F022E5F97500CF946B /* common */,
-				F187164122E5C8BC00CF946B /* easing */,
-				F187165022E5C8BD00CF946B /* proxy */,
-				F187165722E5C8BD00CF946B /* animation */,
-				F187166E22E5C8BD00CF946B /* physics */,
-				F187169522E5C8BD00CF946B /* DEPRECATED */,
+				F187174F22E79E2E00CF946B /* animation */,
+				F187172722E79E2E00CF946B /* common */,
+				F187176622E79E2E00CF946B /* easing */,
+				F187172F22E79E2E00CF946B /* physics */,
+				F187176222E79E2E00CF946B /* proxy */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		F187164122E5C8BC00CF946B /* easing */ = {
-			isa = PBXGroup;
-			children = (
-				F187164222E5C8BC00CF946B /* Easing.swift */,
-				F187164322E5C8BC00CF946B /* type */,
-				F187164F22E5C8BD00CF946B /* EasingEquation.swift */,
-			);
-			path = easing;
-			sourceTree = "<group>";
-		};
-		F187164322E5C8BC00CF946B /* type */ = {
-			isa = PBXGroup;
-			children = (
-				F187164422E5C8BC00CF946B /* Elastic.swift */,
-				F187164522E5C8BC00CF946B /* Cubic.swift */,
-				F187164622E5C8BD00CF946B /* Quint.swift */,
-				F187164722E5C8BD00CF946B /* Back.swift */,
-				F187164822E5C8BD00CF946B /* Circ.swift */,
-				F187164922E5C8BD00CF946B /* Bounce.swift */,
-				F187164A22E5C8BD00CF946B /* Expo.swift */,
-				F187164B22E5C8BD00CF946B /* Quart.swift */,
-				F187164C22E5C8BD00CF946B /* Sine.swift */,
-				F187164D22E5C8BD00CF946B /* Linear.swift */,
-				F187164E22E5C8BD00CF946B /* Quad.swift */,
-			);
-			path = type;
-			sourceTree = "<group>";
-		};
-		F187165022E5C8BD00CF946B /* proxy */ = {
-			isa = PBXGroup;
-			children = (
-				F187165122E5C8BD00CF946B /* AnimProxyKind2.swift */,
-				F187165222E5C8BD00CF946B /* AnimProxy2+Core.swift */,
-				F187165322E5C8BD00CF946B /* AnimProxy2.swift */,
-				F187165422E5C8BD00CF946B /* DEPRECATED */,
-			);
-			path = proxy;
-			sourceTree = "<group>";
-		};
-		F187165422E5C8BD00CF946B /* DEPRECATED */ = {
-			isa = PBXGroup;
-			children = (
-				F187165522E5C8BD00CF946B /* AnimProxy.swift */,
-				F187165622E5C8BD00CF946B /* AnimProxyKind.swift */,
-			);
-			path = DEPRECATED;
-			sourceTree = "<group>";
-		};
-		F187165722E5C8BD00CF946B /* animation */ = {
-			isa = PBXGroup;
-			children = (
-				F187165822E5C8BD00CF946B /* frame */,
-				F187165D22E5C8BD00CF946B /* Animator */,
-				F187166322E5C8BD00CF946B /* loop */,
-			);
-			path = animation;
-			sourceTree = "<group>";
-		};
-		F187165822E5C8BD00CF946B /* frame */ = {
-			isa = PBXGroup;
-			children = (
-				F18716EE22E5EE4000CF946B /* protocol */,
-				F187165B22E5C8BD00CF946B /* FrameAnimator2.swift */,
-				F187165A22E5C8BD00CF946B /* FrameAnimator2+Core.swift */,
-				F18716F422E605C400CF946B /* FrameAnimator2+Action.swift */,
-				F187165C22E5C8BD00CF946B /* FrameAnimator2+Access.swift */,
-			);
-			path = frame;
-			sourceTree = "<group>";
-		};
-		F187165D22E5C8BD00CF946B /* Animator */ = {
-			isa = PBXGroup;
-			children = (
-				F187165F22E5C8BD00CF946B /* Animator2.swift */,
-				F187165E22E5C8BD00CF946B /* Animator2+Core.swift */,
-				F187166022E5C8BD00CF946B /* Animator2+Access.swift */,
-				F187166122E5C8BD00CF946B /* Animator2+Default.swift */,
-				F187166222E5C8BD00CF946B /* Animator2+Type.swift */,
-			);
-			path = Animator;
-			sourceTree = "<group>";
-		};
-		F187166322E5C8BD00CF946B /* loop */ = {
-			isa = PBXGroup;
-			children = (
-				F187166622E5C8BD00CF946B /* LoopAnimator2.swift */,
-				F187166722E5C8BD00CF946B /* LoopAnimator2+Core.swift */,
-				F187166422E5C8BD00CF946B /* LoopAnimator2+Type.swift */,
-				F187166522E5C8BD00CF946B /* LoopAnimator2+Default.swift */,
-			);
-			path = loop;
-			sourceTree = "<group>";
-		};
-		F187166822E5C8BD00CF946B /* DEPRECATED */ = {
-			isa = PBXGroup;
-			children = (
-				F187166922E5C8BD00CF946B /* 1 */,
-			);
-			path = DEPRECATED;
-			sourceTree = "<group>";
-		};
-		F187166922E5C8BD00CF946B /* 1 */ = {
-			isa = PBXGroup;
-			children = (
-				F187166A22E5C8BD00CF946B /* AnimatorExtensions.swift */,
-				F187166B22E5C8BD00CF946B /* FrameAnimator.swift */,
-				F187166C22E5C8BD00CF946B /* LoopingAnimator.swift */,
-				F187166D22E5C8BD00CF946B /* Animator.swift */,
-			);
-			path = 1;
-			sourceTree = "<group>";
-		};
-		F187166E22E5C8BD00CF946B /* physics */ = {
-			isa = PBXGroup;
-			children = (
-				F187166F22E5C8BD00CF946B /* 5 */,
-			);
-			path = physics;
-			sourceTree = "<group>";
-		};
-		F187166F22E5C8BD00CF946B /* 5 */ = {
-			isa = PBXGroup;
-			children = (
-				F187167022E5C8BD00CF946B /* rubberband */,
-				F187167422E5C8BD00CF946B /* mover */,
-				F187167622E5C8BD00CF946B /* springer */,
-				F18716EF22E5EE5D00CF946B /* protocol */,
-				F187167A22E5C8BD00CF946B /* easer */,
-				F187168022E5C8BD00CF946B /* friction */,
-				F187168322E5C8BD00CF946B /* Physics */,
-			);
-			path = 5;
-			sourceTree = "<group>";
-		};
-		F187167022E5C8BD00CF946B /* rubberband */ = {
-			isa = PBXGroup;
-			children = (
-				F18716E222E5CF2100CF946B /* group */,
-				F187167122E5C8BD00CF946B /* RubberBand.swift */,
-				F18716E822E5D24E00CF946B /* RubberBand+Core.swift */,
-				F18716EA22E5D25B00CF946B /* RubberBand+Helper.swift */,
-				F18716E522E5D17700CF946B /* RubberBand+Default.swift */,
-				F18716E322E5D06400CF946B /* RubberBand+Access.swift */,
-				F187167322E5C8BD00CF946B /* RubberBand+Type.swift */,
-			);
-			path = rubberband;
-			sourceTree = "<group>";
-		};
-		F187167422E5C8BD00CF946B /* mover */ = {
-			isa = PBXGroup;
-			children = (
-				F187167522E5C8BD00CF946B /* Mover.swift */,
-				F18716F722E6061F00CF946B /* Mover+Core.swift */,
-			);
-			path = mover;
-			sourceTree = "<group>";
-		};
-		F187167622E5C8BD00CF946B /* springer */ = {
-			isa = PBXGroup;
-			children = (
-				F187167722E5C8BD00CF946B /* Springer5.swift */,
-			);
-			path = springer;
-			sourceTree = "<group>";
-		};
-		F187167A22E5C8BD00CF946B /* easer */ = {
-			isa = PBXGroup;
-			children = (
-				F187167822E5C8BD00CF946B /* AnimState5.swift */,
-				F187167D22E5C8BD00CF946B /* Easer5.swift */,
-				F187167B22E5C8BD00CF946B /* Easer5+Core.swift */,
-				F187167C22E5C8BD00CF946B /* Easer5+Type.swift */,
-				F187167E22E5C8BD00CF946B /* Easer5+Default.swift */,
-			);
-			path = easer;
-			sourceTree = "<group>";
-		};
-		F187168022E5C8BD00CF946B /* friction */ = {
-			isa = PBXGroup;
-			children = (
-				F187168122E5C8BD00CF946B /* CustomFriction.swift */,
-				F187168222E5C8BD00CF946B /* Friction.swift */,
-			);
-			path = friction;
-			sourceTree = "<group>";
-		};
-		F187168322E5C8BD00CF946B /* Physics */ = {
-			isa = PBXGroup;
-			children = (
-				F187168422E5C8BD00CF946B /* PhysicsAnimKind5+Access.swift */,
-				F187168522E5C8BD00CF946B /* PhysicsAnimKind5.swift */,
-			);
-			path = Physics;
-			sourceTree = "<group>";
-		};
-		F187168622E5C8BD00CF946B /* DEPRECATED */ = {
-			isa = PBXGroup;
-			children = (
-				F187166822E5C8BD00CF946B /* DEPRECATED */,
-				F187168722E5C8BD00CF946B /* 1 */,
-				F187168B22E5C8BD00CF946B /* 4 */,
-				F187169022E5C8BD00CF946B /* 3 */,
-			);
-			path = DEPRECATED;
-			sourceTree = "<group>";
-		};
-		F187168722E5C8BD00CF946B /* 1 */ = {
-			isa = PBXGroup;
-			children = (
-				F187168822E5C8BD00CF946B /* Easer.swift */,
-				F187168922E5C8BD00CF946B /* PhysicsAnimationKind.swift */,
-				F187168A22E5C8BD00CF946B /* Springer.swift */,
-			);
-			path = 1;
-			sourceTree = "<group>";
-		};
-		F187168B22E5C8BD00CF946B /* 4 */ = {
-			isa = PBXGroup;
-			children = (
-				F187168C22E5C8BD00CF946B /* Advancable4.swift */,
-				F187168D22E5C8BD00CF946B /* Springer4.swift */,
-				F187168E22E5C8BD00CF946B /* Easer4.swift */,
-				F187168F22E5C8BD00CF946B /* PhysicsAnimKind4.swift */,
-			);
-			path = 4;
-			sourceTree = "<group>";
-		};
-		F187169022E5C8BD00CF946B /* 3 */ = {
-			isa = PBXGroup;
-			children = (
-				F187169122E5C8BD00CF946B /* Advancable3.swift */,
-				F187169222E5C8BD00CF946B /* AnimationState.swift */,
-				F187169322E5C8BD00CF946B /* Easer3.swift */,
-				F187169422E5C8BD00CF946B /* PhysicsAnimKind3.swift */,
-			);
-			path = 3;
-			sourceTree = "<group>";
-		};
-		F187169522E5C8BD00CF946B /* DEPRECATED */ = {
-			isa = PBXGroup;
-			children = (
-				F187168622E5C8BD00CF946B /* DEPRECATED */,
-				F187169622E5C8BD00CF946B /* movers */,
-				F187169D22E5C8BD00CF946B /* events */,
-			);
-			path = DEPRECATED;
-			sourceTree = "<group>";
-		};
-		F187169622E5C8BD00CF946B /* movers */ = {
-			isa = PBXGroup;
-			children = (
-				F187169822E5C8BD00CF946B /* utils */,
-				F187169A22E5C8BD00CF946B /* DEPRECATED */,
-			);
-			path = movers;
-			sourceTree = "<group>";
-		};
-		F187169822E5C8BD00CF946B /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				F187169922E5C8BD00CF946B /* DEPRECATEDFrameTicker.swift */,
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
-		F187169A22E5C8BD00CF946B /* DEPRECATED */ = {
-			isa = PBXGroup;
-			children = (
-				F187169B22E5C8BD00CF946B /* beta */,
-			);
-			path = DEPRECATED;
-			sourceTree = "<group>";
-		};
-		F187169B22E5C8BD00CF946B /* beta */ = {
-			isa = PBXGroup;
-			children = (
-				F187169C22E5C8BD00CF946B /* SnapFriction.swift */,
-			);
-			path = beta;
-			sourceTree = "<group>";
-		};
-		F187169D22E5C8BD00CF946B /* events */ = {
-			isa = PBXGroup;
-			children = (
-				F187169E22E5C8BD00CF946B /* AnimEvent.swift */,
-			);
-			path = events;
-			sourceTree = "<group>";
-		};
-		F18716E222E5CF2100CF946B /* group */ = {
-			isa = PBXGroup;
-			children = (
-				F187167222E5C8BD00CF946B /* MoverGroup.swift */,
-				F187172122E77C8F00CF946B /* Dir.swift */,
-			);
-			path = group;
-			sourceTree = "<group>";
-		};
-		F18716EE22E5EE4000CF946B /* protocol */ = {
-			isa = PBXGroup;
-			children = (
-				F187165922E5C8BD00CF946B /* FrameAnimatable2.swift */,
-			);
-			path = protocol;
-			sourceTree = "<group>";
-		};
-		F18716EF22E5EE5D00CF946B /* protocol */ = {
-			isa = PBXGroup;
-			children = (
-				F187167922E5C8BD00CF946B /* Advancable5+Type.swift */,
-				F187167F22E5C8BD00CF946B /* Advancable5.swift */,
-			);
-			path = protocol;
-			sourceTree = "<group>";
-		};
-		F18716F022E5F97500CF946B /* common */ = {
-			isa = PBXGroup;
-			children = (
-				F18716F122E5F98100CF946B /* ArraySugar.swift */,
-				F18716F922E62A5F00CF946B /* CGFloatSugar.swift */,
-				F18716FC22E62B7000CF946B /* CGPointSugar.swift */,
-				F18716FE22E62C3600CF946B /* CGSizeSugar.swift */,
-				F187170822E62E9F00CF946B /* CGRectSugar.swift */,
-				F187171222E71FEF00CF946B /* ViewSugar.swift */,
-				F187171622E7486F00CF946B /* ThreadingSugar.swift */,
-			);
-			path = common;
 			sourceTree = "<group>";
 		};
 		F187171B22E776EA00CF946B /* test */ = {
@@ -605,6 +257,205 @@
 				F187171E22E7771A00CF946B /* View+MovingTest.swift */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		F187172722E79E2E00CF946B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F187172822E79E2E00CF946B /* ArraySugar.swift */,
+				F187172922E79E2E00CF946B /* CGSizeSugar.swift */,
+				F187172A22E79E2E00CF946B /* CGFloatSugar.swift */,
+				F187172B22E79E2E00CF946B /* CGRectSugar.swift */,
+				F187172C22E79E2E00CF946B /* ViewSugar.swift */,
+				F187172D22E79E2E00CF946B /* ThreadingSugar.swift */,
+				F187172E22E79E2E00CF946B /* CGPointSugar.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F187172F22E79E2E00CF946B /* physics */ = {
+			isa = PBXGroup;
+			children = (
+				F187173022E79E2E00CF946B /* rubberband */,
+				F187173B22E79E2E00CF946B /* mover */,
+				F187173E22E79E2E00CF946B /* springer */,
+				F187174022E79E2E00CF946B /* easer */,
+				F187174622E79E2E00CF946B /* friction */,
+				F187174922E79E2E00CF946B /* protocol */,
+				F187174C22E79E2E00CF946B /* Physics */,
+			);
+			path = physics;
+			sourceTree = "<group>";
+		};
+		F187173022E79E2E00CF946B /* rubberband */ = {
+			isa = PBXGroup;
+			children = (
+				F187173122E79E2E00CF946B /* RubberBand+Core.swift */,
+				F187173222E79E2E00CF946B /* RubberBand.swift */,
+				F187173322E79E2E00CF946B /* group */,
+				F187173722E79E2E00CF946B /* RubberBand+Default.swift */,
+				F187173822E79E2E00CF946B /* RubberBand+Type.swift */,
+				F187173922E79E2E00CF946B /* RubberBand+Access.swift */,
+				F187173A22E79E2E00CF946B /* RubberBand+Helper.swift */,
+			);
+			path = rubberband;
+			sourceTree = "<group>";
+		};
+		F187173322E79E2E00CF946B /* group */ = {
+			isa = PBXGroup;
+			children = (
+				F187173422E79E2E00CF946B /* MoverGroup+Access.swift */,
+				F187173522E79E2E00CF946B /* MoverGroup.swift */,
+				F187173622E79E2E00CF946B /* Dir.swift */,
+			);
+			path = group;
+			sourceTree = "<group>";
+		};
+		F187173B22E79E2E00CF946B /* mover */ = {
+			isa = PBXGroup;
+			children = (
+				F187173C22E79E2E00CF946B /* Mover+Core.swift */,
+				F187173D22E79E2E00CF946B /* Mover.swift */,
+			);
+			path = mover;
+			sourceTree = "<group>";
+		};
+		F187173E22E79E2E00CF946B /* springer */ = {
+			isa = PBXGroup;
+			children = (
+				F187173F22E79E2E00CF946B /* Springer.swift */,
+			);
+			path = springer;
+			sourceTree = "<group>";
+		};
+		F187174022E79E2E00CF946B /* easer */ = {
+			isa = PBXGroup;
+			children = (
+				F187174122E79E2E00CF946B /* Easer+Type.swift */,
+				F187174222E79E2E00CF946B /* Easer.swift */,
+				F187174322E79E2E00CF946B /* AnimState.swift */,
+				F187174422E79E2E00CF946B /* Easer+Default.swift */,
+				F187174522E79E2E00CF946B /* Easer+Core.swift */,
+			);
+			path = easer;
+			sourceTree = "<group>";
+		};
+		F187174622E79E2E00CF946B /* friction */ = {
+			isa = PBXGroup;
+			children = (
+				F187174722E79E2E00CF946B /* CustomFriction.swift */,
+				F187174822E79E2E00CF946B /* Friction.swift */,
+			);
+			path = friction;
+			sourceTree = "<group>";
+		};
+		F187174922E79E2E00CF946B /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F187174A22E79E2E00CF946B /* Advancable.swift */,
+				F187174B22E79E2E00CF946B /* Advancable+Type.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		F187174C22E79E2E00CF946B /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				F187174D22E79E2E00CF946B /* PhysicsAnimKind.swift */,
+				F187174E22E79E2E00CF946B /* PhysicsAnimKind+Access.swift */,
+			);
+			path = Physics;
+			sourceTree = "<group>";
+		};
+		F187174F22E79E2E00CF946B /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				F187175022E79E2E00CF946B /* frame */,
+				F187175722E79E2E00CF946B /* Animator */,
+				F187175D22E79E2E00CF946B /* loop */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		F187175022E79E2E00CF946B /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				F187175122E79E2E00CF946B /* FrameAnimator.swift */,
+				F187175222E79E2E00CF946B /* protocol */,
+				F187175422E79E2E00CF946B /* FrameAnimator+Action.swift */,
+				F187175522E79E2E00CF946B /* FrameAnimator+Access.swift */,
+				F187175622E79E2E00CF946B /* FrameAnimator+Core.swift */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
+		F187175222E79E2E00CF946B /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F187175322E79E2E00CF946B /* FrameAnimatable.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		F187175722E79E2E00CF946B /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				F187175822E79E2E00CF946B /* Animator+Type.swift */,
+				F187175922E79E2E00CF946B /* Animator+Access.swift */,
+				F187175A22E79E2E00CF946B /* Animator.swift */,
+				F187175B22E79E2E00CF946B /* Animator+Default.swift */,
+				F187175C22E79E2E00CF946B /* Animator+Core.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		F187175D22E79E2E00CF946B /* loop */ = {
+			isa = PBXGroup;
+			children = (
+				F187175E22E79E2E00CF946B /* LoopAnimator+Core.swift */,
+				F187175F22E79E2E00CF946B /* LoopAnimator+Default.swift */,
+				F187176022E79E2E00CF946B /* LoopAnimator+Type.swift */,
+				F187176122E79E2E00CF946B /* LoopAnimator.swift */,
+			);
+			path = loop;
+			sourceTree = "<group>";
+		};
+		F187176222E79E2E00CF946B /* proxy */ = {
+			isa = PBXGroup;
+			children = (
+				F187176322E79E2E00CF946B /* AnimProxy.swift */,
+				F187176422E79E2E00CF946B /* AnimProxyKind.swift */,
+				F187176522E79E2E00CF946B /* AnimProxy+Core.swift */,
+			);
+			path = proxy;
+			sourceTree = "<group>";
+		};
+		F187176622E79E2E00CF946B /* easing */ = {
+			isa = PBXGroup;
+			children = (
+				F187176722E79E2E00CF946B /* Easing.swift */,
+				F187176822E79E2F00CF946B /* type */,
+				F187177422E79E2F00CF946B /* EasingEquation.swift */,
+			);
+			path = easing;
+			sourceTree = "<group>";
+		};
+		F187176822E79E2F00CF946B /* type */ = {
+			isa = PBXGroup;
+			children = (
+				F187176922E79E2F00CF946B /* Elastic.swift */,
+				F187176A22E79E2F00CF946B /* Cubic.swift */,
+				F187176B22E79E2F00CF946B /* Quint.swift */,
+				F187176C22E79E2F00CF946B /* Back.swift */,
+				F187176D22E79E2F00CF946B /* Circ.swift */,
+				F187176E22E79E2F00CF946B /* Bounce.swift */,
+				F187176F22E79E2F00CF946B /* Expo.swift */,
+				F187177022E79E2F00CF946B /* Quart.swift */,
+				F187177122E79E2F00CF946B /* Sine.swift */,
+				F187177222E79E2F00CF946B /* Linear.swift */,
+				F187177322E79E2F00CF946B /* Quad.swift */,
+			);
+			path = type;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -730,65 +581,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18716B522E5C8BD00CF946B /* Animator2+Core.swift in Sources */,
-				F18716AA22E5C8BD00CF946B /* Quad.swift in Sources */,
-				F187169F22E5C8BD00CF946B /* Easing.swift in Sources */,
-				F187170722E62D0B00CF946B /* CGSizeSugar.swift in Sources */,
-				F18716A622E5C8BD00CF946B /* Expo.swift in Sources */,
-				F18716A922E5C8BD00CF946B /* Linear.swift in Sources */,
-				F187172322E77CD900CF946B /* Dir.swift in Sources */,
-				F18716D022E5C8BD00CF946B /* PhysicsAnimKind5+Access.swift in Sources */,
-				F187171822E748AF00CF946B /* ViewSugar.swift in Sources */,
-				F18716C722E5C8BD00CF946B /* AnimState5.swift in Sources */,
-				F18716B922E5C8BD00CF946B /* Animator2+Type.swift in Sources */,
-				F18716CB22E5C8BD00CF946B /* Easer5.swift in Sources */,
-				F18716EC22E5D28300CF946B /* RubberBand+Core.swift in Sources */,
-				F18716AE22E5C8BD00CF946B /* AnimProxy2.swift in Sources */,
-				F18716CC22E5C8BD00CF946B /* Easer5+Default.swift in Sources */,
-				F18716A822E5C8BD00CF946B /* Sine.swift in Sources */,
-				F187170622E62D0B00CF946B /* CGPointSugar.swift in Sources */,
-				F18716C822E5C8BD00CF946B /* Advancable5+Type.swift in Sources */,
-				F187170B22E66C9C00CF946B /* Mover+Core.swift in Sources */,
-				F18716B822E5C8BD00CF946B /* Animator2+Default.swift in Sources */,
-				F18716BB22E5C8BD00CF946B /* LoopAnimator2+Default.swift in Sources */,
-				F18716F322E5F9BB00CF946B /* ArraySugar.swift in Sources */,
-				F18716C922E5C8BD00CF946B /* Easer5+Core.swift in Sources */,
-				F18716C522E5C8BD00CF946B /* Mover.swift in Sources */,
-				F18716E722E5D20F00CF946B /* RubberBand+Access.swift in Sources */,
-				F18716B122E5C8BD00CF946B /* FrameAnimatable2.swift in Sources */,
-				F18716B722E5C8BD00CF946B /* Animator2+Access.swift in Sources */,
-				F18716A122E5C8BD00CF946B /* Cubic.swift in Sources */,
-				F18716CD22E5C8BD00CF946B /* Advancable5.swift in Sources */,
-				F18716C422E5C8BD00CF946B /* RubberBand+Type.swift in Sources */,
-				F18716A422E5C8BD00CF946B /* Circ.swift in Sources */,
-				F18716C622E5C8BD00CF946B /* Springer5.swift in Sources */,
-				F187171922E748AF00CF946B /* ThreadingSugar.swift in Sources */,
-				F187170A22E62F4F00CF946B /* CGRectSugar.swift in Sources */,
-				F18716A022E5C8BD00CF946B /* Elastic.swift in Sources */,
-				F18716A522E5C8BD00CF946B /* Bounce.swift in Sources */,
-				F18716A722E5C8BD00CF946B /* Quart.swift in Sources */,
-				F18716AC22E5C8BD00CF946B /* AnimProxyKind2.swift in Sources */,
-				F18716AD22E5C8BD00CF946B /* AnimProxy2+Core.swift in Sources */,
-				F18716B622E5C8BD00CF946B /* Animator2.swift in Sources */,
-				F187172022E77C4600CF946B /* MoverGroup.swift in Sources */,
-				F18716BD22E5C8BD00CF946B /* LoopAnimator2+Core.swift in Sources */,
-				F18716AB22E5C8BD00CF946B /* EasingEquation.swift in Sources */,
-				F18716A322E5C8BD00CF946B /* Back.swift in Sources */,
-				F18716B222E5C8BD00CF946B /* FrameAnimator2+Core.swift in Sources */,
-				F187171022E66CA400CF946B /* RubberBand+Default.swift in Sources */,
-				F18716BA22E5C8BD00CF946B /* LoopAnimator2+Type.swift in Sources */,
-				F18716ED22E5D2A200CF946B /* RubberBand+Helper.swift in Sources */,
-				F18716F622E605F500CF946B /* FrameAnimator2+Action.swift in Sources */,
-				F18716A222E5C8BD00CF946B /* Quint.swift in Sources */,
-				F18716D122E5C8BD00CF946B /* PhysicsAnimKind5.swift in Sources */,
-				F18716B422E5C8BD00CF946B /* FrameAnimator2+Access.swift in Sources */,
-				F18716CE22E5C8BD00CF946B /* CustomFriction.swift in Sources */,
-				F18716B322E5C8BD00CF946B /* FrameAnimator2.swift in Sources */,
-				F187170522E62D0A00CF946B /* CGFloatSugar.swift in Sources */,
-				F18716CF22E5C8BD00CF946B /* Friction.swift in Sources */,
-				F18716C222E5C8BD00CF946B /* RubberBand.swift in Sources */,
-				F18716CA22E5C8BD00CF946B /* Easer5+Type.swift in Sources */,
-				F18716BC22E5C8BD00CF946B /* LoopAnimator2.swift in Sources */,
+				F187179322E79E2F00CF946B /* FrameAnimator.swift in Sources */,
+				F187178A22E79E2F00CF946B /* AnimState.swift in Sources */,
+				F187178F22E79E2F00CF946B /* Advancable.swift in Sources */,
+				F18717AC22E79E2F00CF946B /* Quart.swift in Sources */,
+				F187179722E79E2F00CF946B /* FrameAnimator+Core.swift in Sources */,
+				F187178322E79E2F00CF946B /* RubberBand+Access.swift in Sources */,
+				F187177722E79E2F00CF946B /* CGFloatSugar.swift in Sources */,
+				F187177B22E79E2F00CF946B /* CGPointSugar.swift in Sources */,
+				F18717AD22E79E2F00CF946B /* Sine.swift in Sources */,
+				F187178722E79E2F00CF946B /* Springer.swift in Sources */,
+				F187178D22E79E2F00CF946B /* CustomFriction.swift in Sources */,
+				F187177A22E79E2F00CF946B /* ThreadingSugar.swift in Sources */,
+				F18717AE22E79E2F00CF946B /* Linear.swift in Sources */,
+				F18717A022E79E2F00CF946B /* LoopAnimator.swift in Sources */,
+				F187179422E79E2F00CF946B /* FrameAnimatable.swift in Sources */,
+				F187179922E79E2F00CF946B /* Animator+Access.swift in Sources */,
+				F187178522E79E2F00CF946B /* Mover+Core.swift in Sources */,
+				F18717A422E79E2F00CF946B /* Easing.swift in Sources */,
+				F187178422E79E2F00CF946B /* RubberBand+Helper.swift in Sources */,
+				F187179622E79E2F00CF946B /* FrameAnimator+Access.swift in Sources */,
+				F187177F22E79E2F00CF946B /* MoverGroup.swift in Sources */,
+				F187179122E79E2F00CF946B /* PhysicsAnimKind.swift in Sources */,
+				F187177C22E79E2F00CF946B /* RubberBand+Core.swift in Sources */,
+				F187177522E79E2F00CF946B /* ArraySugar.swift in Sources */,
+				F187178222E79E2F00CF946B /* RubberBand+Type.swift in Sources */,
+				F187177E22E79E2F00CF946B /* MoverGroup+Access.swift in Sources */,
+				F187179C22E79E2F00CF946B /* Animator+Core.swift in Sources */,
+				F187178822E79E2F00CF946B /* Easer+Type.swift in Sources */,
+				F187179A22E79E2F00CF946B /* Animator.swift in Sources */,
+				F187177922E79E2F00CF946B /* ViewSugar.swift in Sources */,
+				F187179B22E79E2F00CF946B /* Animator+Default.swift in Sources */,
+				F187179822E79E2F00CF946B /* Animator+Type.swift in Sources */,
+				F187179222E79E2F00CF946B /* PhysicsAnimKind+Access.swift in Sources */,
+				F187177822E79E2F00CF946B /* CGRectSugar.swift in Sources */,
+				F18717A522E79E2F00CF946B /* Elastic.swift in Sources */,
+				F187178B22E79E2F00CF946B /* Easer+Default.swift in Sources */,
+				F18717A722E79E2F00CF946B /* Quint.swift in Sources */,
+				F187179E22E79E2F00CF946B /* LoopAnimator+Default.swift in Sources */,
+				F18717AF22E79E2F00CF946B /* Quad.swift in Sources */,
+				F18717AB22E79E2F00CF946B /* Expo.swift in Sources */,
+				F18717B022E79E2F00CF946B /* EasingEquation.swift in Sources */,
+				F187177D22E79E2F00CF946B /* RubberBand.swift in Sources */,
+				F18717A322E79E2F00CF946B /* AnimProxy+Core.swift in Sources */,
+				F187177622E79E2F00CF946B /* CGSizeSugar.swift in Sources */,
+				F187178022E79E2F00CF946B /* Dir.swift in Sources */,
+				F187179022E79E2F00CF946B /* Advancable+Type.swift in Sources */,
+				F187178E22E79E2F00CF946B /* Friction.swift in Sources */,
+				F18717A922E79E2F00CF946B /* Circ.swift in Sources */,
+				F187178122E79E2F00CF946B /* RubberBand+Default.swift in Sources */,
+				F18717A822E79E2F00CF946B /* Back.swift in Sources */,
+				F187178922E79E2F00CF946B /* Easer.swift in Sources */,
+				F187178622E79E2F00CF946B /* Mover.swift in Sources */,
+				F187179F22E79E2F00CF946B /* LoopAnimator+Type.swift in Sources */,
+				F187178C22E79E2F00CF946B /* Easer+Core.swift in Sources */,
+				F187179D22E79E2F00CF946B /* LoopAnimator+Core.swift in Sources */,
+				F18717A122E79E2F00CF946B /* AnimProxy.swift in Sources */,
+				F187179522E79E2F00CF946B /* FrameAnimator+Action.swift in Sources */,
+				F18717AA22E79E2F00CF946B /* Bounce.swift in Sources */,
+				F18717A622E79E2F00CF946B /* Cubic.swift in Sources */,
+				F18717A222E79E2F00CF946B /* AnimProxyKind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

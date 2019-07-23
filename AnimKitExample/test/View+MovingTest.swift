@@ -10,7 +10,7 @@ extension View {
       box.wantsLayer = true
       box.layer?.backgroundColor = NSColor.orange.cgColor
       addSubview(box)
-      let animator: Animator2 = .init()
+      let animator: Animator = .init()
       animator.onFrame = { progress in Swift.print("onFrame"); disableAnim { box.frame.origin.x = 100 * progress } }
       animator.completed = { Swift.print("Animation completed ✅") }
       animator.start()
