@@ -29,8 +29,6 @@
 		F18716AC22E5C8BD00CF946B /* AnimProxyKind2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165122E5C8BD00CF946B /* AnimProxyKind2.swift */; };
 		F18716AD22E5C8BD00CF946B /* AnimProxy2+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165222E5C8BD00CF946B /* AnimProxy2+Core.swift */; };
 		F18716AE22E5C8BD00CF946B /* AnimProxy2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165322E5C8BD00CF946B /* AnimProxy2.swift */; };
-		F18716AF22E5C8BD00CF946B /* AnimProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165522E5C8BD00CF946B /* AnimProxy.swift */; };
-		F18716B022E5C8BD00CF946B /* AnimProxyKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165622E5C8BD00CF946B /* AnimProxyKind.swift */; };
 		F18716B122E5C8BD00CF946B /* FrameAnimatable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165922E5C8BD00CF946B /* FrameAnimatable2.swift */; };
 		F18716B222E5C8BD00CF946B /* FrameAnimator2+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165A22E5C8BD00CF946B /* FrameAnimator2+Core.swift */; };
 		F18716B322E5C8BD00CF946B /* FrameAnimator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187165B22E5C8BD00CF946B /* FrameAnimator2.swift */; };
@@ -71,6 +69,7 @@
 		F187170A22E62F4F00CF946B /* CGRectSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187170822E62E9F00CF946B /* CGRectSugar.swift */; };
 		F187170B22E66C9C00CF946B /* Mover+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716F722E6061F00CF946B /* Mover+Core.swift */; };
 		F187171022E66CA400CF946B /* RubberBand+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18716E522E5D17700CF946B /* RubberBand+Default.swift */; };
+		F187171322E71FEF00CF946B /* ViewSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187171222E71FEF00CF946B /* ViewSugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +183,7 @@
 		F18716FC22E62B7000CF946B /* CGPointSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointSugar.swift; sourceTree = "<group>"; };
 		F18716FE22E62C3600CF946B /* CGSizeSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeSugar.swift; sourceTree = "<group>"; };
 		F187170822E62E9F00CF946B /* CGRectSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectSugar.swift; sourceTree = "<group>"; };
+		F187171222E71FEF00CF946B /* ViewSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -581,6 +581,7 @@
 				F18716FC22E62B7000CF946B /* CGPointSugar.swift */,
 				F18716FE22E62C3600CF946B /* CGSizeSugar.swift */,
 				F187170822E62E9F00CF946B /* CGRectSugar.swift */,
+				F187171222E71FEF00CF946B /* ViewSugar.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -698,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F18716E122E5C92F00CF946B /* View.swift in Sources */,
+				F187171322E71FEF00CF946B /* ViewSugar.swift in Sources */,
 				F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -748,7 +750,6 @@
 				F18716A322E5C8BD00CF946B /* Back.swift in Sources */,
 				F18716B222E5C8BD00CF946B /* FrameAnimator2+Core.swift in Sources */,
 				F187171022E66CA400CF946B /* RubberBand+Default.swift in Sources */,
-				F18716AF22E5C8BD00CF946B /* AnimProxy.swift in Sources */,
 				F18716BA22E5C8BD00CF946B /* LoopAnimator2+Type.swift in Sources */,
 				F18716ED22E5D2A200CF946B /* RubberBand+Helper.swift in Sources */,
 				F18716F622E605F500CF946B /* FrameAnimator2+Action.swift in Sources */,
@@ -756,7 +757,6 @@
 				F18716D122E5C8BD00CF946B /* PhysicsAnimKind5.swift in Sources */,
 				F18716B422E5C8BD00CF946B /* FrameAnimator2+Access.swift in Sources */,
 				F18716CE22E5C8BD00CF946B /* CustomFriction.swift in Sources */,
-				F18716B022E5C8BD00CF946B /* AnimProxyKind.swift in Sources */,
 				F18716B322E5C8BD00CF946B /* FrameAnimator2.swift in Sources */,
 				F187170522E62D0A00CF946B /* CGFloatSugar.swift in Sources */,
 				F18716CF22E5C8BD00CF946B /* Friction.swift in Sources */,

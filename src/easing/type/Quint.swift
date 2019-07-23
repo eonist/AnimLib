@@ -2,11 +2,11 @@ import Foundation
 /**
  * Quintic - QUINTIC EASING: t^5
  */
-class Quint{
+public class Quint{
    /*
     * easeIn
     */
-    static func easeIn(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
+    public static func easeIn(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         var t = t
         t = t/d
         return c * pow(t, 5) + b
@@ -14,7 +14,7 @@ class Quint{
     /*
     * easeOut
     */
-    static func easeOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
+    public static func easeOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat{
         var t = t
         t = t / d - 1
         return c * (pow(t, 5) + 1) + b
@@ -22,7 +22,7 @@ class Quint{
     /*
     * easeInOut
     */
-    static func easeInOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat {
+    public static func easeInOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat {
         var t = t
         t = t / d * 2
         if t < 1 {
@@ -35,7 +35,7 @@ class Quint{
     /*
     * easeOutIn
     */
-    static func easeOutIn (_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat {
+    public static func easeOutIn (_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)->CGFloat {
         if t < d / 2 {
             return easeOut(t * 2,  b,  c / 2,  d)
         } else {

@@ -4,7 +4,7 @@ import Foundation
  */
 extension FrameAnimator2 {
     /**
-     * Assert if an animator is active or not, you can also check if the Animator is nil to check if is active or not
+     * Assert if an animator is in the array of animators (aka is animating) 
      * Fixme: ⚠️️ Name this hasStopped
      */
    var stopped: Bool {

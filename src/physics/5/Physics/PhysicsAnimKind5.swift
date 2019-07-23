@@ -1,9 +1,9 @@
 import Foundation
 /**
  * This class exists so that Springer and Easer can have fewer vars, by instead accessing vars through getters and setters that derive their values from tuples
- * Fixme: ⚠️️ Rename initValues to config, as initvalues could indicate the start values, which it is not
- * Fixme: ⚠️️ Consider using other names from regex proposal
- * Fixme: ⚠️️ Try to get rid of the :class by making the var's mutable somehow
+ * - Fixme: ⚠️️ Rename initValues to config, as initvalues could indicate the start values, which it is not
+ * - Fixme: ⚠️️ Consider using other names from regex proposal
+ * - Fixme: ⚠️️ Try to get rid of the :class by making the var's mutable somehow
  */
 protocol PhysicsAnimKind5: class, FrameAnimatable2 {
     associatedtype T: Advancable5

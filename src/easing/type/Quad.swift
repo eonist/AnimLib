@@ -2,11 +2,11 @@ import Foundation
 /**
  * Quadratic
  */
-class Quad {
+public class Quad {
    /*
     * easeIn
     */
-    static func easeIn(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)-> CGFloat{
+    public static func easeIn(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)-> CGFloat{
         var t = t
         t = t/d
         return c*t*t + b
@@ -14,7 +14,7 @@ class Quad {
     /*
     * easeOut
     */
-    static func easeOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)-> CGFloat{
+    public static func easeOut(_ t:CGFloat, _ b:CGFloat, _ c:CGFloat, _ d:CGFloat)-> CGFloat{
         var t = t
         t = t/d
         return -c*t*(t-2) + b
@@ -22,7 +22,7 @@ class Quad {
     /*
     * easeInOut
     */
-    static func easeInOut(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat)-> CGFloat{
+    public static func easeInOut(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat)-> CGFloat{
         var t = t
         t = t / d * 2
         if t < 1 {
@@ -33,7 +33,7 @@ class Quad {
     /*
     * easeOutIn
     */
-    static func easeOutIn ( _ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat {
+    public static func easeOutIn ( _ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat {
         if t < d / 2 {
             return easeOut(t * 2,  b, c / 2,  d)
         }

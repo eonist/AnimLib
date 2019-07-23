@@ -4,7 +4,7 @@ import Foundation
  * - Fixme: ⚠️️ If you need to stop the entire anim chain you need to store each successive anim in an array and stop the one that is running, you can create utilitity methods that does this for you
  * - Fixme: ⚠️️ API like: animate(view, duration: 1, curve: .bezier(1, 0.4, 1, 0.5)) {$0.x = finalValue}
  */
-class Animator2: FrameAnimator2 {
+public class Animator2: FrameAnimator2 {
     var currentFrameCount: CGFloat = 0 // curFrameCount, this is needed in order to know when the animation is complete
     public var completed: Completed = {} // Completion call-back
     public var onFrame: FrameTick
@@ -20,10 +20,10 @@ class Animator2: FrameAnimator2 {
      * animator.onFrame = { progress in view.frame.size }
      * animator.completed = { Swift.print("Animation completed ✅") }
      * animator.start()
-     * - Fixme: ⚠️ ️Make a struct for the initValues instead, because: autoComplete
+     * - Fixme: ⚠️ Make a struct for the initValues instead, because: autoComplete
      * - Fixme: ⚠️️ Rename initvalues to config ?
      */
-    init(_ initValues: Animator2.InitValues = Animator2.initValues, _ easing:@escaping EasingEquation = Easing.linear.ease, _ onFrame: @escaping FrameTick = { _ in }) { // Fixme: make default frametick
+    public init(_ initValues: Animator2.InitValues = Animator2.initValues, _ easing:@escaping EasingEquation = Easing.linear.ease, _ onFrame: @escaping FrameTick = { _ in }) { // Fixme: make default frametick
         self.initValues = initValues
         self.onFrame = onFrame
         self.easing = easing

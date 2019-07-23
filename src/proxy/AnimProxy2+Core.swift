@@ -7,6 +7,7 @@ extension AnimProxy2 {
     * Fires on every screen refresh at 60 FPS, or device speed
     */
    @objc func onFrame() {
+      Swift.print("AnimProxy2.onFrame()")
       self.performSelector(onMainThread: #selector(onFrameOnMainThread), with: nil, waitUntilDone: false)
    }
    /**
@@ -20,12 +21,13 @@ extension AnimProxy2 {
     * - Note: This method fires 60 FPS
     */
    @objc func setUpDisplayLink() -> CVDisplayLink {
+      Swift.print("setUpDisplayLink")
       var displayLink: CVDisplayLink?
       var status = kCVReturnSuccess // Fixme: ⚠️️ Write the type for this variable
       status = CVDisplayLinkCreateWithActiveCGDisplays(&displayLink) // strange that you can't move this one line up
       // Set up DisplayLink, Fixme: ⚠️️ make this a var based callback instead?
       func displayLinkOutputCallback(displayLink: CVDisplayLink, _ inNow: UnsafePointer<CVTimeStamp>, _ inOutputTime: UnsafePointer<CVTimeStamp>,_ flagsIn: CVOptionFlags, _ flagsOut: UnsafeMutablePointer<CVOptionFlags>, _ displayLinkContext: UnsafeMutableRawPointer?) -> CVReturn {
-           unsafeBitCast(displayLinkContext, to: AnimProxy.self).onFrame()
+           unsafeBitCast(displayLinkContext, to: AnimProxy2.self).onFrame()
            return kCVReturnSuccess
       }
       if let displayLink = displayLink {

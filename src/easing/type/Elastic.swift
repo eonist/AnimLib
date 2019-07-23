@@ -2,11 +2,11 @@ import Foundation
 /**
  * Elastic
  */
-class Elastic {
+public class Elastic {
    /*
     * easeIn
     */
-    static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
+    public static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
         var t = t
         var a: CGFloat? = nil
         var p: CGFloat? = nil
@@ -27,7 +27,7 @@ class Elastic {
     /*
     * easeOut
     */
-    static func easeOut(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
+    public static func easeOut(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
         var t = t
         var a: CGFloat? = nil
         var p: CGFloat? = nil
@@ -47,7 +47,7 @@ class Elastic {
     /*
     * easeInOut
     */
-    static func easeInOut(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
+    public static func easeInOut(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
         var t = t
         var a: CGFloat? = nil
         var p: CGFloat? = nil
