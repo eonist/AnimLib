@@ -30,7 +30,7 @@ extension View {
          roundRect.layer?.cornerRadius = startCornerRadius
          return roundRect
       }()
-      let anim = Animator.init((dur: 0.8, from: 0, to: 1), Easing.elastic.easeOut) { value in
+      let anim: Animator = .init((dur: 0.8, from: 0, to: 1), Easing.elastic.easeOut) { value in
          view.layer?.cornerRadius = startCornerRadius.interpolate(endCornerRadius, value)
          view.frame.size = startRect.size.interpolate(endRect.size, value)
          view.frame.origin = startRect.origin.interpolate(endRect.origin, value)
