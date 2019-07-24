@@ -4,6 +4,10 @@ import Foundation
  * - Note: The Advancable protocol makes this class able to manipulate multiple values at once
  * - Note: The FrameTick and the InitValues typaliases are the same in Springer and Easer so we just reuse them
  * - Note: This is the Base class
+ * ## Example:
+ * let animator = Easer<CGPoint> { print("val: " + "\($0)") }
+ * animator.targetValue = CGPoint(x: 100, y: 100)
+ * animator.start()
  * - Fixme: ⚠️️ Maybe make a base class for Easer and Springer that they both can extend? that way you could change between them on a whim
  * - Fixme: ⚠️️ Rename to Advancer ?
  * - Fixme: ⚠️️ Consider making a convenient init with named params
@@ -30,6 +34,7 @@ public class Easer<T: Advancable>: FrameAnimator, PhysicsAnimKind {
    }
    /**
     * - Abstract In charge of updating the velocity and value of the animation instance (also calls onCOmplete)
+    * - Remark: this method cant be moved to extension because its inside a generic class
     */
    func updatePosition() {
       velocity = (targetValue - value) * easing

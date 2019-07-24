@@ -9,7 +9,8 @@ open class View: NSView {
       self.wantsLayer = true /* if true then view is layer backed */
 //      testAnimation()
 //      zoomBackAndForthAnimTest()
-      easer4Test()
+//      easer4Test()
+      springer4Test()
    }
    /**
     * Boilerplate

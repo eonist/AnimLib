@@ -38,7 +38,6 @@
 		F187178822E79E2F00CF946B /* Easer+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174122E79E2E00CF946B /* Easer+Type.swift */; };
 		F187178922E79E2F00CF946B /* Easer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174222E79E2E00CF946B /* Easer.swift */; };
 		F187178A22E79E2F00CF946B /* AnimState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174322E79E2E00CF946B /* AnimState.swift */; };
-		F187178B22E79E2F00CF946B /* Easer+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174422E79E2E00CF946B /* Easer+Default.swift */; };
 		F187178C22E79E2F00CF946B /* Easer+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174522E79E2E00CF946B /* Easer+Core.swift */; };
 		F187178D22E79E2F00CF946B /* CustomFriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174722E79E2E00CF946B /* CustomFriction.swift */; };
 		F187178E22E79E2F00CF946B /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187174822E79E2E00CF946B /* Friction.swift */; };
@@ -77,6 +76,8 @@
 		F18717AF22E79E2F00CF946B /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177322E79E2F00CF946B /* Quad.swift */; };
 		F18717B022E79E2F00CF946B /* EasingEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177422E79E2F00CF946B /* EasingEquation.swift */; };
 		F18717B422E86F4800CF946B /* View+EaserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717B322E86F4800CF946B /* View+EaserTest.swift */; };
+		F18717B722E8935900CF946B /* View+SpringerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717B622E8935900CF946B /* View+SpringerTest.swift */; };
+		F18717C022E89BE500CF946B /* Springer+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717BE22E89BCF00CF946B /* Springer+Type.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,7 +139,6 @@
 		F187174122E79E2E00CF946B /* Easer+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer+Type.swift"; sourceTree = "<group>"; };
 		F187174222E79E2E00CF946B /* Easer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easer.swift; sourceTree = "<group>"; };
 		F187174322E79E2E00CF946B /* AnimState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimState.swift; sourceTree = "<group>"; };
-		F187174422E79E2E00CF946B /* Easer+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer+Default.swift"; sourceTree = "<group>"; };
 		F187174522E79E2E00CF946B /* Easer+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easer+Core.swift"; sourceTree = "<group>"; };
 		F187174722E79E2E00CF946B /* CustomFriction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFriction.swift; sourceTree = "<group>"; };
 		F187174822E79E2E00CF946B /* Friction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friction.swift; sourceTree = "<group>"; };
@@ -177,6 +177,8 @@
 		F187177322E79E2F00CF946B /* Quad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quad.swift; sourceTree = "<group>"; };
 		F187177422E79E2F00CF946B /* EasingEquation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingEquation.swift; sourceTree = "<group>"; };
 		F18717B322E86F4800CF946B /* View+EaserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EaserTest.swift"; sourceTree = "<group>"; };
+		F18717B622E8935900CF946B /* View+SpringerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SpringerTest.swift"; sourceTree = "<group>"; };
+		F18717BE22E89BCF00CF946B /* Springer+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Springer+Type.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				F187171C22E776EA00CF946B /* View+BounceTest.swift */,
 				F187171E22E7771A00CF946B /* View+MovingTest.swift */,
 				F18717B322E86F4800CF946B /* View+EaserTest.swift */,
+				F18717B622E8935900CF946B /* View+SpringerTest.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				F187173F22E79E2E00CF946B /* Springer.swift */,
+				F18717BE22E89BCF00CF946B /* Springer+Type.swift */,
 			);
 			path = springer;
 			sourceTree = "<group>";
@@ -336,7 +340,6 @@
 			children = (
 				F187174122E79E2E00CF946B /* Easer+Type.swift */,
 				F187174222E79E2E00CF946B /* Easer.swift */,
-				F187174422E79E2E00CF946B /* Easer+Default.swift */,
 				F187174522E79E2E00CF946B /* Easer+Core.swift */,
 			);
 			path = easer;
@@ -614,6 +617,7 @@
 			files = (
 				F18716E122E5C92F00CF946B /* View.swift in Sources */,
 				F187171D22E776EA00CF946B /* View+BounceTest.swift in Sources */,
+				F18717B722E8935900CF946B /* View+SpringerTest.swift in Sources */,
 				F187171F22E7771A00CF946B /* View+MovingTest.swift in Sources */,
 				F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */,
 				F18717B422E86F4800CF946B /* View+EaserTest.swift in Sources */,
@@ -656,10 +660,10 @@
 				F187177922E79E2F00CF946B /* ViewSugar.swift in Sources */,
 				F187179B22E79E2F00CF946B /* Animator+Default.swift in Sources */,
 				F187179822E79E2F00CF946B /* Animator+Type.swift in Sources */,
+				F18717C022E89BE500CF946B /* Springer+Type.swift in Sources */,
 				F187179222E79E2F00CF946B /* PhysicsAnimKind+Access.swift in Sources */,
 				F187177822E79E2F00CF946B /* CGRectSugar.swift in Sources */,
 				F18717A522E79E2F00CF946B /* Elastic.swift in Sources */,
-				F187178B22E79E2F00CF946B /* Easer+Default.swift in Sources */,
 				F18717A722E79E2F00CF946B /* Quint.swift in Sources */,
 				F187179E22E79E2F00CF946B /* LoopAnimator+Default.swift in Sources */,
 				F18717AF22E79E2F00CF946B /* Quad.swift in Sources */,
