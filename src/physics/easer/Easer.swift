@@ -8,13 +8,13 @@ import Foundation
  * - Fixme: ⚠️️ Rename to Advancer ?
  * - Fixme: ⚠️️ Consider making a convenient init with named params
  */
-class Easer<T: Advancable>: FrameAnimator, PhysicsAnimKind {
+public class Easer<T: Advancable>: FrameAnimator, PhysicsAnimKind {
    var easing: T // This can be customized by setting the value but not via init
-   var state: AnimState<T>
-   var onFrame: FrameTickSignature // Fixme: ⚠️️ rename to onFrameTick, onFrameCallback, frameTick?
-   var onComplete: OnComplete = {} // add external onComplete closures when needed
+   public var state: AnimState<T>
+   public var onFrame: FrameTickSignature // Fixme: ⚠️️ rename to onFrameTick, onFrameCallback, frameTick?
+   public var onComplete: OnComplete = {} // add external onComplete closures when needed
    //var updatePos:(() -> Void) = { _ in } // might have to make this lazy
-   init(_ state: AnimState<T>, _ easing: T, _ onFrame:@escaping FrameTickSignature) {
+   public init(_ state: AnimState<T> = T.defaults, _ easing: T = T.defaultEasing, _ onFrame:@escaping FrameTickSignature) {
       self.state = state
       self.easing = easing
       self.onFrame = onFrame
@@ -33,7 +33,7 @@ class Easer<T: Advancable>: FrameAnimator, PhysicsAnimKind {
     */
    func updatePosition() {
       velocity = (targetValue - value) * easing
-      value = value + velocity
+      value = { value + velocity }()
       if assertStop {
          value = targetValue // set the final value
          stop() // stop the animation
@@ -42,4 +42,3 @@ class Easer<T: Advancable>: FrameAnimator, PhysicsAnimKind {
       }
    }
 }
-

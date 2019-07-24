@@ -5,7 +5,7 @@ import Foundation
  * - Fixme: ⚠️️ Consider using other names from regex proposal
  * - Fixme: ⚠️️ Try to get rid of the :class by making the var's mutable somehow
  */
-protocol PhysicsAnimKind: class, FrameAnimatable {
+public protocol PhysicsAnimKind: AnyObject, FrameAnimatable {
     associatedtype T: Advancable
     typealias FrameTickSignature = (T) -> Void // generic call back signature, use Spring.FrameTick outside this class
     var state: AnimState<T> { get set }

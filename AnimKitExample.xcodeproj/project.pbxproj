@@ -76,6 +76,7 @@
 		F18717AE22E79E2F00CF946B /* Linear.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177222E79E2F00CF946B /* Linear.swift */; };
 		F18717AF22E79E2F00CF946B /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177322E79E2F00CF946B /* Quad.swift */; };
 		F18717B022E79E2F00CF946B /* EasingEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187177422E79E2F00CF946B /* EasingEquation.swift */; };
+		F18717B422E86F4800CF946B /* View+EaserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717B322E86F4800CF946B /* View+EaserTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +176,7 @@
 		F187177222E79E2F00CF946B /* Linear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linear.swift; sourceTree = "<group>"; };
 		F187177322E79E2F00CF946B /* Quad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quad.swift; sourceTree = "<group>"; };
 		F187177422E79E2F00CF946B /* EasingEquation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingEquation.swift; sourceTree = "<group>"; };
+		F18717B322E86F4800CF946B /* View+EaserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EaserTest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			children = (
 				F187171C22E776EA00CF946B /* View+BounceTest.swift */,
 				F187171E22E7771A00CF946B /* View+MovingTest.swift */,
+				F18717B322E86F4800CF946B /* View+EaserTest.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -333,7 +336,6 @@
 			children = (
 				F187174122E79E2E00CF946B /* Easer+Type.swift */,
 				F187174222E79E2E00CF946B /* Easer.swift */,
-				F187174322E79E2E00CF946B /* AnimState.swift */,
 				F187174422E79E2E00CF946B /* Easer+Default.swift */,
 				F187174522E79E2E00CF946B /* Easer+Core.swift */,
 			);
@@ -352,6 +354,7 @@
 		F187174922E79E2E00CF946B /* protocol */ = {
 			isa = PBXGroup;
 			children = (
+				F187174322E79E2E00CF946B /* AnimState.swift */,
 				F187174A22E79E2E00CF946B /* Advancable.swift */,
 				F187174B22E79E2E00CF946B /* Advancable+Type.swift */,
 			);
@@ -613,6 +616,7 @@
 				F187171D22E776EA00CF946B /* View+BounceTest.swift in Sources */,
 				F187171F22E7771A00CF946B /* View+MovingTest.swift in Sources */,
 				F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */,
+				F18717B422E86F4800CF946B /* View+EaserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

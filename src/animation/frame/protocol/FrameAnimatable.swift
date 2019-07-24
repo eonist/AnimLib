@@ -2,7 +2,7 @@ import Foundation
 /**
  * - Fixme: ⚠️️ This protocol might not be needed
  */
-protocol FrameAnimatable {
+public protocol FrameAnimatable {
     var animProxy: AnimProxyKind { get } // Access to singelton instance
     func start() // Start animation
     func stop() // Stop animation

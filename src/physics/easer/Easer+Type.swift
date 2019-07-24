@@ -2,6 +2,6 @@
  * Type
  */
 extension Easer {
-   typealias FrameTickSignature = (T) -> Void
-   typealias OnComplete = () -> Void
+   public typealias FrameTickSignature = (T) -> Void
+   public typealias OnComplete = () -> Void
 }

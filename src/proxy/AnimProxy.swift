@@ -6,8 +6,8 @@ import Cocoa
  * - Note: Override the onFrame method to do frame animations
  * - Note: Start and stop with CVDisplayLinkStart(displayLink) and CVDisplayLinkStop(displayLink) and CVDisplayLinkIsRunning(displayLink) to assert if the displayLink is running
  */
-class AnimProxy: NSObject, AnimProxyKind { // Apparently the class needs to be NSView in order for the performSelector to work//<---Fixme: ⚠️️ you can probably delete the IAnimatable, as nothing extends this class anyway
-    static let shared = AnimProxy() // Singelton variable
-    lazy var displayLink: CVDisplayLink = self.setUpDisplayLink() // This is the instance that enables frame animation, lazying this value will probably haunt me later, playing with fire
-    lazy var animators: [FrameAnimator] = [] // Stores the animators
+public class AnimProxy: NSObject, AnimProxyKind { // Apparently the class needs to be NSView in order for the performSelector to work//<---Fixme: ⚠️️ you can probably delete the IAnimatable, as nothing extends this class anyway
+   public static let shared = AnimProxy() // Singelton variable
+   public lazy var displayLink: CVDisplayLink = self.setUpDisplayLink() // This is the instance that enables frame animation, lazying this value will probably haunt me later, playing with fire
+   public lazy var animators: [FrameAnimator] = [] // Stores the animators
 }

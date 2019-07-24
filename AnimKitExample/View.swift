@@ -8,7 +8,8 @@ open class View: NSView {
       Swift.print("hello world")
       self.wantsLayer = true /* if true then view is layer backed */
 //      testAnimation()
-      zoomBackAndForthAnimTest()
+//      zoomBackAndForthAnimTest()
+      easer4Test()
    }
    /**
     * Boilerplate

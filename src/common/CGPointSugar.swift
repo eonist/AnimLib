@@ -11,6 +11,6 @@ extension CGPoint {
       return CGPoint(x: self.x.interpolate(to.x, scalar), y: self.y.interpolate(to.y, scalar))
    }
 }
-func + (a: CGPoint, b: CGPoint) -> CGPoint { return CGPoint(x: a.x + b.x, y: a.y + b.y) } // Adds the coordinates of point p to the coordinates of this point to create a new point
-func * (a: CGPoint, b: CGPoint) -> CGPoint { return CGPoint(x: a.x * b.x, y: a.y * b.y) } // Multiplies two CGPoint values and returns the result as a new CGPoint.
-func - (a: CGPoint, b: CGPoint) -> CGPoint { return CGPoint(x: a.x - b.x, y: a.y - b.y) } // Subtracts the coordinates of point p from the coordinates of this point to create a new point.
+public func + (a: CGPoint, b: CGPoint) -> CGPoint { return CGPoint(x: a.x + b.x, y: a.y + b.y) } // Adds the coordinates of point p to the coordinates of this point to create a new point
+public func * (a: CGPoint, b: CGPoint) -> CGPoint { return CGPoint(x: a.x * b.x, y: a.y * b.y) } // Multiplies two CGPoint values and returns the result as a new CGPoint.
+public func - (a: CGPoint, b: CGPoint) -> CGPoint { return CGPoint(x: a.x - b.x, y: a.y - b.y) } // Subtracts the coordinates of point p from the coordinates of this point to create a new point.

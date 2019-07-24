@@ -8,7 +8,7 @@ public class Cubic {
     */
     public static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
         var t = t
-        t = t / d
+        t /= d
         return c * pow(t, 3) + b
     }
     /*

@@ -15,9 +15,9 @@ class Springer<T: Advancable>: Easer<T> { // ⚠️️ Beta, untested ⚠️️
    override func updatePosition() {
       let d = (targetValue - value)
       let a = d * config.spring
-      velocity = velocity + a
-      velocity = velocity * config.friction
-      value =  value + velocity
+      velocity = { velocity + a }()
+      velocity = { velocity * config.friction }() // ⚠️️ This is a temp hack, should implement *= in type etc
+      value = { value + velocity }()
       if assertStop {
          state.value = state.targetValue//set the final value
          stop()
