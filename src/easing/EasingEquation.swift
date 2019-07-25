@@ -1,3 +1,4 @@
+import Foundation
 /**
  * - Parameter: t: time (current frame) this can also be actual time
  * - Parameter: b: begin (the value it is at the begining)

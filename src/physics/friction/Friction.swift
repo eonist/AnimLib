@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 /**
  * Fixme: ⚠️️ override stop and set the stop there instead
  */

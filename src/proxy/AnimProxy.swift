@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 /**
  * You can only setup 1 CVDisplayLink as such you can only have 1 AnimProxy class to controll it
  * - Abstract: This class is a singelton wrapper around CVDisplayLink
@@ -8,6 +8,6 @@ import Cocoa
  */
 public class AnimProxy: NSObject, AnimProxyKind { // Apparently the class needs to be NSView in order for the performSelector to work//<---Fixme: ⚠️️ you can probably delete the IAnimatable, as nothing extends this class anyway
    public static let shared = AnimProxy() // Singelton variable
-   public lazy var displayLink: CVDisplayLink = self.setUpDisplayLink() // This is the instance that enables frame animation, lazying this value will probably haunt me later, playing with fire
+   public lazy var displayLink: DisplayLink = self.createDisplayLink() // This is the instance that enables frame animation, lazying this value will probably haunt me later, playing with fire
    public lazy var animators: [FrameAnimator] = [] // Stores the animators
 }

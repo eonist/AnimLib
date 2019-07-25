@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 class Mover: FrameAnimator {
    var value: CGFloat = 0

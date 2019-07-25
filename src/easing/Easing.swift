@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 public class Easing {
    public static var back: Back.Type { return Back.self }

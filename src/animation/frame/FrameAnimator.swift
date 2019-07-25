@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 /**
  * - Abstract: FrameAnimator serves as the Core Animator in this Animation library
  * - Fixme: ⚠️️⚠️️⚠️️ Make a local stopped flag, so you don't have to itrate animProxy.animations so many times

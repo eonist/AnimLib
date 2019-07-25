@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 /**
  * - Note: friction: This value is the strength of the friction when the item is floating freely
  * - Note: springEasing: the easeOut effect on the spring (also known as the dampener)
