@@ -9,7 +9,7 @@ import Foundation
 class LoopAnimator: Animator {
     var repeatCount: Int // <--zero means infinite, not at the moment it seems
     var curRepeatCount: Int = 0
-    init(initValues: LoopAnimator.InitLoopValues = LoopAnimator.initLoopValues, easing:@escaping EasingEquation = Easing.linear.ease, closure: @escaping FrameTick = {_ in}) {
+    init(initValues: LoopAnimator.InitLoopValues = LoopAnimator.initLoopValues, easing:@escaping EasingEquation = Easing.linear.ease, closure: @escaping FrameTick = { _ in }) {
         self.repeatCount = initValues.repeatCount
         super.init((initValues.duration, initValues.from, initValues.to), easing, closure)
     }

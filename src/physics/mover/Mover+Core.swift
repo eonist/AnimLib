@@ -11,7 +11,7 @@ extension Mover {
    /**
     * - Abstract: Called every on every frame tick (60FPS)
     */
-   override func onFrameTick(){
+   override func onFrameTick() {
       updatePosition()
       callBack(value)
    }

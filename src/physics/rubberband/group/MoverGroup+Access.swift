@@ -2,7 +2,7 @@ import Foundation
 /**
  * Access
  */
-extension MoverGroup{
+extension MoverGroup {
    //var event: EventCallBack { get { fatalError("not supported") } set { xMover.event = newValue; yMover.event = newValue } }
    func mover(_ dir: Dir) -> RubberBand {/*Convenience*/
       return dir == .hor ? xMover : yMover
@@ -27,7 +27,7 @@ extension MoverGroup{
       xMover.start()
       yMover.start()
    }
-   public func stop(){
+   public func stop() {
       xMover.stop()
       yMover.stop()
    }
@@ -42,4 +42,3 @@ extension MoverGroup{
 //        set { xMover.isDirectlyManipulating = newValue; yMover.isDirectlyManipulating = newValue; fatalError("deprecated") }
 //    }
 //}
-

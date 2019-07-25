@@ -6,7 +6,7 @@ public class Quart {
    /*
     * easeIn
     */
-   public static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
+   public static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat {
       var t = t
       t /= d
       return c * t * t * t * t + b

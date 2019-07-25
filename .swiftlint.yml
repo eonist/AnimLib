@@ -102,7 +102,7 @@ whitelist_rules:
   - trailing_newline
   - trailing_semicolon
   - trailing_whitespace
-  - type_name
+#  - type_name
 #  - unavailable_function
   - unneeded_break_in_switch
   - unneeded_parentheses_in_closure_argument

@@ -4,7 +4,7 @@ extension RubberBand {
    /**
     * Called every frame tick (60FPS)
     */
-   override func onFrameTick(){
+   override func onFrameTick() {
       if hasStopped { // stop the frameTicker here
          stop() // <---never stop the CVDisplayLink before you start another. Since you can't start a CVDisplayLink within a CVDisplayLinkStart block
       } else { // only move the view if the mover is not stopped

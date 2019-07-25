@@ -8,6 +8,6 @@ extension RubberBand {
       springEasing: 0.2,
       spring: 0.4,
       limit: 100.0,
-      epsilon: 0.15 
+      epsilon: 0.15
    )
 }

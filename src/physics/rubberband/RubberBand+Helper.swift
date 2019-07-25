@@ -1,14 +1,14 @@
 import Foundation
 
-extension RubberBand{
+extension RubberBand {
    /**
     * - Abstract: When the min val reaches beyond max
     * - Parameter direct: toggles the directManipulation mode
     */
-   func applyTopBoundary(_ direct: Bool){/*Surface is slipping the further you pull*/
+   func applyTopBoundary(_ direct: Bool) { /*Surface is slipping the further you pull*/
       let distToGoal: CGFloat = value - maskFrame.min
       if direct { // surface is slipping the further you pull
-         result = maskFrame.min + CustomFriction.constrainedValueWithLog10(distToGoal,limit - maskFrame.min /*topMargin*/)//<--Creates the illusion that the surface under the thumb is slipping
+         result = maskFrame.min + CustomFriction.constrainedValueWithLog10(distToGoal, limit - maskFrame.min /*topMargin*/)//<--Creates the illusion that the surface under the thumb is slipping
       } else { // Springs back to limit
          velocity -= (distToGoal * spring)
          velocity *= springEasing // Fixme: ⚠️️ try to apply log10 instead of the regular easing
@@ -25,7 +25,7 @@ extension RubberBand{
       if direct { // surface is slipping the further you pull
          let totLen: CGFloat = contentFrame.len - maskFrame.len // tot length of items - length of mask
          let normalizedValue: CGFloat = totLen + value // goes from 0 to -100
-         result = -totLen + CustomFriction.constrainedValueWithLog10(normalizedValue,-limit)//<--Creates the illusion that the surface under the thumb is slipping
+         result = -totLen + CustomFriction.constrainedValueWithLog10(normalizedValue, -limit)//<--Creates the illusion that the surface under the thumb is slipping
       } else { // Springs back to limit
          let dist = maskFrame.len - (value + contentFrame.len) // distanceToGoal
          velocity += (dist * spring)

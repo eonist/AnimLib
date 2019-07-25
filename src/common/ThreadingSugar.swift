@@ -5,7 +5,7 @@ import Foundation
  * ## Examples:
  * bg.async{main.async{print("🎉")}}
  */
-private var bg: DispatchQueue = { DispatchQueue.global(qos:.background) }()
+private var bg: DispatchQueue = { DispatchQueue.global(qos: .background) }()
 private var main: DispatchQueue = { DispatchQueue.main }()
 /**
  * Helps sleep whatever is defined within the PARAM: closure with-out blocking the app

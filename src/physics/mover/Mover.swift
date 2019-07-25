@@ -16,4 +16,3 @@ class Mover: FrameAnimator {
       super.init(animatable)
    }
 }
-

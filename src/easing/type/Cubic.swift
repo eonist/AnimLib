@@ -6,7 +6,7 @@ public class Cubic {
    /*
     * easeIn
     */
-    public static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
+    public static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat {
         var t = t
         t /= d
         return c * pow(t, 3) + b
@@ -37,7 +37,7 @@ public class Cubic {
     */
     public static func easeOutIn (_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat {
         if t < d / 2 {
-            return easeOut(t * 2,  b, c / 2, d)
+            return easeOut(t * 2, b, c / 2, d)
         } else {
             return easeIn((t * 2) - d, b + c / 2, c / 2, d)
         }

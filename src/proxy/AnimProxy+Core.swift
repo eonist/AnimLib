@@ -13,7 +13,7 @@ extension AnimProxy {
    /**
     * Tick every animator on every frame tick (This is called on the MainThread)
     */
-   @objc func onFrameOnMainThread(){
+   @objc func onFrameOnMainThread() {
       animators.forEach { $0.onFrameTick() } // Loop through all assigned animators that are registered to AnimProxy
    }
    /**
@@ -26,7 +26,7 @@ extension AnimProxy {
       var status = kCVReturnSuccess // Fixme: ⚠️️ Write the type for this variable
       status = CVDisplayLinkCreateWithActiveCGDisplays(&displayLink) // strange that you can't move this one line up
       // Set up DisplayLink, Fixme: ⚠️️ make this a var based callback instead?
-      func displayLinkOutputCallback(displayLink: CVDisplayLink, _ inNow: UnsafePointer<CVTimeStamp>, _ inOutputTime: UnsafePointer<CVTimeStamp>,_ flagsIn: CVOptionFlags, _ flagsOut: UnsafeMutablePointer<CVOptionFlags>, _ displayLinkContext: UnsafeMutableRawPointer?) -> CVReturn {
+      func displayLinkOutputCallback(displayLink: CVDisplayLink, _ inNow: UnsafePointer<CVTimeStamp>, _ inOutputTime: UnsafePointer<CVTimeStamp>, _ flagsIn: CVOptionFlags, _ flagsOut: UnsafeMutablePointer<CVOptionFlags>, _ displayLinkContext: UnsafeMutableRawPointer?) -> CVReturn {
            unsafeBitCast(displayLinkContext, to: AnimProxy.self).onFrame()
            return kCVReturnSuccess
       }

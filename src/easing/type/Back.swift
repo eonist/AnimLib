@@ -6,7 +6,7 @@ public class Back {
    /**
     * easeIn
     */
-    public static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat{
+    public static func easeIn(_ t: CGFloat, _ b: CGFloat, _ c: CGFloat, _ d: CGFloat) -> CGFloat {
         var s: CGFloat?
         if s == nil { s = 1.701_58 }
         var t = t

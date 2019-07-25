@@ -7,7 +7,7 @@ extension LoopAnimator {
     * Fires on every frame tick
     */
    override func onFrameTick() {
-      let val: CGFloat = easing(currentFrameCount, from, to-from, framesToEnd)
+      let val: CGFloat = easing(currentFrameCount, from, to - from, framesToEnd)
       onFrame(val) // call the FrameTick method
       if currentFrameCount >= framesToEnd {
            self.currentFrameCount = 0 // Reset
