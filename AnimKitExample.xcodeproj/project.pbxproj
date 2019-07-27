@@ -84,6 +84,9 @@
 		F1059ED422EA5DE8004A8346 /* RubberBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173222E79E2E00CF946B /* RubberBand.swift */; };
 		F1059ED522EA5DF1004A8346 /* RubberBand+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173122E79E2E00CF946B /* RubberBand+Core.swift */; };
 		F1059ED722EA623D004A8346 /* AnimKitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CB288422E9E5FA00C2A8CF /* AnimKitIOS.framework */; };
+		F1059ED922EAEA36004A8346 /* ForceTouchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1059ED822EAEA36004A8346 /* ForceTouchButton.swift */; };
+		F1059EDE22EB65D3004A8346 /* ForceTouchButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1059EDD22EB65D3004A8346 /* ForceTouchButton+Extension.swift */; };
+		F1059EE022EC3123004A8346 /* ForceTouchButtonKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1059EDF22EC3123004A8346 /* ForceTouchButtonKind.swift */; };
 		F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187162022E5C49F00CF946B /* AppDelegate.swift */; };
 		F187162322E5C4A100CF946B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F187162222E5C4A100CF946B /* Assets.xcassets */; };
 		F187162622E5C4A100CF946B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F187162422E5C4A100CF946B /* MainMenu.xib */; };
@@ -208,6 +211,9 @@
 		F1059E9022E9FDA3004A8346 /* ThirdButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdButton.swift; sourceTree = "<group>"; };
 		F1059E9322E9FEB7004A8346 /* PromptButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptButton.swift; sourceTree = "<group>"; };
 		F1059E9622EA0DA5004A8346 /* DisplayLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLink.swift; sourceTree = "<group>"; };
+		F1059ED822EAEA36004A8346 /* ForceTouchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceTouchButton.swift; sourceTree = "<group>"; };
+		F1059EDD22EB65D3004A8346 /* ForceTouchButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceTouchButton+Extension.swift"; sourceTree = "<group>"; };
+		F1059EDF22EC3123004A8346 /* ForceTouchButtonKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceTouchButtonKind.swift; sourceTree = "<group>"; };
 		F187161D22E5C49F00CF946B /* AnimKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F187162022E5C49F00CF946B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F187162222E5C4A100CF946B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -353,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				F1059E8A22E9FC81004A8346 /* ModalButton.swift */,
+				F1059EDA22EB634D004A8346 /* forcetouch */,
 				F1059E8C22E9FCE8004A8346 /* FirstButton.swift */,
 				F1059E8E22E9FD53004A8346 /* SecondButton.swift */,
 				F1059E9022E9FDA3004A8346 /* ThirdButton.swift */,
@@ -365,6 +372,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1059EDA22EB634D004A8346 /* forcetouch */ = {
+			isa = PBXGroup;
+			children = (
+				F1059ED822EAEA36004A8346 /* ForceTouchButton.swift */,
+				F1059EDD22EB65D3004A8346 /* ForceTouchButton+Extension.swift */,
+				F1059EDF22EC3123004A8346 /* ForceTouchButtonKind.swift */,
+			);
+			path = forcetouch;
 			sourceTree = "<group>";
 		};
 		F187161422E5C49F00CF946B = {
@@ -1029,10 +1046,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1059E9422E9FEB7004A8346 /* PromptButton.swift in Sources */,
+				F1059EE022EC3123004A8346 /* ForceTouchButtonKind.swift in Sources */,
 				F1CB28BC22E9E83700C2A8CF /* AppDelegate.swift in Sources */,
+				F1059EDE22EB65D3004A8346 /* ForceTouchButton+Extension.swift in Sources */,
 				F1059E8822E9ED22004A8346 /* PeakAndPopView.swift in Sources */,
 				F1059E8B22E9FC81004A8346 /* ModalButton.swift in Sources */,
 				F1059E9122E9FDA3004A8346 /* ThirdButton.swift in Sources */,
+				F1059ED922EAEA36004A8346 /* ForceTouchButton.swift in Sources */,
 				F1059E8622E9ED00004A8346 /* PeekAndPopView+Create.swift in Sources */,
 				F1059E8D22E9FCE8004A8346 /* FirstButton.swift in Sources */,
 				F1059E7622E9E8B4004A8346 /* MainVC.swift in Sources */,
