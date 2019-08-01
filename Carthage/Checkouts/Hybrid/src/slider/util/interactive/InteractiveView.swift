@@ -1,14 +1,16 @@
 import Foundation
-
-internal class InteractiveView: GraphicView {
+/**
+ * - Fixme: ⚠️️ Probably rename to onMoveCallback, or move, or moveCallBack et
+ */
+open class InteractiveView: GraphicView {
    /*Callbacks*/
-   var onDown: CallBack = { _ in }
-   var onUp: CallBack = { _ in }
-   var onMove: CallBack = { _ in } // Fixme: rename to onDrag
+   public var onDown: CallBack = { _ in }
+   public var onUp: CallBack = { _ in }
+   public var onMove: CallBack = { _ in } // Fixme: rename to onDrag
 }
 /**
  * Type
  */
 extension InteractiveView {
-   typealias CallBack = (_ point: CGPoint) -> Void
+   public typealias CallBack = (_ point: CGPoint) -> Void
 }

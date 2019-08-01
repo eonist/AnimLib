@@ -13,43 +13,26 @@ import Foundation
  * - Fixme: ⚠️️ Integrate temp values inside rubberband or make a tempvalue struct
  * - Fixme: ⚠️️ Maybe rename to Elastic or SpringSolver
  */
-class RubberBand: Mover {
-    // Initial values
-    var maskFrame: Frame
-    var contentFrame: Frame
-    var config: Config
-    // Interim values
-    var result: CGFloat = 0 // Output value, this is the value that external callers can use, it's the var value after friction etc has been applied, it cannot be set from outside but can only be read from outside
-    var hasStopped: Bool = true // Indicates that the motion has stopped //Fixme: ⚠️️ try to move this into the mover
+public class RubberBand: Mover {
+   // Initial values
+   var maskFrame: Frame // Fixme: ⚠️️ group maskFrame and contentFrame?
+   var contentFrame: Frame
+   var config: Config
+   // Interim values
+   var result: CGFloat = 0 // Output value, this is the value that external callers can use, it's the var value after friction etc has been applied, it cannot be set from outside but can only be read from outside
+   var hasStopped: Bool = true // Indicates that the motion has stopped //Fixme: ⚠️️ try to move this into the mover
    /**
     * - Parameter callBack: Called on every FPS tick
     * - Parameter maskFrame: Represents the visible part of the content
     * - Parameter contentFrame: Represents the total size of the content
     * - Parameter config: Contains the configuration of the elastic effect (friction, springyness, limit etc)
+    * ## Examples:
+    * .init(thumbFrameAnim,(min: self.frame.origin.y, len: self.frame.size.height),(min: self.frame.origin.y, len: 100),RubberBand.defaultConfig)
     */
-    init(_ callBack:@escaping FrameTick, _ maskFrame: Frame, _ contentFrame: Frame, _ config: Config = RubberBand.defaultConfig) {
-        self.maskFrame = maskFrame
-        self.contentFrame = contentFrame
-        self.config = config
-        super.init(AnimProxy.shared, callBack, 0, 0)
-    }
+   public init(_ callBack:@escaping FrameTick, _ maskFrame: Frame, _ contentFrame: Frame, _ config: Config = RubberBand.defaultConfig) {
+      self.maskFrame = maskFrame
+      self.contentFrame = contentFrame
+      self.config = config
+      super.init(AnimProxy.shared, callBack, 0, 0)
+   }
 }
-
-
-/**
- * Deprecations
- * - Fixme: ⚠️️ you can probably uncomment the methods bellow
- */
-//extension RubberBand{
-//    //legacy
-//    convenience init(_ animatable:AnimProxyKind,_ callBack:@escaping FrameTick, _ maskFrame:Frame, _ contentFrame:Frame, _ value:CGFloat = 0, _ velocity:CGFloat = 0, _ friction:CGFloat = 0.98, _ springEasing:CGFloat = 0.2,_ spring:CGFloat = 0.4, _ limit:CGFloat = 100){
-//        let config:Config = (friction,springEasing,spring,limit,0.15)
-//        self.init(callBack, maskFrame,contentFrame, config)
-//        /*self.velocity = velocity
-//         self.value = value*/
-//    }
-//    //DEPRECATED,Legacy support
-//    convenience init(_ animatable:AnimProxyKind,_ callBack:@escaping FrameTick, _ maskRect:CGRect, _ contentRect:CGRect, _ value:CGFloat = 0, _ velocity:CGFloat = 0, _ friction:CGFloat = 0.98, _ springEasing:CGFloat = 0.2,_ spring:CGFloat = 0.4, _ limit:CGFloat = 100){
-//        self.init(animatable, callBack, (maskRect.y,maskRect.height),(contentRect.y,contentRect.height),value,velocity,friction,springEasing,spring,limit)
-//    }
-//}

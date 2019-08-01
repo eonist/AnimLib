@@ -85,8 +85,20 @@
 		F1059ED522EA5DF1004A8346 /* RubberBand+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187173122E79E2E00CF946B /* RubberBand+Core.swift */; };
 		F1059ED722EA623D004A8346 /* AnimKitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CB288422E9E5FA00C2A8CF /* AnimKitIOS.framework */; };
 		F1059ED922EAEA36004A8346 /* ForceTouchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1059ED822EAEA36004A8346 /* ForceTouchButton.swift */; };
-		F1059EDE22EB65D3004A8346 /* ForceTouchButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1059EDD22EB65D3004A8346 /* ForceTouchButton+Extension.swift */; };
 		F1059EE022EC3123004A8346 /* ForceTouchButtonKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1059EDF22EC3123004A8346 /* ForceTouchButtonKind.swift */; };
+		F117657222EC61EA00A387B5 /* ModalButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117657122EC61EA00A387B5 /* ModalButton+Event.swift */; };
+		F117657722EDB4D200A387B5 /* ElasticView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117657622EDB4D200A387B5 /* ElasticView+Create.swift */; };
+		F117657822EDB61A00A387B5 /* AnimProxyKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176422E79E2E00CF946B /* AnimProxyKind.swift */; };
+		F117657922EDB64C00A387B5 /* AnimProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176322E79E2E00CF946B /* AnimProxy.swift */; };
+		F117657A22EDB69100A387B5 /* AnimProxy+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187176522E79E2E00CF946B /* AnimProxy+Core.swift */; };
+		F117658422EDB80000A387B5 /* Hybrid_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F117658122EDB7FF00A387B5 /* Hybrid_macOS.framework */; };
+		F117658522EDB80000A387B5 /* Hybrid_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F117658122EDB7FF00A387B5 /* Hybrid_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F117658622EDB80000A387B5 /* Spatial_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F117658222EDB7FF00A387B5 /* Spatial_macOS.framework */; };
+		F117658722EDB80000A387B5 /* Spatial_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F117658222EDB7FF00A387B5 /* Spatial_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F117658822EDB80000A387B5 /* With_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F117658322EDB80000A387B5 /* With_mac.framework */; };
+		F117658922EDB80000A387B5 /* With_mac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F117658322EDB80000A387B5 /* With_mac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F117658B22EDBF7F00A387B5 /* ElasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117658A22EDBF7F00A387B5 /* ElasticView.swift */; };
+		F117658E22EDBFE700A387B5 /* ElasticView+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117658D22EDBFE700A387B5 /* ElasticView+Event.swift */; };
 		F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187162022E5C49F00CF946B /* AppDelegate.swift */; };
 		F187162322E5C4A100CF946B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F187162222E5C4A100CF946B /* Assets.xcassets */; };
 		F187162622E5C4A100CF946B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F187162422E5C4A100CF946B /* MainMenu.xib */; };
@@ -159,6 +171,36 @@
 		F1CB28BC22E9E83700C2A8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CB28BB22E9E83700C2A8CF /* AppDelegate.swift */; };
 		F1CB28C322E9E83800C2A8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CB28C222E9E83800C2A8CF /* Assets.xcassets */; };
 		F1CB28C622E9E83800C2A8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CB28C422E9E83800C2A8CF /* LaunchScreen.storyboard */; };
+		F1E786AE22EE4799002007EE /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786AD22EE4799002007EE /* Box.swift */; };
+		F1E786BF22EEFCD5002007EE /* PeekAndPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786BE22EEFCD5002007EE /* PeekAndPopView.swift */; };
+		F1E786C122EEFD3F002007EE /* PeekAndPopView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786C022EEFD3F002007EE /* PeekAndPopView+Create.swift */; };
+		F1E786C422EEFF9E002007EE /* ForceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786C322EEFF9E002007EE /* ForceButton.swift */; };
+		F1E786C622EF03EE002007EE /* ForceTouchButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786C522EF03EE002007EE /* ForceTouchButton+Event.swift */; };
+		F1E786C822EF0459002007EE /* ForceTouchButton+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786C722EF0459002007EE /* ForceTouchButton+Getter.swift */; };
+		F1E786CA22EF049A002007EE /* ForceTouchButton+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786C922EF049A002007EE /* ForceTouchButton+Type.swift */; };
+		F1E786CC22EF0833002007EE /* ForceButton+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786CB22EF0833002007EE /* ForceButton+Type.swift */; };
+		F1E786CE22EF0860002007EE /* ForceButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786CD22EF0860002007EE /* ForceButton+Event.swift */; };
+		F1E786D022EF1982002007EE /* ForceButton+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786CF22EF1982002007EE /* ForceButton+Helper.swift */; };
+		F1E786D422EF2DB9002007EE /* ModalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D322EF2DB9002007EE /* ModalButton.swift */; };
+		F1E786D622EF4267002007EE /* ModalButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D522EF4267002007EE /* ModalButton+Event.swift */; };
+		F1E786D822EF4DB6002007EE /* ModalButton+Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D722EF4DB6002007EE /* ModalButton+Force.swift */; };
+		F1E786DA22EF5A7D002007EE /* ModalButton+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */; };
+		F1E786DC22EF7569002007EE /* ModalButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786DB22EF7569002007EE /* ModalButton+Const.swift */; };
+		F1E786DE22EF763E002007EE /* ModalButton+Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786DD22EF763E002007EE /* ModalButton+Setter.swift */; };
+		F1E786E122F0691D002007EE /* ElasticEaser2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786DF22F068FD002007EE /* ElasticEaser2.swift */; };
+		F1E786E722F069AC002007EE /* ElasticEaser2+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786E222F06938002007EE /* ElasticEaser2+Helper.swift */; };
+		F1E786EA22F06B99002007EE /* ModalButton+Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786E922F06B99002007EE /* ModalButton+Anim.swift */; };
+		F1E786F222F08837002007EE /* RoundedRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786EC22F085FF002007EE /* RoundedRect.swift */; };
+		F1E786F622F08941002007EE /* RoundedRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786F422F088D1002007EE /* RoundedRect+Extension.swift */; };
+		F1E786FE22F0A31C002007EE /* ElasticEaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786FA22F0A302002007EE /* ElasticEaser.swift */; };
+		F1E786FF22F0A31C002007EE /* ElasticEaser+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786FB22F0A302002007EE /* ElasticEaser+Helper.swift */; };
+		F1E7870422F0E647002007EE /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7870322F0E647002007EE /* DismissButton.swift */; };
+		F1E7870922F0EA26002007EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7870822F0EA26002007EE /* Const.swift */; };
+		F1E7870B22F0ECDF002007EE /* DismissButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7870A22F0ECDF002007EE /* DismissButton+Const.swift */; };
+		F1E7870D22F1AE21002007EE /* DismissButton+Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7870C22F1AE21002007EE /* DismissButton+Anim.swift */; };
+		F1E7870F22F1CAA5002007EE /* PeekAndPopView+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7870E22F1CAA5002007EE /* PeekAndPopView+Event.swift */; };
+		F1E7871122F1F358002007EE /* ModalButton+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7871022F1F358002007EE /* ModalButton+Core.swift */; };
+		F1E7871322F1F824002007EE /* NSColorSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7871222F1F824002007EE /* NSColorSugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,7 +233,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F117658522EDB80000A387B5 /* Hybrid_macOS.framework in Embed Frameworks */,
 				F187163B22E5C54800CF946B /* AnimKit.framework in Embed Frameworks */,
+				F117658922EDB80000A387B5 /* With_mac.framework in Embed Frameworks */,
+				F117658722EDB80000A387B5 /* Spatial_macOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +257,14 @@
 		F1059E9322E9FEB7004A8346 /* PromptButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptButton.swift; sourceTree = "<group>"; };
 		F1059E9622EA0DA5004A8346 /* DisplayLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLink.swift; sourceTree = "<group>"; };
 		F1059ED822EAEA36004A8346 /* ForceTouchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceTouchButton.swift; sourceTree = "<group>"; };
-		F1059EDD22EB65D3004A8346 /* ForceTouchButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceTouchButton+Extension.swift"; sourceTree = "<group>"; };
 		F1059EDF22EC3123004A8346 /* ForceTouchButtonKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceTouchButtonKind.swift; sourceTree = "<group>"; };
+		F117657122EC61EA00A387B5 /* ModalButton+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Event.swift"; sourceTree = "<group>"; };
+		F117657622EDB4D200A387B5 /* ElasticView+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElasticView+Create.swift"; sourceTree = "<group>"; };
+		F117658122EDB7FF00A387B5 /* Hybrid_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hybrid_macOS.framework; path = Carthage/Build/Mac/Hybrid_macOS.framework; sourceTree = "<group>"; };
+		F117658222EDB7FF00A387B5 /* Spatial_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spatial_macOS.framework; path = Carthage/Build/Mac/Spatial_macOS.framework; sourceTree = "<group>"; };
+		F117658322EDB80000A387B5 /* With_mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = With_mac.framework; path = Carthage/Build/Mac/With_mac.framework; sourceTree = "<group>"; };
+		F117658A22EDBF7F00A387B5 /* ElasticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticView.swift; sourceTree = "<group>"; };
+		F117658D22EDBFE700A387B5 /* ElasticView+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElasticView+Event.swift"; sourceTree = "<group>"; };
 		F187161D22E5C49F00CF946B /* AnimKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F187162022E5C49F00CF946B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F187162222E5C4A100CF946B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -297,6 +348,36 @@
 		F1CB28C522E9E83800C2A8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1CB28C722E9E83800C2A8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1CB28CB22E9E89B00C2A8CF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F1E786AD22EE4799002007EE /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		F1E786BE22EEFCD5002007EE /* PeekAndPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekAndPopView.swift; sourceTree = "<group>"; };
+		F1E786C022EEFD3F002007EE /* PeekAndPopView+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeekAndPopView+Create.swift"; sourceTree = "<group>"; };
+		F1E786C322EEFF9E002007EE /* ForceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceButton.swift; sourceTree = "<group>"; };
+		F1E786C522EF03EE002007EE /* ForceTouchButton+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceTouchButton+Event.swift"; sourceTree = "<group>"; };
+		F1E786C722EF0459002007EE /* ForceTouchButton+Getter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceTouchButton+Getter.swift"; sourceTree = "<group>"; };
+		F1E786C922EF049A002007EE /* ForceTouchButton+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceTouchButton+Type.swift"; sourceTree = "<group>"; };
+		F1E786CB22EF0833002007EE /* ForceButton+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceButton+Type.swift"; sourceTree = "<group>"; };
+		F1E786CD22EF0860002007EE /* ForceButton+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceButton+Event.swift"; sourceTree = "<group>"; };
+		F1E786CF22EF1982002007EE /* ForceButton+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceButton+Helper.swift"; sourceTree = "<group>"; };
+		F1E786D322EF2DB9002007EE /* ModalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalButton.swift; sourceTree = "<group>"; };
+		F1E786D522EF4267002007EE /* ModalButton+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Event.swift"; sourceTree = "<group>"; };
+		F1E786D722EF4DB6002007EE /* ModalButton+Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Force.swift"; sourceTree = "<group>"; };
+		F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Create.swift"; sourceTree = "<group>"; };
+		F1E786DB22EF7569002007EE /* ModalButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Const.swift"; sourceTree = "<group>"; };
+		F1E786DD22EF763E002007EE /* ModalButton+Setter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Setter.swift"; sourceTree = "<group>"; };
+		F1E786DF22F068FD002007EE /* ElasticEaser2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticEaser2.swift; sourceTree = "<group>"; };
+		F1E786E222F06938002007EE /* ElasticEaser2+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElasticEaser2+Helper.swift"; sourceTree = "<group>"; };
+		F1E786E922F06B99002007EE /* ModalButton+Anim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Anim.swift"; sourceTree = "<group>"; };
+		F1E786EC22F085FF002007EE /* RoundedRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRect.swift; sourceTree = "<group>"; };
+		F1E786F422F088D1002007EE /* RoundedRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundedRect+Extension.swift"; sourceTree = "<group>"; };
+		F1E786FA22F0A302002007EE /* ElasticEaser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticEaser.swift; sourceTree = "<group>"; };
+		F1E786FB22F0A302002007EE /* ElasticEaser+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ElasticEaser+Helper.swift"; sourceTree = "<group>"; };
+		F1E7870322F0E647002007EE /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		F1E7870822F0EA26002007EE /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		F1E7870A22F0ECDF002007EE /* DismissButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DismissButton+Const.swift"; sourceTree = "<group>"; };
+		F1E7870C22F1AE21002007EE /* DismissButton+Anim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DismissButton+Anim.swift"; sourceTree = "<group>"; };
+		F1E7870E22F1CAA5002007EE /* PeekAndPopView+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeekAndPopView+Event.swift"; sourceTree = "<group>"; };
+		F1E7871022F1F358002007EE /* ModalButton+Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Core.swift"; sourceTree = "<group>"; };
+		F1E7871222F1F824002007EE /* NSColorSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorSugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,7 +385,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F117658422EDB80000A387B5 /* Hybrid_macOS.framework in Frameworks */,
 				F187163A22E5C54800CF946B /* AnimKit.framework in Frameworks */,
+				F117658822EDB80000A387B5 /* With_mac.framework in Frameworks */,
+				F117658622EDB80000A387B5 /* Spatial_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +442,7 @@
 		F1059E9222E9FEA6004A8346 /* modal */ = {
 			isa = PBXGroup;
 			children = (
-				F1059E8A22E9FC81004A8346 /* ModalButton.swift */,
+				F117657022EC619B00A387B5 /* modalbutton */,
 				F1059EDA22EB634D004A8346 /* forcetouch */,
 				F1059E8C22E9FCE8004A8346 /* FirstButton.swift */,
 				F1059E8E22E9FD53004A8346 /* SecondButton.swift */,
@@ -378,15 +462,50 @@
 			isa = PBXGroup;
 			children = (
 				F1059ED822EAEA36004A8346 /* ForceTouchButton.swift */,
-				F1059EDD22EB65D3004A8346 /* ForceTouchButton+Extension.swift */,
+				F1E786C922EF049A002007EE /* ForceTouchButton+Type.swift */,
+				F1E786C522EF03EE002007EE /* ForceTouchButton+Event.swift */,
+				F1E786C722EF0459002007EE /* ForceTouchButton+Getter.swift */,
 				F1059EDF22EC3123004A8346 /* ForceTouchButtonKind.swift */,
 			);
 			path = forcetouch;
 			sourceTree = "<group>";
 		};
+		F117657022EC619B00A387B5 /* modalbutton */ = {
+			isa = PBXGroup;
+			children = (
+				F1059E8A22E9FC81004A8346 /* ModalButton.swift */,
+				F117657122EC61EA00A387B5 /* ModalButton+Event.swift */,
+			);
+			path = modalbutton;
+			sourceTree = "<group>";
+		};
+		F117658C22EDBFA900A387B5 /* elasticTest */ = {
+			isa = PBXGroup;
+			children = (
+				F1E786F922F0A302002007EE /* anim */,
+				F117658A22EDBF7F00A387B5 /* ElasticView.swift */,
+				F117657622EDB4D200A387B5 /* ElasticView+Create.swift */,
+				F117658D22EDBFE700A387B5 /* ElasticView+Event.swift */,
+				F1E786AD22EE4799002007EE /* Box.swift */,
+			);
+			path = elasticTest;
+			sourceTree = "<group>";
+		};
+		F117658F22EDE44000A387B5 /* elastic */ = {
+			isa = PBXGroup;
+			children = (
+				F1E786DF22F068FD002007EE /* ElasticEaser2.swift */,
+				F1E786E222F06938002007EE /* ElasticEaser2+Helper.swift */,
+			);
+			path = elastic;
+			sourceTree = "<group>";
+		};
 		F187161422E5C49F00CF946B = {
 			isa = PBXGroup;
 			children = (
+				F117658122EDB7FF00A387B5 /* Hybrid_macOS.framework */,
+				F117658222EDB7FF00A387B5 /* Spatial_macOS.framework */,
+				F117658322EDB80000A387B5 /* With_mac.framework */,
 				F1059E7922E9ECC2004A8346 /* Hybrid_iOS.framework */,
 				F1059E8122E9ECD2004A8346 /* Hybrid_iOS.framework */,
 				F1059E7722E9ECC2004A8346 /* Spatial.framework */,
@@ -415,8 +534,10 @@
 		F187161F22E5C49F00CF946B /* AnimKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				F1E786BD22EEFCBD002007EE /* peekandpop */,
 				F187162022E5C49F00CF946B /* AppDelegate.swift */,
 				F18716E022E5C92F00CF946B /* View.swift */,
+				F117658C22EDBFA900A387B5 /* elasticTest */,
 				F187171B22E776EA00CF946B /* test */,
 				F187162222E5C4A100CF946B /* Assets.xcassets */,
 				F187162422E5C4A100CF946B /* MainMenu.xib */,
@@ -461,6 +582,7 @@
 		F187172722E79E2E00CF946B /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F1E786F322F088BC002007EE /* roundedrect */,
 				F187172822E79E2E00CF946B /* ArraySugar.swift */,
 				F187172922E79E2E00CF946B /* CGSizeSugar.swift */,
 				F187172A22E79E2E00CF946B /* CGFloatSugar.swift */,
@@ -476,6 +598,7 @@
 		F187172F22E79E2E00CF946B /* physics */ = {
 			isa = PBXGroup;
 			children = (
+				F117658F22EDE44000A387B5 /* elastic */,
 				F187173022E79E2E00CF946B /* rubberband */,
 				F187173B22E79E2E00CF946B /* mover */,
 				F187173E22E79E2E00CF946B /* springer */,
@@ -490,13 +613,13 @@
 		F187173022E79E2E00CF946B /* rubberband */ = {
 			isa = PBXGroup;
 			children = (
-				F187173122E79E2E00CF946B /* RubberBand+Core.swift */,
 				F187173222E79E2E00CF946B /* RubberBand.swift */,
-				F187173322E79E2E00CF946B /* group */,
+				F187173122E79E2E00CF946B /* RubberBand+Core.swift */,
 				F187173722E79E2E00CF946B /* RubberBand+Default.swift */,
 				F187173822E79E2E00CF946B /* RubberBand+Type.swift */,
 				F187173922E79E2E00CF946B /* RubberBand+Access.swift */,
 				F187173A22E79E2E00CF946B /* RubberBand+Helper.swift */,
+				F187173322E79E2E00CF946B /* group */,
 			);
 			path = rubberband;
 			sourceTree = "<group>";
@@ -678,6 +801,107 @@
 				F1CB28C722E9E83800C2A8CF /* Info.plist */,
 			);
 			path = AnimKitExampleIOS;
+			sourceTree = "<group>";
+		};
+		F1E786BD22EEFCBD002007EE /* peekandpop */ = {
+			isa = PBXGroup;
+			children = (
+				F1E7870722F0EA1C002007EE /* const */,
+				F1E786EE22F08637002007EE /* animation */,
+				F1E786EB22F085EA002007EE /* common */,
+				F1E786C222EEFF23002007EE /* button */,
+				F1E786BE22EEFCD5002007EE /* PeekAndPopView.swift */,
+				F1E7870E22F1CAA5002007EE /* PeekAndPopView+Event.swift */,
+				F1E786C022EEFD3F002007EE /* PeekAndPopView+Create.swift */,
+			);
+			path = peekandpop;
+			sourceTree = "<group>";
+		};
+		F1E786C222EEFF23002007EE /* button */ = {
+			isa = PBXGroup;
+			children = (
+				F1E7870222F0E639002007EE /* dismiss */,
+				F1E786D222EF2DA0002007EE /* modal */,
+				F1E786D122EF2CD9002007EE /* force */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
+		F1E786D122EF2CD9002007EE /* force */ = {
+			isa = PBXGroup;
+			children = (
+				F1E786C322EEFF9E002007EE /* ForceButton.swift */,
+				F1E786CF22EF1982002007EE /* ForceButton+Helper.swift */,
+				F1E786CB22EF0833002007EE /* ForceButton+Type.swift */,
+				F1E786CD22EF0860002007EE /* ForceButton+Event.swift */,
+			);
+			path = force;
+			sourceTree = "<group>";
+		};
+		F1E786D222EF2DA0002007EE /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				F1E786D322EF2DB9002007EE /* ModalButton.swift */,
+				F1E7871022F1F358002007EE /* ModalButton+Core.swift */,
+				F1E786DB22EF7569002007EE /* ModalButton+Const.swift */,
+				F1E786DD22EF763E002007EE /* ModalButton+Setter.swift */,
+				F1E786D522EF4267002007EE /* ModalButton+Event.swift */,
+				F1E786E922F06B99002007EE /* ModalButton+Anim.swift */,
+				F1E786D722EF4DB6002007EE /* ModalButton+Force.swift */,
+				F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */,
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
+		F1E786EB22F085EA002007EE /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F1E7871222F1F824002007EE /* NSColorSugar.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F1E786EE22F08637002007EE /* animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		F1E786F322F088BC002007EE /* roundedrect */ = {
+			isa = PBXGroup;
+			children = (
+				F1E786EC22F085FF002007EE /* RoundedRect.swift */,
+				F1E786F422F088D1002007EE /* RoundedRect+Extension.swift */,
+			);
+			path = roundedrect;
+			sourceTree = "<group>";
+		};
+		F1E786F922F0A302002007EE /* anim */ = {
+			isa = PBXGroup;
+			children = (
+				F1E786FA22F0A302002007EE /* ElasticEaser.swift */,
+				F1E786FB22F0A302002007EE /* ElasticEaser+Helper.swift */,
+			);
+			path = anim;
+			sourceTree = "<group>";
+		};
+		F1E7870222F0E639002007EE /* dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				F1E7870322F0E647002007EE /* DismissButton.swift */,
+				F1E7870C22F1AE21002007EE /* DismissButton+Anim.swift */,
+				F1E7870A22F0ECDF002007EE /* DismissButton+Const.swift */,
+			);
+			path = dismiss;
+			sourceTree = "<group>";
+		};
+		F1E7870722F0EA1C002007EE /* const */ = {
+			isa = PBXGroup;
+			children = (
+				F1E7870822F0EA26002007EE /* Const.swift */,
+			);
+			path = const;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -900,11 +1124,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				F18716E122E5C92F00CF946B /* View.swift in Sources */,
+				F1E786EA22F06B99002007EE /* ModalButton+Anim.swift in Sources */,
+				F1E786D422EF2DB9002007EE /* ModalButton.swift in Sources */,
+				F1E786DE22EF763E002007EE /* ModalButton+Setter.swift in Sources */,
+				F1E7870B22F0ECDF002007EE /* DismissButton+Const.swift in Sources */,
+				F1E7871122F1F358002007EE /* ModalButton+Core.swift in Sources */,
+				F1E786CC22EF0833002007EE /* ForceButton+Type.swift in Sources */,
+				F1E786CE22EF0860002007EE /* ForceButton+Event.swift in Sources */,
+				F1E7870422F0E647002007EE /* DismissButton.swift in Sources */,
 				F187171D22E776EA00CF946B /* View+BounceTest.swift in Sources */,
 				F18717B722E8935900CF946B /* View+SpringerTest.swift in Sources */,
 				F187171F22E7771A00CF946B /* View+MovingTest.swift in Sources */,
+				F1E786DC22EF7569002007EE /* ModalButton+Const.swift in Sources */,
+				F117658E22EDBFE700A387B5 /* ElasticView+Event.swift in Sources */,
+				F1E786D622EF4267002007EE /* ModalButton+Event.swift in Sources */,
+				F1E7870D22F1AE21002007EE /* DismissButton+Anim.swift in Sources */,
+				F117658B22EDBF7F00A387B5 /* ElasticView.swift in Sources */,
+				F1E786C422EEFF9E002007EE /* ForceButton.swift in Sources */,
+				F1E786D822EF4DB6002007EE /* ModalButton+Force.swift in Sources */,
+				F1E786D022EF1982002007EE /* ForceButton+Helper.swift in Sources */,
 				F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */,
+				F1E7870F22F1CAA5002007EE /* PeekAndPopView+Event.swift in Sources */,
+				F1E786C122EEFD3F002007EE /* PeekAndPopView+Create.swift in Sources */,
+				F1E7870922F0EA26002007EE /* Const.swift in Sources */,
+				F1E786DA22EF5A7D002007EE /* ModalButton+Create.swift in Sources */,
+				F1E7871322F1F824002007EE /* NSColorSugar.swift in Sources */,
+				F1E786BF22EEFCD5002007EE /* PeekAndPopView.swift in Sources */,
+				F117657722EDB4D200A387B5 /* ElasticView+Create.swift in Sources */,
 				F18717B422E86F4800CF946B /* View+EaserTest.swift in Sources */,
+				F1E786AE22EE4799002007EE /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,14 +1165,18 @@
 				F187178F22E79E2F00CF946B /* Advancable.swift in Sources */,
 				F18717AC22E79E2F00CF946B /* Quart.swift in Sources */,
 				F187179722E79E2F00CF946B /* FrameAnimator+Core.swift in Sources */,
+				F1E786E722F069AC002007EE /* ElasticEaser2+Helper.swift in Sources */,
 				F187178322E79E2F00CF946B /* RubberBand+Access.swift in Sources */,
 				F187177722E79E2F00CF946B /* CGFloatSugar.swift in Sources */,
 				F187177B22E79E2F00CF946B /* CGPointSugar.swift in Sources */,
 				F18717AD22E79E2F00CF946B /* Sine.swift in Sources */,
 				F187178722E79E2F00CF946B /* Springer.swift in Sources */,
 				F187178D22E79E2F00CF946B /* CustomFriction.swift in Sources */,
+				F1E786F622F08941002007EE /* RoundedRect+Extension.swift in Sources */,
 				F187177A22E79E2F00CF946B /* ThreadingSugar.swift in Sources */,
 				F18717AE22E79E2F00CF946B /* Linear.swift in Sources */,
+				F1E786FF22F0A31C002007EE /* ElasticEaser+Helper.swift in Sources */,
+				F117657922EDB64C00A387B5 /* AnimProxy.swift in Sources */,
 				F18717A022E79E2F00CF946B /* LoopAnimator.swift in Sources */,
 				F187179422E79E2F00CF946B /* FrameAnimatable.swift in Sources */,
 				F187179922E79E2F00CF946B /* Animator+Access.swift in Sources */,
@@ -932,6 +1184,7 @@
 				F18717A422E79E2F00CF946B /* Easing.swift in Sources */,
 				F187178422E79E2F00CF946B /* RubberBand+Helper.swift in Sources */,
 				F187179622E79E2F00CF946B /* FrameAnimator+Access.swift in Sources */,
+				F1E786E122F0691D002007EE /* ElasticEaser2.swift in Sources */,
 				F187177F22E79E2F00CF946B /* MoverGroup.swift in Sources */,
 				F187179122E79E2F00CF946B /* PhysicsAnimKind.swift in Sources */,
 				F187177C22E79E2F00CF946B /* RubberBand+Core.swift in Sources */,
@@ -939,6 +1192,7 @@
 				F1059E9822EA0DC8004A8346 /* DisplayLink.swift in Sources */,
 				F187178222E79E2F00CF946B /* RubberBand+Type.swift in Sources */,
 				F187177E22E79E2F00CF946B /* MoverGroup+Access.swift in Sources */,
+				F117657822EDB61A00A387B5 /* AnimProxyKind.swift in Sources */,
 				F187179C22E79E2F00CF946B /* Animator+Core.swift in Sources */,
 				F187178822E79E2F00CF946B /* Easer+Type.swift in Sources */,
 				F187179A22E79E2F00CF946B /* Animator.swift in Sources */,
@@ -953,12 +1207,15 @@
 				F187179E22E79E2F00CF946B /* LoopAnimator+Default.swift in Sources */,
 				F18717AF22E79E2F00CF946B /* Quad.swift in Sources */,
 				F18717AB22E79E2F00CF946B /* Expo.swift in Sources */,
+				F1E786F222F08837002007EE /* RoundedRect.swift in Sources */,
+				F117657A22EDB69100A387B5 /* AnimProxy+Core.swift in Sources */,
 				F18717B022E79E2F00CF946B /* EasingEquation.swift in Sources */,
 				F187177D22E79E2F00CF946B /* RubberBand.swift in Sources */,
 				F187177622E79E2F00CF946B /* CGSizeSugar.swift in Sources */,
 				F187178022E79E2F00CF946B /* Dir.swift in Sources */,
 				F187179022E79E2F00CF946B /* Advancable+Type.swift in Sources */,
 				F187178E22E79E2F00CF946B /* Friction.swift in Sources */,
+				F1E786FE22F0A31C002007EE /* ElasticEaser.swift in Sources */,
 				F18717A922E79E2F00CF946B /* Circ.swift in Sources */,
 				F187178122E79E2F00CF946B /* RubberBand+Default.swift in Sources */,
 				F18717A822E79E2F00CF946B /* Back.swift in Sources */,
@@ -1046,16 +1303,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1059E9422E9FEB7004A8346 /* PromptButton.swift in Sources */,
+				F1E786CA22EF049A002007EE /* ForceTouchButton+Type.swift in Sources */,
 				F1059EE022EC3123004A8346 /* ForceTouchButtonKind.swift in Sources */,
 				F1CB28BC22E9E83700C2A8CF /* AppDelegate.swift in Sources */,
-				F1059EDE22EB65D3004A8346 /* ForceTouchButton+Extension.swift in Sources */,
 				F1059E8822E9ED22004A8346 /* PeakAndPopView.swift in Sources */,
 				F1059E8B22E9FC81004A8346 /* ModalButton.swift in Sources */,
 				F1059E9122E9FDA3004A8346 /* ThirdButton.swift in Sources */,
+				F117657222EC61EA00A387B5 /* ModalButton+Event.swift in Sources */,
 				F1059ED922EAEA36004A8346 /* ForceTouchButton.swift in Sources */,
 				F1059E8622E9ED00004A8346 /* PeekAndPopView+Create.swift in Sources */,
+				F1E786C822EF0459002007EE /* ForceTouchButton+Getter.swift in Sources */,
 				F1059E8D22E9FCE8004A8346 /* FirstButton.swift in Sources */,
 				F1059E7622E9E8B4004A8346 /* MainVC.swift in Sources */,
+				F1E786C622EF03EE002007EE /* ForceTouchButton+Event.swift in Sources */,
 				F1059E8F22E9FD53004A8346 /* SecondButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1213,6 +1473,10 @@
 				CODE_SIGN_ENTITLEMENTS = AnimKitExample/AnimKitExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = AnimKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1232,6 +1496,10 @@
 				CODE_SIGN_ENTITLEMENTS = AnimKitExample/AnimKitExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = AnimKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

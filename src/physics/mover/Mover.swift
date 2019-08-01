@@ -1,7 +1,7 @@
 import Foundation
 
-class Mover: FrameAnimator {
-   var value: CGFloat = 0
+public class Mover: FrameAnimator {
+   public var value: CGFloat = 0
    var velocity: CGFloat
    var callBack: FrameTick
    /**

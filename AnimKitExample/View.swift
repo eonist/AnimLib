@@ -7,10 +7,11 @@ open class View: NSView {
       super.init(frame: frame)
       Swift.print("Hello world")
       self.wantsLayer = true /* if true then view is layer backed */
-      testAnimation()
+//      testAnimation()
 //      zoomBackAndForthAnimTest()
 //      easer4Test()
 //      springer4Test()
+//      elasticTest()
    }
    /**
     * Boilerplate

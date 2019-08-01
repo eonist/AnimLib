@@ -4,6 +4,7 @@ import Foundation
  * - Note: this class also works great with RadioBullets
  * - Note: Use the SelectGroupModifier and SelectGroupParser for Modifing and parsing the SelectGroup
  * Fixme: ⚠️️ You could add a SelectGroupExtension class that adds Modifing and parsing methods to the SelectGroup instance!
+ * Fixme: ⚠️️ Add example
  */
 public class SelectGroup {
    public var selectables: [Selectable]

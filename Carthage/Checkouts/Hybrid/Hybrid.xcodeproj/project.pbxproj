@@ -65,7 +65,7 @@
 		F1D606A32233C8A0003854BB /* InteractiveView+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D606172233C8A0003854BB /* InteractiveView+Event.swift */; };
 		F1D606A52233C8A0003854BB /* SliderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D606182233C8A0003854BB /* SliderHelper.swift */; };
 		F1D606A72233C8A0003854BB /* Slider+Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D606192233C8A0003854BB /* Slider+Setter.swift */; };
-		F1D606A92233C8A0003854BB /* Slider+Eventhandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061A2233C8A0003854BB /* Slider+Eventhandler.swift */; };
+		F1D606A92233C8A0003854BB /* Slider+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061A2233C8A0003854BB /* Slider+Event.swift */; };
 		F1D606AB2233C8A0003854BB /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061B2233C8A0003854BB /* Slider.swift */; };
 		F1D606AD2233C8A0003854BB /* Slider+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061C2233C8A0003854BB /* Slider+Create.swift */; };
 		F1D606AF2233C8A0003854BB /* Slider+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061D2233C8A0003854BB /* Slider+Core.swift */; };
@@ -133,7 +133,7 @@
 		F1D607972233CB5B003854BB /* InteractiveView+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D606172233C8A0003854BB /* InteractiveView+Event.swift */; };
 		F1D607982233CB5B003854BB /* SliderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D606182233C8A0003854BB /* SliderHelper.swift */; };
 		F1D607992233CB5B003854BB /* Slider+Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D606192233C8A0003854BB /* Slider+Setter.swift */; };
-		F1D6079A2233CB5B003854BB /* Slider+Eventhandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061A2233C8A0003854BB /* Slider+Eventhandler.swift */; };
+		F1D6079A2233CB5B003854BB /* Slider+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061A2233C8A0003854BB /* Slider+Event.swift */; };
 		F1D6079B2233CB5B003854BB /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061B2233C8A0003854BB /* Slider.swift */; };
 		F1D6079C2233CB5B003854BB /* Slider+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061C2233C8A0003854BB /* Slider+Create.swift */; };
 		F1D6079D2233CB5B003854BB /* Slider+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6061D2233C8A0003854BB /* Slider+Core.swift */; };
@@ -273,7 +273,7 @@
 		F1D606172233C8A0003854BB /* InteractiveView+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InteractiveView+Event.swift"; sourceTree = "<group>"; };
 		F1D606182233C8A0003854BB /* SliderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderHelper.swift; sourceTree = "<group>"; };
 		F1D606192233C8A0003854BB /* Slider+Setter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Slider+Setter.swift"; sourceTree = "<group>"; };
-		F1D6061A2233C8A0003854BB /* Slider+Eventhandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Slider+Eventhandler.swift"; sourceTree = "<group>"; };
+		F1D6061A2233C8A0003854BB /* Slider+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Slider+Event.swift"; sourceTree = "<group>"; };
 		F1D6061B2233C8A0003854BB /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		F1D6061C2233C8A0003854BB /* Slider+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Slider+Create.swift"; sourceTree = "<group>"; };
 		F1D6061D2233C8A0003854BB /* Slider+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Slider+Core.swift"; sourceTree = "<group>"; };
@@ -526,7 +526,7 @@
 				F1D606112233C8A0003854BB /* Slider+Type.swift */,
 				F1D606122233C8A0003854BB /* util */,
 				F1D606192233C8A0003854BB /* Slider+Setter.swift */,
-				F1D6061A2233C8A0003854BB /* Slider+Eventhandler.swift */,
+				F1D6061A2233C8A0003854BB /* Slider+Event.swift */,
 				F1D6061B2233C8A0003854BB /* Slider.swift */,
 				F1D6061C2233C8A0003854BB /* Slider+Create.swift */,
 				F1D6061D2233C8A0003854BB /* Slider+Core.swift */,
@@ -1067,7 +1067,7 @@
 				F1D606E12233C8A0003854BB /* Selectable.swift in Sources */,
 				F1D606D12233C8A0003854BB /* CheckBoxButton.swift in Sources */,
 				F1D606CD2233C8A0003854BB /* NSLabel.swift in Sources */,
-				F1D606A92233C8A0003854BB /* Slider+Eventhandler.swift in Sources */,
+				F1D606A92233C8A0003854BB /* Slider+Event.swift in Sources */,
 				F12441BB22465B5000D808D8 /* SB+Const.swift in Sources */,
 				F1D606CB2233C8A0003854BB /* Label+Extension.swift in Sources */,
 				F1D6069F2233C8A0003854BB /* InteractiveView+Core.swift in Sources */,
@@ -1108,7 +1108,7 @@
 				F1D607972233CB5B003854BB /* InteractiveView+Event.swift in Sources */,
 				F1D607982233CB5B003854BB /* SliderHelper.swift in Sources */,
 				F1D607992233CB5B003854BB /* Slider+Setter.swift in Sources */,
-				F1D6079A2233CB5B003854BB /* Slider+Eventhandler.swift in Sources */,
+				F1D6079A2233CB5B003854BB /* Slider+Event.swift in Sources */,
 				F1D6079B2233CB5B003854BB /* Slider.swift in Sources */,
 				F12441C322465D0800D808D8 /* Switch.swift in Sources */,
 				F1D6079C2233CB5B003854BB /* Slider+Create.swift in Sources */,

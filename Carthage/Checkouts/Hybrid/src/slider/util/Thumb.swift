@@ -6,13 +6,12 @@ import Spatial_macOS
 import Cocoa
 #endif
 
-class Thumb: InteractiveView, ConstraintKind {
-   /*Constraints*/
+open class Thumb: InteractiveView, ConstraintKind {
    #if os(iOS)
    /**
     * Thouch moved
     */
-   override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+   override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
       if let touch = touches.first /* touch.view == self*/ {
          let touchPoint = touch.location(in: self.superview)
          onMove(touchPoint)
@@ -22,7 +21,7 @@ class Thumb: InteractiveView, ConstraintKind {
    /**
     * Mouse dragged
     */
-   override func mouseDragged(with event: NSEvent) {
+   override open func mouseDragged(with event: NSEvent) {
       let p: CGPoint = self.superview!.convert(event.locationInWindow, from: nil)
       onMove(p)
    }

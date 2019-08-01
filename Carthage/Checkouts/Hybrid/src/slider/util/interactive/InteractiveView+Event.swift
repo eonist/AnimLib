@@ -5,6 +5,7 @@ import Cocoa
 #endif
 /**
  * Event
+ * Fixme: ⚠️️ Seperate os speccific code into extension based on os
  */
 extension InteractiveView {
    #if os(iOS)
@@ -12,7 +13,7 @@ extension InteractiveView {
     * On tap down inside
     */
    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-      if  let touch: UITouch = touches.first/*, touch.view == self*/ {
+      if let touch: UITouch = touches.first/*, touch.view == self*/ {
          let touchPoint: CGPoint = touch.location(in: self)
          onDown(touchPoint)
       }
@@ -56,7 +57,10 @@ extension InteractiveView {
    /**
     * Mouse dragged
     */
-   override func mouseDragged(with event: NSEvent) {
+   override open func mouseDragged(with event: NSEvent) {
+      // fixme: ⚠️️
+      // might have to do: (since your getting local position not parentPOs i the current code)
+         //let pos: CGPoint = self.superView!.convert((window?.mouseLocationOutsideOfEventStream)!,from:nil)
       let p: CGPoint = self.convert(event.locationInWindow, from: nil)
       onMove(p)
    }

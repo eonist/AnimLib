@@ -7,7 +7,7 @@ extension AnimProxy {
     * Fires on every screen refresh at 60 FPS, or device speed
     */
    @objc public func onFrame() {
-      Swift.print("AnimProxy2.onFrame()")
+//      Swift.print("AnimProxy2.onFrame()")
       self.performSelector(onMainThread: #selector(onFrameOnMainThread), with: nil, waitUntilDone: false)
    }
    /**

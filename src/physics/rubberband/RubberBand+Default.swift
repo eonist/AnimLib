@@ -3,7 +3,7 @@ import Foundation
  * Defaults
  */
 extension RubberBand {
-   static var defaultConfig: Config = (
+   public static var defaultConfig: Config = (
       friction: 0.98,
       springEasing: 0.2,
       spring: 0.4,

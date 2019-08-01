@@ -10,7 +10,7 @@ extension SpacingTestView {
    func createVerticalItems() -> [UIView] {
       let size: CGSize = .init(width: 120, height: 48)
       let views: [ConstraintView] = [UIColor.purple, .orange/*,.red,.blue*/].map {
-         let view: ConstraintView = .init(frame: .zero)//.init(origin: .zero, size: size)
+         let view: ConstraintView = .init(frame: .zero) // .init(origin: .zero, size: size)
          self.addSubview(view)
          view.backgroundColor = $0
          return view

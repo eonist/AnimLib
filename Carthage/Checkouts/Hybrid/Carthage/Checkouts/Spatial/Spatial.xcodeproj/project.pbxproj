@@ -109,6 +109,8 @@
 		F1D369F32171FDAF00F498FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D369F12171FDAF00F498FA /* LaunchScreen.storyboard */; };
 		F1D36A012172039B00F498FA /* ConstraintKind+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D369FD2172039B00F498FA /* ConstraintKind+Apply.swift */; };
 		F1D36A032172039B00F498FA /* Constraint+Activate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D369FF2172039B00F498FA /* Constraint+Activate.swift */; };
+		F1D81ECF22E329D2008F842A /* Constraint+Access+Bulk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D81ECE22E329D2008F842A /* Constraint+Access+Bulk.swift */; };
+		F1D81EFE22E46FEC008F842A /* Constraint+Access+Bulk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D81ECE22E329D2008F842A /* Constraint+Access+Bulk.swift */; };
 		F1FC84D42174E6B800D01B72 /* MiddleContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC84D32174E6B800D01B72 /* MiddleContent.swift */; };
 /* End PBXBuildFile section */
 
@@ -220,6 +222,7 @@
 		F1D369F42171FDAF00F498FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1D369FD2172039B00F498FA /* ConstraintKind+Apply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintKind+Apply.swift"; sourceTree = "<group>"; };
 		F1D369FF2172039B00F498FA /* Constraint+Activate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraint+Activate.swift"; sourceTree = "<group>"; };
+		F1D81ECE22E329D2008F842A /* Constraint+Access+Bulk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constraint+Access+Bulk.swift"; sourceTree = "<group>"; };
 		F1FC84D32174E6B800D01B72 /* MiddleContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -505,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				F109EE6A21E382D100FCC696 /* Constraint+Access.swift */,
+				F1D81ECE22E329D2008F842A /* Constraint+Access+Bulk.swift */,
 				F17E0E3521DF29E100EE3027 /* Constraint+Anchor.swift */,
 				F17E0E3721DF2A8D00EE3027 /* Constraint+Size.swift */,
 				F1D369FF2172039B00F498FA /* Constraint+Activate.swift */,
@@ -803,6 +807,7 @@
 				F1AA75602269F94500D4C272 /* AlignType+Extension.swift in Sources */,
 				F1AA75722269F99D00D4C272 /* AxisType.swift in Sources */,
 				F185A3B722319EAC00AE66B2 /* ConstraintKind+Animate.swift in Sources */,
+				F1D81EFE22E46FEC008F842A /* Constraint+Access+Bulk.swift in Sources */,
 				F185A3BE22319EAC00AE66B2 /* Constraint+Type.swift in Sources */,
 				F185A3B122319EAC00AE66B2 /* ConstraintKind+Bulk.swift in Sources */,
 				F185A3BC22319EAC00AE66B2 /* Constraint+Activate.swift in Sources */,
@@ -837,6 +842,7 @@
 				F17E0E2E21DE327B00EE3027 /* ConstraintKind+Bulk.swift in Sources */,
 				F109EE6D21E383F000FCC696 /* ConstraintKind+Access.swift in Sources */,
 				F1AA75712269F99D00D4C272 /* AxisType.swift in Sources */,
+				F1D81ECF22E329D2008F842A /* Constraint+Access+Bulk.swift in Sources */,
 				F17E0E2C21DE31A800EE3027 /* ConstraintKind+Type.swift in Sources */,
 				F1D36A032172039B00F498FA /* Constraint+Activate.swift in Sources */,
 				F14FADE121F3980F00ACE5FF /* ConstraintKind+SpaceBetween.swift in Sources */,

@@ -20,3 +20,11 @@ public struct AnimState<T: Advancable> {
         self.epsilon = epsilon
     }
 }
+extension AnimState {
+   /**
+    * Convenience init
+    */
+   public init(value: T = T.defaults.value, targetValue: T = T.defaults.targetValue, velocity: T = T.defaults.velocity, stopVelocity: T = T.defaults.stopVelocity, epsilon: T = T.defaults.epsilon) {
+      self.init(value, targetValue, velocity, stopVelocity)
+   }
+}

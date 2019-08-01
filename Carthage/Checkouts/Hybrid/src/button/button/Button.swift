@@ -24,7 +24,7 @@ open class Button: GraphicView, ConstraintKind {/*We use HybridView because that
    public var outCallBack: UpCallBack = defaultOut//out
    #endif
    /*Style*/
-   internal var style: Style
+   public var style: Style // Remark: This must be public, since we might need to set it for animation etc
    /**
     * Initiate
     * setting raster ref: https://stackoverflow.com/questions/24316705/how-to-draw-a-smooth-circle-with-cashapelayer-and-uibezierpath

@@ -6,7 +6,7 @@ extension RubberBand {
     * - Parameter Friction: Degrades the velocity over time utill stop
     * - Parameter epsilon: When the velocity is bellow this value stop the animation
     */
-   typealias Config = (
+   public typealias Config = (
       friction: CGFloat,
       springEasing: CGFloat,
       spring: CGFloat,
@@ -18,7 +18,7 @@ extension RubberBand {
     * - Parameter min: Basically topMargin when vertical, or leftMargin when horizontal
     * - Prameter len: Basically height when vertical or width when horizontal
     */
-   typealias Frame = (
+   public typealias Frame = (
       min: CGFloat,
       len: CGFloat
    )

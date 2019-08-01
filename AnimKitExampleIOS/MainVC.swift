@@ -33,9 +33,7 @@ class MainView: UIView {
       animator.onFrame = { progress in Swift.print("onFrame"); /*disableAnim {*/  box.frame.origin.x = 100 * progress /*}*/ }
       animator.completed = { Swift.print("Animation completed ✅") }
       animator.start()
-      
       //https://stackoverflow.com/questions/38112061/correct-handling-cleanup-etc-of-cadisplaylink-in-swift-custom-animation
-      
       // alot of gotchas 👆
    }
 }

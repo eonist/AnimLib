@@ -1,3 +1,3 @@
 import Foundation
 
-class Track: InteractiveView {  }
+open class Track: InteractiveView {  }

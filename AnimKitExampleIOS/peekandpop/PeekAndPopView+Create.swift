@@ -16,7 +16,9 @@ extension PeekAndPopView {
       addSubview(btn)
       //(to: self, width: 80, height: 80, align: .centerCenter, alignTo: .topCenter, offset: )
       let y: CGFloat = UIScreen.main.bounds.size.height / 4 * btn.factor
-      btn.anchorAndSize(to: self, width: 80, height: 80, align: .centerCenter, alignTo: .topCenter, offset: .init(x: 0, y: y) )
+//      btn.offset = y
+
+      btn.applyAnchorAndSize(to: self, width: 80, height: 80, align: .centerCenter, alignTo: .topCenter, offset: .init(x: 0, y: y) )
 //      btn.forceTouchEvent = onForceTouchEvent
       return btn
    }
