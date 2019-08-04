@@ -29,23 +29,22 @@ extension ModalButton {
             self.animator.direct = false
             self.animator.setTargetValue(ModalButton.initFrame).start()
             self.isExapanded = false
-            self.backgroundColor = .white
-            self.style.backgroundColor = .white
+            if let color = Colors.Initial.first.color { self.style.backgroundColor = color; self.backgroundColor = color } //.white
          }
       } else if stage == 1 && self.prevStage == 0 { // only change to red if prev stage was 0
          if !PeekAndPopView.shared.isModalHinged {
             self.animator.direct = false
             self.animator.setTargetValue(ModalButton.clickFrame).start()
             self.isExapanded = false
-            self.backgroundColor = .blue
-            self.style.backgroundColor = .blue
+            if let color = Colors.click.color { self.style.backgroundColor = color; self.backgroundColor = color } //.white
          }
       } else if stage == 2 {
          self.animator.direct = true
          self.isExapanded = true
          self.animator.setTargetValue(ModalButton.expandedFrame).start()
-         self.backgroundColor = .green
-         self.style.backgroundColor = .green
+         if let color = Colors.Initial.first.color { self.style.backgroundColor = color; self.backgroundColor = color } //.white
+//         self.backgroundColor = .green
+//         self.style.backgroundColor = .green
       }
    }
 }
@@ -55,7 +54,6 @@ extension ModalButton {
    }
    private func clickUp() {
       Swift.print("clickUp")
-      
    }
    private func deepClickDown() {
       Swift.print("deepClickDown")

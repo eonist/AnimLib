@@ -1,11 +1,3 @@
-//
-//  ModalButton+Core.swift
-//  AnimKitExample
-//
-//  Created by Eon on 31/07/2019.
-//  Copyright © 2019 FutureLab. All rights reserved.
-//
-
 import Foundation
 
 extension ModalButton {
@@ -44,4 +36,3 @@ extension ModalButton {
 //      }
    }
 }
-

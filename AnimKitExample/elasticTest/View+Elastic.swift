@@ -11,11 +11,9 @@ extension ElasticTestView {
       let box: Thumb = .init(frame: rect)
       box.caLayer?.backgroundColor = Color.black.cgColor
       box.onMove = self.onMove
-
       addSubview(box)
-
    }
-   func onMove(p: CGPoint){
+   func onMove(p: CGPoint) {
       Swift.print("p:  \(p)")
    }
 }

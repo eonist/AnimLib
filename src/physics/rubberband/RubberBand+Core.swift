@@ -17,7 +17,7 @@ extension RubberBand {
     * - Note: When in inderect motion: Springs back to it's limit
     * - Fixme: ⚠️️ Add a isDirectlyManipulating flag to the function arg instead of having a class scoped bool flag!?!?
     */
-   open override func updatePosition(_ direct: Bool = false) {
+   override open func updatePosition(_ direct: Bool = false) {
       Swift.print("updatePosition value: \(value) direct: \(direct)")
       if value > maskFrame.min { applyTopBoundary(direct) } // the top of the item-container passed the mask-container top checkPoint
       else if (value + contentFrame.len) < maskFrame.len { applyBottomBoundary(direct) } // the bottom of the item-container passed the mask-container bottom checkPoint

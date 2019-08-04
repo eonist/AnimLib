@@ -25,7 +25,6 @@ extension AppDelegate {
       let view: NSView = PeekAndPopView.shared
       view.frame = contentRect
       window.contentView = view
-      view.layer?.backgroundColor = NSColor.yellow.cgColor
       return view
    }
 }

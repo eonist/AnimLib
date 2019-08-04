@@ -8,7 +8,11 @@ extension PeekAndPopView {
     * firstBtn
     */
    func createFirstButton() -> ModalButton {
-      return with(.init()) {
+      var style: Button.Style = Button.defaultStyle
+      style.borderWidth = 0
+      style.borderColor = .clear
+      if let color = Colors.Initial.first.color { style.backgroundColor = color }
+      return with(.init(style: style)) {
          addSubview($0)
 //         let y: CGFloat = self.frame.size.height / 4 * 2
          $0.frame = ModalButton.initFrame.rect

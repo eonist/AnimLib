@@ -15,6 +15,7 @@ open class PeekAndPopView: NSView {
    override public init(frame: CGRect) {
       super.init(frame: frame)
       self.wantsLayer = true // if true then view is layer backed
+      self.layer?.backgroundColor = Colors.background.color?.cgColor// 
       _ = firstButton
       _ = dismissButton
    }
