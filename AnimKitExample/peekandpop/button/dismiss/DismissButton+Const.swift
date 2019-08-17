@@ -5,7 +5,7 @@ extension DismissButton {
     * Hidden state (bellow vissible view)
     */
    static let hidden: CGRect = {
-      let size: CGSize = .init(width: ModalButton.expandedFrame.size.width, height: 45)
+      let size: CGSize = .init(width: ModalButton.expanded.size.width, height: 45)
       let p: CGPoint = .init(x: (WinRect.size.width / 2) - (size.width / 2), y: ModalButton.winContentFrame.size.height)
       return .init(origin: p, size: size)
    }()

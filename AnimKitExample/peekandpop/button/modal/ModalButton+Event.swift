@@ -12,7 +12,7 @@ extension ModalButton {
       let newRect: RoundedRect = {
          let p: CGPoint = self.superview!.convert((window?.mouseLocationOutsideOfEventStream)!, from: nil)//self.convert(event.locationInWindow, from: nil)
          let relativePos: CGFloat = self.onDownYOffset - p.y
-         var newRect = ModalButton.expandedFrame
+         var newRect = ModalButton.expanded
          newRect.origin.y -= relativePos
          return newRect
       }()
@@ -32,7 +32,7 @@ extension ModalButton {
     */
    override func mouseDown(with event: NSEvent) {
       let p: CGPoint = self.superview!.convert((window?.mouseLocationOutsideOfEventStream)!, from: nil)//self.convert(event.locationInWindow, from: nil)//      let p: CGPoint = self.convert(event.locationInWindow, from: nil)
-      Swift.print("mouseDown.p:  \(p)")
+//      Swift.print("mouseDown.p:  \(p)")
       onDownYOffset = p.y
    }
 }

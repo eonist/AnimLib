@@ -16,8 +16,7 @@ extension ForceButton {
    /**
     * Stages
     */
-   public enum Stage: Int {
-      // case none
+   public enum Stage: Int { // case none
       case clickDown // from noStage to clickStage
       case deepClickDown // from clickStage to deepClickStage
       case clickUp // from clickStage to noStage

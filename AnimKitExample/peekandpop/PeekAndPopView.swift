@@ -14,8 +14,9 @@ open class PeekAndPopView: NSView {
    lazy var dismissButton: DismissButton = createPromptButton()
    override public init(frame: CGRect) {
       super.init(frame: frame)
+      Swift.print("PeekAndPopView.init()")
       self.wantsLayer = true // if true then view is layer backed
-      self.layer?.backgroundColor = Colors.background.color?.cgColor// 
+      self.layer?.backgroundColor = Colors.background.color?.cgColor
       _ = firstButton
       _ = dismissButton
    }

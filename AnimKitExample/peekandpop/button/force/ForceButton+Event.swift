@@ -15,12 +15,12 @@ extension ForceButton {
          case (1, 2):
             stageChange(Stage.deepClickUp) // super.onEvent(ForceTouchEvent(ForceTouchEvent.deepClickUp,prevStage,self,event))
          case (2, 1):
-            stageChange(Stage.deepClickDown) //super.onEvent(ForceTouchEvent(ForceTouchEvent.deepClickDown,prevStage,self,event))
+            stageChange(Stage.deepClickDown) // super.onEvent(ForceTouchEvent(ForceTouchEvent.deepClickDown,prevStage,self,event))
          default: fatalError("stage not supoprted") // isn't possible
          }
          stageSwitch(event.stage)
 //         super.onEvent(ForceTouchEvent(ForceTouchEvent.stageChange,prevStage,self,event))
-         prevStage = curStage/*always set prevStage to curStage on stage change*/
+         prevStage = curStage // always set prevStage to curStage on stage change
       }
       let linearPressure: CGFloat = self.linearPressure(pressure: event.pressure, stage: event.stage)
       pressureChange(linearPressure)

@@ -167,6 +167,9 @@
 		F18717B422E86F4800CF946B /* View+EaserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717B322E86F4800CF946B /* View+EaserTest.swift */; };
 		F18717B722E8935900CF946B /* View+SpringerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717B622E8935900CF946B /* View+SpringerTest.swift */; };
 		F18717C022E89BE500CF946B /* Springer+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717BE22E89BCF00CF946B /* Springer+Type.swift */; };
+		F1B49548230814B3001F28F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49547230814B3001F28F2 /* MainView.swift */; };
+		F1B4954A230831D5001F28F2 /* ModalButton+Force+Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49549230831D5001F28F2 /* ModalButton+Force+Stage.swift */; };
+		F1B4954C23083359001F28F2 /* AppDelegate+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */; };
 		F1CB288822E9E5FA00C2A8CF /* AnimKitIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F1CB288622E9E5FA00C2A8CF /* AnimKitIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1CB28BC22E9E83700C2A8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CB28BB22E9E83700C2A8CF /* AppDelegate.swift */; };
 		F1CB28C322E9E83800C2A8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CB28C222E9E83800C2A8CF /* Assets.xcassets */; };
@@ -183,7 +186,6 @@
 		F1E786D022EF1982002007EE /* ForceButton+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786CF22EF1982002007EE /* ForceButton+Helper.swift */; };
 		F1E786D422EF2DB9002007EE /* ModalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D322EF2DB9002007EE /* ModalButton.swift */; };
 		F1E786D622EF4267002007EE /* ModalButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D522EF4267002007EE /* ModalButton+Event.swift */; };
-		F1E786D822EF4DB6002007EE /* ModalButton+Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D722EF4DB6002007EE /* ModalButton+Force.swift */; };
 		F1E786DA22EF5A7D002007EE /* ModalButton+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */; };
 		F1E786DC22EF7569002007EE /* ModalButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786DB22EF7569002007EE /* ModalButton+Const.swift */; };
 		F1E786DE22EF763E002007EE /* ModalButton+Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786DD22EF763E002007EE /* ModalButton+Setter.swift */; };
@@ -339,6 +341,9 @@
 		F18717B322E86F4800CF946B /* View+EaserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EaserTest.swift"; sourceTree = "<group>"; };
 		F18717B622E8935900CF946B /* View+SpringerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SpringerTest.swift"; sourceTree = "<group>"; };
 		F18717BE22E89BCF00CF946B /* Springer+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Springer+Type.swift"; sourceTree = "<group>"; };
+		F1B49547230814B3001F28F2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F1B49549230831D5001F28F2 /* ModalButton+Force+Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Force+Stage.swift"; sourceTree = "<group>"; };
+		F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Create.swift"; sourceTree = "<group>"; };
 		F1CB288422E9E5FA00C2A8CF /* AnimKitIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimKitIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CB288622E9E5FA00C2A8CF /* AnimKitIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimKitIOS.h; sourceTree = "<group>"; };
 		F1CB288722E9E5FA00C2A8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -360,7 +365,6 @@
 		F1E786CF22EF1982002007EE /* ForceButton+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceButton+Helper.swift"; sourceTree = "<group>"; };
 		F1E786D322EF2DB9002007EE /* ModalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalButton.swift; sourceTree = "<group>"; };
 		F1E786D522EF4267002007EE /* ModalButton+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Event.swift"; sourceTree = "<group>"; };
-		F1E786D722EF4DB6002007EE /* ModalButton+Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Force.swift"; sourceTree = "<group>"; };
 		F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Create.swift"; sourceTree = "<group>"; };
 		F1E786DB22EF7569002007EE /* ModalButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Const.swift"; sourceTree = "<group>"; };
 		F1E786DD22EF763E002007EE /* ModalButton+Setter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Setter.swift"; sourceTree = "<group>"; };
@@ -536,6 +540,7 @@
 			children = (
 				F1E786BD22EEFCBD002007EE /* peekandpop */,
 				F187162022E5C49F00CF946B /* AppDelegate.swift */,
+				F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */,
 				F18716E022E5C92F00CF946B /* View.swift */,
 				F117658C22EDBFA900A387B5 /* elasticTest */,
 				F187171B22E776EA00CF946B /* test */,
@@ -795,6 +800,7 @@
 			children = (
 				F1CB28BB22E9E83700C2A8CF /* AppDelegate.swift */,
 				F1CB28CB22E9E89B00C2A8CF /* MainVC.swift */,
+				F1B49547230814B3001F28F2 /* MainView.swift */,
 				F1059E8422E9ECE5004A8346 /* peekandpop */,
 				F1CB28C222E9E83800C2A8CF /* Assets.xcassets */,
 				F1CB28C422E9E83800C2A8CF /* LaunchScreen.storyboard */,
@@ -847,7 +853,7 @@
 				F1E786DD22EF763E002007EE /* ModalButton+Setter.swift */,
 				F1E786D522EF4267002007EE /* ModalButton+Event.swift */,
 				F1E786E922F06B99002007EE /* ModalButton+Anim.swift */,
-				F1E786D722EF4DB6002007EE /* ModalButton+Force.swift */,
+				F1B49549230831D5001F28F2 /* ModalButton+Force+Stage.swift */,
 				F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */,
 			);
 			path = modal;
@@ -1139,9 +1145,9 @@
 				F117658E22EDBFE700A387B5 /* ElasticView+Event.swift in Sources */,
 				F1E786D622EF4267002007EE /* ModalButton+Event.swift in Sources */,
 				F1E7870D22F1AE21002007EE /* DismissButton+Anim.swift in Sources */,
+				F1B4954A230831D5001F28F2 /* ModalButton+Force+Stage.swift in Sources */,
 				F117658B22EDBF7F00A387B5 /* ElasticView.swift in Sources */,
 				F1E786C422EEFF9E002007EE /* ForceButton.swift in Sources */,
-				F1E786D822EF4DB6002007EE /* ModalButton+Force.swift in Sources */,
 				F1E786D022EF1982002007EE /* ForceButton+Helper.swift in Sources */,
 				F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */,
 				F1E7870F22F1CAA5002007EE /* PeekAndPopView+Event.swift in Sources */,
@@ -1151,6 +1157,7 @@
 				F1E7871322F1F824002007EE /* NSColorSugar.swift in Sources */,
 				F1E786BF22EEFCD5002007EE /* PeekAndPopView.swift in Sources */,
 				F117657722EDB4D200A387B5 /* ElasticView+Create.swift in Sources */,
+				F1B4954C23083359001F28F2 /* AppDelegate+Create.swift in Sources */,
 				F18717B422E86F4800CF946B /* View+EaserTest.swift in Sources */,
 				F1E786AE22EE4799002007EE /* Box.swift in Sources */,
 			);
@@ -1311,6 +1318,7 @@
 				F1059E9122E9FDA3004A8346 /* ThirdButton.swift in Sources */,
 				F117657222EC61EA00A387B5 /* ModalButton+Event.swift in Sources */,
 				F1059ED922EAEA36004A8346 /* ForceTouchButton.swift in Sources */,
+				F1B49548230814B3001F28F2 /* MainView.swift in Sources */,
 				F1059E8622E9ED00004A8346 /* PeekAndPopView+Create.swift in Sources */,
 				F1E786C822EF0459002007EE /* ForceTouchButton+Getter.swift in Sources */,
 				F1059E8D22E9FCE8004A8346 /* FirstButton.swift in Sources */,

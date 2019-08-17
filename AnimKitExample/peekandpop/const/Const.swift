@@ -30,6 +30,7 @@ enum Colors {
       static let idle = "#555555"
       static let down = "#FFFFFF"
    }
-   static let click = "#555555" // "DDDDDD"
+   static let click = "#555555" // "DDDDDD" // grey
    static let background = "#FFFFFF"
+   static let dismiss = "#999999"
 }

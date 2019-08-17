@@ -4,22 +4,13 @@ import Spatial
 import With
 
 extension PeekAndPopView {
-//   func createFirstButton() -> Button {
-//      return with(.init()) {
-//         addSubview($0)
-//         $0.anchorAndSize(to: self, width: 100, height: 24, align: .topLeft, alignTo: .topLeft)
-//         $0.upInsideCallBack = {Swift.print("upinside")}
-//      }
-//   }
+   /**
+    * Creates the modal button
+    */
    func createModalButton(btn: ModalButton) -> ModalButton {
-//      let btn = type.self.init()
       addSubview(btn)
-      //(to: self, width: 80, height: 80, align: .centerCenter, alignTo: .topCenter, offset: )
       let y: CGFloat = UIScreen.main.bounds.size.height / 4 * btn.factor
-//      btn.offset = y
-
       btn.applyAnchorAndSize(to: self, width: 80, height: 80, align: .centerCenter, alignTo: .topCenter, offset: .init(x: 0, y: y) )
-//      btn.forceTouchEvent = onForceTouchEvent
       return btn
    }
    /**
@@ -32,3 +23,10 @@ extension PeekAndPopView {
       return textBtn
    }
 }
+//   func createFirstButton() -> Button {
+//      return with(.init()) {
+//         addSubview($0)
+//         $0.anchorAndSize(to: self, width: 100, height: 24, align: .topLeft, alignTo: .topLeft)
+//         $0.upInsideCallBack = {Swift.print("upinside")}
+//      }
+//   }

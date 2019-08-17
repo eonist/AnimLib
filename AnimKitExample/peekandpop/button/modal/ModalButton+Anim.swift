@@ -1,12 +1,13 @@
 import Foundation
 import AnimKit
-
+/**
+ * Animation
+ */
 extension ModalButton {
    /**
     * onFrameTick
     */
    func onElasticFrameAnim(value: RoundedRect) {
-      //Swift.print("thumbFrameAnim.yValue:  \(yValue)")
 //      disableAnim {
       self.frame = value.rect
       self.layer?.cornerRadius = value.fillet

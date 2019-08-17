@@ -17,21 +17,6 @@ class ModalButton: ForceButton {
       _ = imageView
    }
    /**
-    * ImageView
-    */
-   func createImageView() -> NSImageView {
-      guard let img = NSImage(named: ImageAsset.eye.rawValue) else { fatalError("no img") }
-//      Swift.print("img.size:  \(img.size)")
-      return with(.init(image: img)) {
-//         $0.frame = .init(origin: .zero, size: img.size)
-//         $0.layer?.backgroundColor = NSColor.purple.cgColor
-         $0.wantsLayer = true
-         self.addSubview($0)
-         $0.anchorAndSize(to: self, width: img.size.width, height: img.size.height, align: .centerCenter, alignTo: .centerCenter, multiplier: .init(width: 0.8, height: 0.8))
-      }
-//      Swift.print("imageView.frame:  \(imageView.frame)")
-   }
-   /**
     * Boilerplate
     */
    required init?(coder aDecoder: NSCoder) {

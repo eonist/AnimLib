@@ -8,7 +8,7 @@ extension ModalButton {
    /**
     * - Fixme: ⚠️️ maybe rename to idle
     */
-   static var initFrame: RoundedRect {
+   static var initial: RoundedRect {
       let winFrame: CGRect = ModalButton.winContentFrame
       let size: CGSize = .init(width: 80, height: 80)
       let x: CGFloat = winFrame.size.width / 2 - size.width / 2
@@ -20,7 +20,7 @@ extension ModalButton {
    /**
     * Fixme: ⚠️️ Rename to click
     */
-   static var clickFrame: RoundedRect {
+   static var click: RoundedRect {
       let winFrame: CGRect = ModalButton.winContentFrame
       let size: CGSize = .init(width: 80 * 1.25, height: 80 * 1.25)
       let x: CGFloat = winFrame.size.width / 2 - size.width / 2
@@ -32,7 +32,7 @@ extension ModalButton {
    /**
     * Fixme: ⚠️️ Rename to expanded
     */
-   static var expandedFrame: RoundedRect {
+   static var expanded: RoundedRect {
       let winFrame: CGRect = ModalButton.winContentFrame
       let size: CGSize = .init(width: winFrame.size.width - 80, height: winFrame.size.height - 100)
       let x: CGFloat = winFrame.size.width / 2 - size.width / 2
@@ -47,7 +47,7 @@ extension ModalButton {
  */
 extension ModalButton {
    /**
-    * returns window contentview frame
+    * Returns window contentview frame (Convenient way to get content rect)
     */
    public static var winContentFrame: CGRect {
       let win: NSWindow = NSApp.windows.first!

@@ -6,6 +6,7 @@ extension ModalButton {
    enum FocusState {
       case focused, unFocused, hidden
    }
+}
 //   func setFocusState(state: FocusState) {
 //      let alpha: CGFloat = {
 //         switch state  {
@@ -17,4 +18,3 @@ extension ModalButton {
 //      button.backgroundColor = Colors.background.alpha(alpha)
 //      button.graphic.backgroundColor = Colors.foreground.alpha(alpha)
 //   }
-}
