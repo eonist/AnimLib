@@ -26,7 +26,7 @@ extension View {
       self.activateAnchorAndSize { _ in
          let anchor = Constraint.anchor(self, to: to, align: align, alignTo: alignTo, offset: offset, useMargin: useMargin)
          let size: SizeConstraint = {
-            if let width = width, let height = height {/*This method exists when you have size, but don't want to set size based on another view*/
+            if let width = width, let height = height { // This method exists when you have size, but don't want to set size based on another view
                return Constraint.size(self, size: .init(width: width, height: height), multiplier: multiplier)
             } else {
                return Constraint.size(self, to: sizeTo ?? to, width: width, height: height, offset: sizeOffset, multiplier: multiplier)
@@ -78,7 +78,7 @@ extension View {
    }
    /**
     * Size a UIView instance to a speccific metric size
-    * - ToDo: ⚠️️ This doesn't have offset, maybe it should 🤔 for now I guess you can always inset the size
+    * - Fixme: ⚠️️ This doesn't have offset, maybe it should 🤔 for now I guess you can always inset the size
     * ## Examples:
     * view.size(width:100,height:100)
     */
@@ -141,7 +141,7 @@ extension Array where Element: View {
     * Size multiple UIView instance
     * - Parameter offset: Add margin by providing a size offset
     * ## Examples:
-    * [btn1,btn2,btn3].size(to:self, height:24, offset:.init(width:-40,height:0))
+    * [btn1, btn2, btn3].size(to: self, height: 24, offset: .init(width: -40, height: 0))
     */
    public func size(to: View, width: CGFloat? = nil, height: CGFloat? = nil, offset: CGSize = .zero, multiplier: CGSize = .init(width: 1, height: 1)) {
       self.activateSizes { views in
@@ -153,7 +153,7 @@ extension Array where Element: View {
    /**
     * Size multiple UIView instance to a speccific metric size
     * ## Examples:
-    * [btn1,btn2,btn3].size(width:96, height:24)
+    * [btn1,btn2,btn3].size(width: 96, height: 24)
     */
    public func size(width: CGFloat, height: CGFloat, multiplier: CGSize = .init(width: 1, height: 1)) {
       self.activateSizes { views in

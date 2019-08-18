@@ -12,7 +12,6 @@ extension ElasticTestView {
       box.caLayer?.backgroundColor = Color.black.cgColor
       box.onMove = self.onMove
       box.onDown = self.onDown
-//      box.
 //      box.wantsLayer = true
 //      box.layer?.backgroundColor = NSColor.orange.cgColor
       addSubview(box)

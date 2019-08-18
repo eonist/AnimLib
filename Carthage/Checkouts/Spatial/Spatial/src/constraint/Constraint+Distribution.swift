@@ -32,7 +32,7 @@ extension Constraint {
       return anchors
    }
    /**
-    * - Important ⚠️️ Sets only anchors not sizes
+    * - Important: ⚠️️ Sets only anchors not sizes
     */
    public static func distribute(vertically views: [View], align: Alignment = .topLeft, spacing: CGFloat = 0, offset: CGFloat = 0) -> [AnchorConstraint] {
       let xConstraints: [NSLayoutConstraint] = views.map { view in
@@ -46,11 +46,12 @@ extension Constraint {
 }
 /**
  * Internal helper methods
- * - NOTE: Consider moving to fileprivate Util class
+ * - Note: Consider moving to fileprivate Util class
  */
 extension Constraint {
    /**
     * Distributes vertically or horizontally
+    * - Fixme: ⚠️️ Remove fatal error?
     */
    fileprivate static func distribute(_ views: [View], axis: Axis, align: Alignment, spacing: CGFloat = 0, offset: CGFloat = 0) -> [NSLayoutConstraint] {
       switch (align.horAlign, align.verAlign) {
@@ -61,6 +62,7 @@ extension Constraint {
    }
    /**
     * Distributes from start to end
+    * - Fixme: ⚠️️ Remove fatal error?
     */
    fileprivate static func distribute(fromStart views: [View], axis: Axis, spacing: CGFloat = 0, offset: CGFloat = 0) -> [NSLayoutConstraint] {
       var anchors: [NSLayoutConstraint] = []
@@ -83,20 +85,21 @@ extension Constraint {
    }
    /**
     * Aligns from end to start
+    * - Fixme: ⚠️️ Remove fatal error?
     */
    fileprivate static func distribute(fromEnd views: [View], axis: Axis, spacing: CGFloat = 0, offset: CGFloat) -> [NSLayoutConstraint] {
       var anchors: [NSLayoutConstraint] = []
       var prevView: View?
-      for view in views.reversed() {/*Move backwards*/
+      for view in views.reversed() { // Move backwards
          guard let toView: View = prevView ?? view.superview else { fatalError("View must have superview") }
          let offset: CGFloat = prevView == nil ? offset : 0
-         let spacing: CGFloat = prevView != nil ? spacing : 0 /*All subsequent views gets spacing*/
+         let spacing: CGFloat = prevView != nil ? spacing : 0 // All subsequent views gets spacing
          switch axis {
          case .hor:
-            let alignTo: HorizontalAlign = prevView == nil ? .right : .left /*first align to right pf superView, then left of each subsequent item*/
+            let alignTo: HorizontalAlign = prevView == nil ? .right : .left // first align to right pf superView, then left of each subsequent item
             anchors.append(Constraint.anchor(view, to: toView, align: .right, alignTo: alignTo, offset: offset + spacing))
          case.ver:
-            let alignTo: VerticalAlign = prevView == nil ? .bottom : .top /*first align to bottom pf superView, then top of each subsequent item*/
+            let alignTo: VerticalAlign = prevView == nil ? .bottom : .top // first align to bottom pf superView, then top of each subsequent item
             anchors.append(Constraint.anchor(view, to: toView, align: .bottom, alignTo: alignTo, offset: offset + spacing))
          }
          prevView = view

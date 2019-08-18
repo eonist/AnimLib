@@ -3,6 +3,7 @@ import Foundation
 extension DismissButton {
    /**
     * Hidden state (bellow vissible view)
+    * - Abstract: Basically the positioning state when the dismissbutton is hidden out of view
     */
    static let hidden: CGRect = {
       let size: CGSize = .init(width: ModalButton.expanded.size.width, height: 45)
@@ -11,6 +12,7 @@ extension DismissButton {
    }()
    /**
     * Revealed state (just above the bottom)
+    * - Abstract: Basically the positioning state when the dismissbutton is shown
     */
    static let revealed: CGRect = { // the limit of where promptButton can go vertically
       let size: CGSize = hidden.size

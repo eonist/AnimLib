@@ -4,6 +4,6 @@ import Foundation
  * - Note: Use .rawValue if you want to get the string "topLeft"
  */
 public enum Axis: String {
-   case hor/*Horizontal*/
-   case ver/*Vertical*/
+   case hor // Horizontal
+   case ver // Vertical
 }

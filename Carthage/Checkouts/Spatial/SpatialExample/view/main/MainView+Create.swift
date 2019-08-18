@@ -1,5 +1,6 @@
 import UIKit
 import Spatial
+import With
 
 extension MainView {
    /**
@@ -51,7 +52,16 @@ extension MainView {
       let view: CustomTableView = .init(rowData: ["Alpha", "Beta", "Ceta", "Delta", "Setta"], frame: .zero, style: .grouped)
       self.addSubview(view)
       view.backgroundColor = .lightGray
-      view.anchorAndSize(to: self/*, height:120*/)
+      view.anchorAndSize(to: self)
       return view
+   }
+   /**
+    * sizeTestingView
+    */
+   func createSizeTestingView() -> SizeTestingView {
+      return with(.init()) {
+         addSubview($0)
+         $0.anchorAndSize(to: self)
+      }
    }
 }

@@ -3,14 +3,14 @@ import UIKit
 /**
  * Animation
  * - Description: These are examples how you can animate with Spatial and autolayout
- * - Todo: ⚠️️ Use animation classes that support earlier versions of iOS
- * - Todo: ⚠️️ Use UIViewConstraintKind?
+ * - Fixme: ⚠️️ Use animation classes that support earlier versions of iOS
+ * - Fixme: ⚠️️ Use UIViewConstraintKind?
  */
 extension ConstraintKind where Self: UIView {
    /**
     * Animates a UIView that adhers to ConstraintKind (hor)
     * ## Examples:
-    * btn.animate(to:100,align:left,alignTo:.left)
+    * btn.animate(to: 100, align: left, alignTo: .left)
     */
    public func animate(to: CGFloat, align: HorizontalAlign, alignTo: HorizontalAlign, onComplete:@escaping AnimComplete = Self.defaultOnComplete) {
       UIView.animate({
@@ -26,7 +26,7 @@ extension ConstraintKind where Self: UIView {
       }, onComplete: onComplete)
    }
    /**
-    * Anim (ver,hor)
+    * Anim (ver, hor)
     */
    public func animate(to: CGPoint, align: Alignment, alignTo: Alignment, onComplete:@escaping AnimComplete = Self.defaultOnComplete) {
       UIView.animate({

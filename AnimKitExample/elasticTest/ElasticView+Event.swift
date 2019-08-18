@@ -18,10 +18,9 @@ extension ElasticTestView {
       onDownYOffset = p.y
    }
 }
-
 extension ElasticTestView {
    /**
-    *
+    * thumbFrameAnim
     */
    func thumbFrameAnim(yValue: CGFloat) {
 //      Swift.print("thumbFrameAnim.yValue:  \(yValue)")

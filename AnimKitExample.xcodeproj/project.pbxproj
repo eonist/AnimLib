@@ -168,7 +168,7 @@
 		F18717B722E8935900CF946B /* View+SpringerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717B622E8935900CF946B /* View+SpringerTest.swift */; };
 		F18717C022E89BE500CF946B /* Springer+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717BE22E89BCF00CF946B /* Springer+Type.swift */; };
 		F1B49548230814B3001F28F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49547230814B3001F28F2 /* MainView.swift */; };
-		F1B4954A230831D5001F28F2 /* ModalButton+Force+Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49549230831D5001F28F2 /* ModalButton+Force+Stage.swift */; };
+		F1B4954A230831D5001F28F2 /* ModalButton+Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49549230831D5001F28F2 /* ModalButton+Force.swift */; };
 		F1B4954C23083359001F28F2 /* AppDelegate+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */; };
 		F1CB288822E9E5FA00C2A8CF /* AnimKitIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F1CB288622E9E5FA00C2A8CF /* AnimKitIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1CB28BC22E9E83700C2A8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CB28BB22E9E83700C2A8CF /* AppDelegate.swift */; };
@@ -342,7 +342,7 @@
 		F18717B622E8935900CF946B /* View+SpringerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SpringerTest.swift"; sourceTree = "<group>"; };
 		F18717BE22E89BCF00CF946B /* Springer+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Springer+Type.swift"; sourceTree = "<group>"; };
 		F1B49547230814B3001F28F2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		F1B49549230831D5001F28F2 /* ModalButton+Force+Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Force+Stage.swift"; sourceTree = "<group>"; };
+		F1B49549230831D5001F28F2 /* ModalButton+Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Force.swift"; sourceTree = "<group>"; };
 		F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Create.swift"; sourceTree = "<group>"; };
 		F1CB288422E9E5FA00C2A8CF /* AnimKitIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimKitIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CB288622E9E5FA00C2A8CF /* AnimKitIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimKitIOS.h; sourceTree = "<group>"; };
@@ -853,7 +853,7 @@
 				F1E786DD22EF763E002007EE /* ModalButton+Setter.swift */,
 				F1E786D522EF4267002007EE /* ModalButton+Event.swift */,
 				F1E786E922F06B99002007EE /* ModalButton+Anim.swift */,
-				F1B49549230831D5001F28F2 /* ModalButton+Force+Stage.swift */,
+				F1B49549230831D5001F28F2 /* ModalButton+Force.swift */,
 				F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */,
 			);
 			path = modal;
@@ -1145,7 +1145,7 @@
 				F117658E22EDBFE700A387B5 /* ElasticView+Event.swift in Sources */,
 				F1E786D622EF4267002007EE /* ModalButton+Event.swift in Sources */,
 				F1E7870D22F1AE21002007EE /* DismissButton+Anim.swift in Sources */,
-				F1B4954A230831D5001F28F2 /* ModalButton+Force+Stage.swift in Sources */,
+				F1B4954A230831D5001F28F2 /* ModalButton+Force.swift in Sources */,
 				F117658B22EDBF7F00A387B5 /* ElasticView.swift in Sources */,
 				F1E786C422EEFF9E002007EE /* ForceButton.swift in Sources */,
 				F1E786D022EF1982002007EE /* ForceButton+Helper.swift in Sources */,

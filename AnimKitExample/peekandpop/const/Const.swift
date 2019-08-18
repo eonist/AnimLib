@@ -21,7 +21,7 @@ enum ImageAsset: String {
  * Colors.other(.background).rawValue.color
  */
 enum Colors {
-   enum Initial {
+   enum Initial { // Buttons
       static let first = "#66CDAD"
       static let second = "#EB4D62"
       static let third = "#4E98F5"

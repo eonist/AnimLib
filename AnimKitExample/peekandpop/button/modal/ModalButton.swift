@@ -10,11 +10,20 @@ class ModalButton: ForceButton {
    var onDownYOffset: CGFloat = 0
    lazy var animator: ElasticEaser2<RoundedRect> = createAnimator()
    var isExapanded: Bool = false
-   override init(style: Button.Style = Button.defaultStyle, frame: CGRect = .zero) {
-      super.init(style: style, frame: frame)
-      stageChange = onStageChange
-      stageSwitch = onStageSwitch
-      _ = imageView
+   typealias Design = (icon: ImageAsset, idleColor: NSColor?, idleFrame: CGRect)
+   let design: Design // Stores the look and feel of the modal button
+   init(design: Design) {
+      self.design = design
+      let style: Button.Style = with(Button.defaultStyle) {
+         $0.borderWidth = 0
+         $0.borderColor = .clear
+         if let color = design.idleColor { $0.backgroundColor = color }
+      }
+      super.init(style: style, frame: design.idleFrame)
+      stageChange = onStageChange // Assign callback
+      stageSwitch = onStageSwitch // Assign callback
+      _ = imageView // Add image graphic
+      self.layer?.cornerRadius = self.idle.fillet
    }
    /**
     * Boilerplate

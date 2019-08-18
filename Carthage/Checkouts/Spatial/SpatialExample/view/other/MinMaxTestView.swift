@@ -36,24 +36,13 @@ extension MinMaxTestView {
          $0.backgroundColor = UIColor.green.withAlphaComponent(0.5)
          $0.layer.borderWidth = 0.5
          $0.layer.borderColor = UIColor.black.cgColor
-         //            $0.anchor(to: self, align: .centerLeft, alignTo: .centerLeft, offset: .init(x:20,y:0) )
          $0.activateConstraints { view in
-            //let height:NSLayoutConstraint = Constraint.height(view, to: self)//length(view, to:self, viewAxis: .ver, toAxis: .ver )
             let y = Constraint.anchor(view, to: self, align: .centerY, alignTo: .centerY)
             let left = Constraint.anchor(view, to: self, align: .left, alignTo: .left, offset: 20)
-            //                let right = Constraint.anchor(view, to: self, align: .right, alignTo: .right, offset:-20)
-            //                let stringWidth:CGFloat =
             let size = text.size(withAttributes: [.font: font])
             let width: NSLayoutConstraint = Constraint.width(view, width: size.width)
-            return [y, left, width /*,height,,,*/]
+            return [y, left, width]
          }
-         //            $0.sizeToFit()
-         //            $0.numberOfLines = 0
-         //            $0.lineBreakMode = .byClipping
-         //            $0.adjustsFontSizeToFitWidth = true
-         //            $0.minimumScaleFactor = 0.5
-         //            $0.font = UIFont.systemFont(ofSize: 15)
-         //            $0.anchorAndSize(to: self.contentView, width:80, align: .centerLeft, alignTo: .centerLeft, offset: .init(x:Margin.horizontal,y:0)  )
       }
    }
    /**

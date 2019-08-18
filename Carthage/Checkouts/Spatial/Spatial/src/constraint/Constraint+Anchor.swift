@@ -2,7 +2,7 @@ import Foundation
 /**
  * Positional constraints (Aligning relative to another view (x,y))
  * - Remark: Snapkit and Carthography are too clever and caters to too many facets of autolayout. This library is just a simple extension that does basic autolayout while reducing the setup time in half.
- * - ToDo: ⚠️️ Not really an anchor, consider renaming to ConstraintAttribute or pin, point, origin, position? or?
+ * - Fixme: ⚠️️ Not really an anchor, consider renaming to ConstraintAttribute or pin, point, origin, position? or?
  * - Note: anchor is a more appropriate name than, pin,pos,pt,edge,put,magnet,align,corner (anchor can represent both corner,edge and center)
  */
 public class Constraint {

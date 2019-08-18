@@ -5,5 +5,5 @@ import Foundation
 public enum VerticalAlign: String {
    case top
    case bottom
-   case centerY /* Use centerY or else .dot syntax fails */
+   case centerY // Use centerY or else .dot syntax fails
 }

@@ -294,6 +294,30 @@ SWIFT_CLASS("_TtC10Hybrid_iOS11CheckButton")
 @end
 
 
+/// <ul>
+///   <li>
+///     Fixme: ⚠️️ Probably rename to onMoveCallback, or move, or moveCallBack et
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC10Hybrid_iOS15InteractiveView")
+@interface InteractiveView : GraphicView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface InteractiveView (SWIFT_EXTENSION(Hybrid_iOS))
+/// On tap down inside
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+/// On tap up inside
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+/// When touches move
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+@end
+
+
 SWIFT_CLASS("_TtC10Hybrid_iOS11MinusButton")
 @interface MinusButton : Button
 /// Draw 1 line
@@ -322,17 +346,17 @@ SWIFT_CLASS("_TtC10Hybrid_iOS12SelectButton")
 
 
 @interface SelectButton (SWIFT_EXTENSION(Hybrid_iOS))
-/// onTapUpInside
-- (void)onUpInside;
-@end
-
-
-@interface SelectButton (SWIFT_EXTENSION(Hybrid_iOS))
 /// Fixme: ⚠️️ This is not needed as you can set it in style
 - (void)drawLayout;
 @end
 
 
+
+
+@interface SelectButton (SWIFT_EXTENSION(Hybrid_iOS))
+/// onTapUpInside
+- (void)onUpInside;
+@end
 
 
 
@@ -352,17 +376,17 @@ SWIFT_CLASS("_TtC10Hybrid_iOS20SelectableTextButton")
 
 
 @interface SelectableTextButton (SWIFT_EXTENSION(Hybrid_iOS))
+/// onTapUpInside
+- (void)onUpInside;
+@end
+
+
+@interface SelectableTextButton (SWIFT_EXTENSION(Hybrid_iOS))
 /// note:
 /// We have to store the constraints because we animate them
 /// note:
 /// This is the only place to get frame.height consistently (when you use either AutoLayout or CGRect based layout)
 - (void)drawLayout;
-@end
-
-
-@interface SelectableTextButton (SWIFT_EXTENSION(Hybrid_iOS))
-/// onTapUpInside
-- (void)onUpInside;
 @end
 
 
@@ -444,12 +468,12 @@ SWIFT_CLASS("_TtC10Hybrid_iOS6Switch")
 @end
 
 
-
-
 @interface Switch (SWIFT_EXTENSION(Hybrid_iOS))
 /// onTapUpInside
 - (void)onUpInside;
 @end
+
+
 
 
 
@@ -489,6 +513,22 @@ SWIFT_CLASS("_TtC10Hybrid_iOS16SwitchForeground")
 
 
 
+
+
+SWIFT_CLASS("_TtC10Hybrid_iOS5Thumb")
+@interface Thumb : InteractiveView
+/// Thouch moved
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Hybrid_iOS5Track")
+@interface Track : InteractiveView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -806,6 +846,30 @@ SWIFT_CLASS("_TtC10Hybrid_iOS11CheckButton")
 @end
 
 
+/// <ul>
+///   <li>
+///     Fixme: ⚠️️ Probably rename to onMoveCallback, or move, or moveCallBack et
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC10Hybrid_iOS15InteractiveView")
+@interface InteractiveView : GraphicView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface InteractiveView (SWIFT_EXTENSION(Hybrid_iOS))
+/// On tap down inside
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+/// On tap up inside
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+/// When touches move
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+@end
+
+
 SWIFT_CLASS("_TtC10Hybrid_iOS11MinusButton")
 @interface MinusButton : Button
 /// Draw 1 line
@@ -834,17 +898,17 @@ SWIFT_CLASS("_TtC10Hybrid_iOS12SelectButton")
 
 
 @interface SelectButton (SWIFT_EXTENSION(Hybrid_iOS))
-/// onTapUpInside
-- (void)onUpInside;
-@end
-
-
-@interface SelectButton (SWIFT_EXTENSION(Hybrid_iOS))
 /// Fixme: ⚠️️ This is not needed as you can set it in style
 - (void)drawLayout;
 @end
 
 
+
+
+@interface SelectButton (SWIFT_EXTENSION(Hybrid_iOS))
+/// onTapUpInside
+- (void)onUpInside;
+@end
 
 
 
@@ -864,17 +928,17 @@ SWIFT_CLASS("_TtC10Hybrid_iOS20SelectableTextButton")
 
 
 @interface SelectableTextButton (SWIFT_EXTENSION(Hybrid_iOS))
+/// onTapUpInside
+- (void)onUpInside;
+@end
+
+
+@interface SelectableTextButton (SWIFT_EXTENSION(Hybrid_iOS))
 /// note:
 /// We have to store the constraints because we animate them
 /// note:
 /// This is the only place to get frame.height consistently (when you use either AutoLayout or CGRect based layout)
 - (void)drawLayout;
-@end
-
-
-@interface SelectableTextButton (SWIFT_EXTENSION(Hybrid_iOS))
-/// onTapUpInside
-- (void)onUpInside;
 @end
 
 
@@ -956,12 +1020,12 @@ SWIFT_CLASS("_TtC10Hybrid_iOS6Switch")
 @end
 
 
-
-
 @interface Switch (SWIFT_EXTENSION(Hybrid_iOS))
 /// onTapUpInside
 - (void)onUpInside;
 @end
+
+
 
 
 
@@ -1001,6 +1065,22 @@ SWIFT_CLASS("_TtC10Hybrid_iOS16SwitchForeground")
 
 
 
+
+
+SWIFT_CLASS("_TtC10Hybrid_iOS5Thumb")
+@interface Thumb : InteractiveView
+/// Thouch moved
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Hybrid_iOS5Track")
+@interface Track : InteractiveView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 

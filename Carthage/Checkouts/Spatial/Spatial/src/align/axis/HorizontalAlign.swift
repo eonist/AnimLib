@@ -5,5 +5,5 @@ import Foundation
 public enum HorizontalAlign: String {
    case left
    case right
-   case centerX/* Use centerX or else .dot syntax fails */
+   case centerX // Use centerX or else .dot syntax fails
 }

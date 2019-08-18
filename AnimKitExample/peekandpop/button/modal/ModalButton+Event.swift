@@ -5,6 +5,13 @@ import AnimKit
 
 extension ModalButton {
    /**
+    * Mouse down
+    */
+   override func mouseDown(with event: NSEvent) {
+      let p: CGPoint = self.superview!.convert((window?.mouseLocationOutsideOfEventStream)!, from: nil)//self.convert(event.locationInWindow, from: nil)//      let p: CGPoint = self.convert(event.locationInWindow, from: nil)
+      onDownYOffset = p.y
+   }
+   /**
     * Mouse dragged
     */
    override open func mouseDragged(with event: NSEvent) {
@@ -17,7 +24,7 @@ extension ModalButton {
          return newRect
       }()
       animator.setTargetValue(newRect).start()
-      // Move the dismissBtn
+      // Moves the dismissBtn
       if animator.value.origin.y < 30 { // modal in stayMode
          PeekAndPopView.shared.isModalHinged = true
          let y: CGFloat = Swift.max(animator.value.origin.y + animator.value.size.height + 15, DismissButton.revealed.origin.y) // 15 = add some margin
@@ -26,13 +33,5 @@ extension ModalButton {
          PeekAndPopView.shared.isModalHinged = false
          PeekAndPopView.shared.dismissButton.animator.setTargetValue(DismissButton.hidden.origin.y).start() //anim bellow screen
       }
-   }
-   /**
-    * Mouse down
-    */
-   override func mouseDown(with event: NSEvent) {
-      let p: CGPoint = self.superview!.convert((window?.mouseLocationOutsideOfEventStream)!, from: nil)//self.convert(event.locationInWindow, from: nil)//      let p: CGPoint = self.convert(event.locationInWindow, from: nil)
-//      Swift.print("mouseDown.p:  \(p)")
-      onDownYOffset = p.y
    }
 }

@@ -12,12 +12,12 @@ extension ConstraintKind where Self: View {
     * sliderBar.applyAnchorAndSize { view in
     *      let anchor = Constraint.anchor(view, to: self, align: .topLeft, alignTo: .topLeft)
     *      let size = Constraint.size(view, size: size)
-    *      return (anchor:anchor, size:size)//(anchor, size) 👈 also works
+    *      return (anchor:anchor, size:size) // (anchor, size) 👈 also works
     * }
     */
    public func applyAnchorAndSize(closure: AnchorAndSizeClosure) {
       self.translatesAutoresizingMaskIntoConstraints = false
-      let constraints: AnchorAndSize = closure(self)/*the constraints is returned from the closure*/
+      let constraints: AnchorAndSize = closure(self) // the constraints is returned from the closure
       setConstraint(anchor: constraints.anchor, size: constraints.size)
       NSLayoutConstraint.activate([constraints.anchor.x, constraints.anchor.y, constraints.size.w, constraints.size.h])
    }
@@ -27,7 +27,7 @@ extension ConstraintKind where Self: View {
     */
    public func applyAnchor(closure: AnchorClosure) {
       self.translatesAutoresizingMaskIntoConstraints = false
-      let anchorConstraint: AnchorConstraint = closure(self)/*the constraints is returned from the closure*/
+      let anchorConstraint: AnchorConstraint = closure(self) // the constraints is returned from the closure
       let constraints: [NSLayoutConstraint] = [anchorConstraint.x, anchorConstraint.y]
       self.anchor = anchorConstraint
       NSLayoutConstraint.activate(constraints)
@@ -38,7 +38,7 @@ extension ConstraintKind where Self: View {
     */
    public func applySize(closure: SizeClosure) {
       self.translatesAutoresizingMaskIntoConstraints = false
-      let sizeConstraint: SizeConstraint = closure(self)/*the constraints is returned from the closure*/
+      let sizeConstraint: SizeConstraint = closure(self) // the constraints is returned from the closure
       let constraints: [NSLayoutConstraint] = [sizeConstraint.w, sizeConstraint.h]
       self.size = sizeConstraint
       NSLayoutConstraint.activate(constraints)

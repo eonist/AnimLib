@@ -7,7 +7,8 @@ extension PeekAndPopView {
    func onDismissButtonClick() {
 //      promptBtn.setAppearance(Colors.PromptButton.Background.idle)
 //      self.curModal.modalAnimator.setTargetValue(Modal.initial(self.curModal.index)).start() // outro modal
-      self.firstButton.animator.setTargetValue(ModalButton.initial).start() // outro modal
+      guard let curExpandedButton: ModalButton = [firstButton, secondButton, thirdButton].first(where: { $0.isExapanded } ) else { return }
+      self.firstButton.animator.setTargetValue(curExpandedButton.idle).start() // outro modal
 //      self.curModal.setAppearance(Colors.Modal.initial(self.curModal.index)) // reset the color again
 //      self.firstButton.backgroundColor = .white
 //      self.firstButton.style.backgroundColor = .white

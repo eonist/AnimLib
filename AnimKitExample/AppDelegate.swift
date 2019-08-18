@@ -12,4 +12,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       _ = view
    }
 }
-

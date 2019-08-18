@@ -8,7 +8,7 @@ extension Array where Element: ConstraintKind.ViewConstraintKind {
     * Size multiple UIView instance
     * - Parameter offset: Add margin by providing a size offset
     * ## Examples:
-    * [btn1,btn2,btn3].applySize(to:self, height:24, offset:.init(width:-40,height:0))
+    * [btn1, btn2, btn3].applySize(to: self, height: 24, offset: .init(width: -40,height: 0))
     */
    public func applySizes(to: View, width: CGFloat? = nil, height: CGFloat? = nil, offset: CGSize = .zero, multiplier: CGSize = .init(width: 1, height: 1)) {
       self.applySizes { views in

@@ -1,7 +1,9 @@
 import Foundation
 import Hybrid_macOS
 import AnimKit
-
+/**
+ * Fixme: ⚠️️ add dismiss anim when leave deep-click-mode
+ */
 class DismissButton: TextButton {
    /*Animation*/
    lazy var animator: Easer<CGFloat> = .init(.init(DismissButton.hidden.origin.y), CGFloat.defaultEasing, onFrameTick)
@@ -12,14 +14,3 @@ class DismissButton: TextButton {
       fatalError("init(coder:) has not been implemented")
    }
 }
-
-//extension PromptButton {
-//   /**
-//    * Frame animation for promptButton
-//    */
-//   func promptButtonAnim(point:CGPoint){
-//      self.promptBtn.layer?.position = point
-//   }
-//}
-
-// add dismiss anim when leave deep-click-mode

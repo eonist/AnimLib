@@ -10,7 +10,7 @@ extension Array where Element: View {
     * - Remark: this method works with regular NSViews
     * - Fixme: ⚠️️ The align part isn't used, try to add it to the code somehow
     * ## Examples: 🤷
-    * let views: [NSView] = [NSColor.blue ,.green,.red].map { color in with (.init()) { $0.wantsLayer = true; $0.layer?.backgroundColor = color.cgColor; self.documentView?.addSubview($0) }
+    * let views: [NSView] = [NSColor.blue, .green, .red].map { color in with (.init()) { $0.wantsLayer = true; $0.layer?.backgroundColor = color.cgColor; self.documentView?.addSubview($0) }
     * views.distributeAndSize(dir:.hor, height:42)
     */
    public func distributeAndSize(dir: Axis, width: CGFloat? = nil, height: CGFloat? = nil, align: Alignment = .topLeft, alignTo: Alignment = .topLeft, spacing: CGFloat = 0, multiplier: CGSize = .init(width: 1, height: 1), offset: CGFloat = 0, sizeOffset: CGSize = .zero) {

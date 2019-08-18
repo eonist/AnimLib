@@ -80,7 +80,7 @@ extension ConstraintKind where Self: View {
       self.anchor = newAnchor
       self.size = newSize
       #if os(iOS)
-      superview.layoutIfNeeded()/*The superview is responsible for updating subView constraint updates*/
+      superview.layoutIfNeeded() // The superview is responsible for updating subView constraint updates
       #elseif os(macOS)
       superview.updateConstraintsForSubtreeIfNeeded()
       #endif
@@ -99,7 +99,7 @@ extension ConstraintKind where Self: View {
       guard let oldAnchor: AnchorConstraint = self.anchor else { Swift.print("⚠️️ err anchor not available ⚠️️"); return }
       closure(superview, oldAnchor)
       #if os(iOS)
-      superview.layoutIfNeeded()/*The superview is responsible for updating subView constraint updates*/
+      superview.layoutIfNeeded() // The superview is responsible for updating subView constraint updates
       #elseif os(macOS)
       superview.updateConstraintsForSubtreeIfNeeded()
       #endif
@@ -113,7 +113,7 @@ extension ConstraintKind where Self: View {
       guard let oldSize: SizeConstraint = self.size else { Swift.print("⚠️️ err sice not available ⚠️️"); return }
       closure(superview, oldSize)
       #if os(iOS)
-      superview.layoutIfNeeded()/*The superview is responsible for updating subView constraint updates*/
+      superview.layoutIfNeeded() // The superview is responsible for updating subView constraint updates
       #elseif os(macOS)
       superview.updateConstraintsForSubtreeIfNeeded()
       #endif
