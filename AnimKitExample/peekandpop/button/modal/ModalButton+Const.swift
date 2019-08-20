@@ -22,12 +22,6 @@ extension ModalButton {
     * Click state
     */
    var click: RoundedRect {
-      // 🏀
-      // base this on idle, ✅
-         //use alignPoint to figure out new y and x. dont use multiplier ✅
-      //add depth handling, look around to see if you have code 👈
-//      let winFrame: CGRect = ModalButton.winContentFrame
-      
       let offset: CGFloat = 20
       let size: CGSize = .init(width: ModalButton.initial.rect.width + offset, height: ModalButton.initial.rect.height + offset)
       let x: CGFloat = design.idleFrame.origin.x - offset / 2 //winFrame.size.width / 2 - size.width / 2//self.design.idle//

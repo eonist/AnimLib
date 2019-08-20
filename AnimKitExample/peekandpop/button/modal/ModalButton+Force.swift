@@ -22,7 +22,8 @@ extension ModalButton {
             self.isExapanded = false
             if let color = Colors.click.color { self.style.backgroundColor = color; self.backgroundColor = color } //.white
          }
-      } else if stage == 2 {
+      } else if stage == 2 { // Expanded mode
+         self.superview?.bringSubviewToFront(self) // change depth of view
          self.animator.direct = true
          self.isExapanded = true
          self.animator.setTargetValue(ModalButton.expanded).start()
