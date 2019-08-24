@@ -171,6 +171,7 @@
 		F1B4954A230831D5001F28F2 /* ModalButton+Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49549230831D5001F28F2 /* ModalButton+Force.swift */; };
 		F1B4954C23083359001F28F2 /* AppDelegate+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */; };
 		F1B49567230C90CB001F28F2 /* DepthModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49566230C90CB001F28F2 /* DepthModifier.swift */; };
+		F1B4956923116161001F28F2 /* DepthParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4956823116161001F28F2 /* DepthParser.swift */; };
 		F1CB288822E9E5FA00C2A8CF /* AnimKitIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F1CB288622E9E5FA00C2A8CF /* AnimKitIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1CB28BC22E9E83700C2A8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CB28BB22E9E83700C2A8CF /* AppDelegate.swift */; };
 		F1CB28C322E9E83800C2A8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CB28C222E9E83800C2A8CF /* Assets.xcassets */; };
@@ -346,6 +347,7 @@
 		F1B49549230831D5001F28F2 /* ModalButton+Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Force.swift"; sourceTree = "<group>"; };
 		F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Create.swift"; sourceTree = "<group>"; };
 		F1B49566230C90CB001F28F2 /* DepthModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthModifier.swift; sourceTree = "<group>"; };
+		F1B4956823116161001F28F2 /* DepthParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthParser.swift; sourceTree = "<group>"; };
 		F1CB288422E9E5FA00C2A8CF /* AnimKitIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimKitIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CB288622E9E5FA00C2A8CF /* AnimKitIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimKitIOS.h; sourceTree = "<group>"; };
 		F1CB288722E9E5FA00C2A8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -866,6 +868,7 @@
 			children = (
 				F1E7871222F1F824002007EE /* NSColorSugar.swift */,
 				F1B49566230C90CB001F28F2 /* DepthModifier.swift */,
+				F1B4956823116161001F28F2 /* DepthParser.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1147,6 +1150,7 @@
 				F187171F22E7771A00CF946B /* View+MovingTest.swift in Sources */,
 				F1E786DC22EF7569002007EE /* ModalButton+Const.swift in Sources */,
 				F117658E22EDBFE700A387B5 /* ElasticView+Event.swift in Sources */,
+				F1B4956923116161001F28F2 /* DepthParser.swift in Sources */,
 				F1E786D622EF4267002007EE /* ModalButton+Event.swift in Sources */,
 				F1E7870D22F1AE21002007EE /* DismissButton+Anim.swift in Sources */,
 				F1B4954A230831D5001F28F2 /* ModalButton+Force.swift in Sources */,

@@ -8,7 +8,7 @@ public class DepthModifier {
     */
    public static func bringSubviewToFront(parent: NSView, child: NSView) {
       var theView = child
-      parent.sortSubviews({(viewA, viewB, rawPointer) in
+      parent.sortSubviews({ viewA, viewB, rawPointer in
          let view = rawPointer?.load(as: NSView.self)
          switch view {
          case viewA:

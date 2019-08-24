@@ -8,11 +8,11 @@ extension PeekAndPopView {
       Swift.print("onDismissButtonClick")
 //      promptBtn.setAppearance(Colors.PromptButton.Background.idle)
 //      self.curModal.modalAnimator.setTargetValue(Modal.initial(self.curModal.index)).start() // outro modal
+      guard let curExpandedButton: ModalButton = DepthParser.frontMostView(views: [firstButton, secondButton, thirdButton]) as? ModalButton else { Swift.print("Cant find expanded button"); return }
 //      guard let curExpandedButton: ModalButton = [firstButton, secondButton, thirdButton].first(where: { $0.isExapanded } ) else { Swift.print("Cant find expanded button"); return }
-      
       // 🏀
-         // Generalize the bellow method and add to DepthParser
-         // use minMax to get front and back
+         // Generalize the bellow method and add to DepthParser ✅ 
+         // use minMax to get front and back instead 👈
          // hide other buttons, when expansion is complete
          // unihide other btns when expansion is dismissed
       guard let frontMostButton: ModalButton = [firstButton, secondButton, thirdButton].sorted(by: { $0.superview?.subviews.firstIndex(of: $0) ?? 0 > $1.superview?.subviews.firstIndex(of: $1) ?? 0 }).first else { return }
