@@ -1,6 +1,6 @@
 import Cocoa
 
-class DepthParser {
+public class DepthParser {
    /**
     * Returns the front most view
     * - Fixme: ⚠️️ make this T where T is NSView etc

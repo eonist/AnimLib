@@ -12,9 +12,10 @@ extension DismissButton {
    }()
    /**
     * Revealed state (just above the bottom)
+    * - Description: the limit of where promptButton can go vertically
     * - Abstract: Basically the positioning state when the dismissbutton is shown
     */
-   static let revealed: CGRect = { // the limit of where promptButton can go vertically
+   static let revealed: CGRect = {
       let size: CGSize = hidden.size
       let p: CGPoint = .init(x: hidden.origin.x, y: (hidden.origin.y) - hidden.height - 20)
       return .init(origin: p, size: size)

@@ -6,7 +6,7 @@ import AnimKit
 extension ModalButton {
    /**
     * onFrameTick
-    * - Remark: it seems we dont need `disableAnim {}`, but maybe in the future
+    * - Note: it seems we don't need `disableAnim {}`, but maybe in the future
     */
    func onElasticFrameAnim(value: RoundedRect) {
       self.frame = value.rect

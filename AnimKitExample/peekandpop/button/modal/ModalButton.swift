@@ -5,13 +5,12 @@ import AnimKit
 import With_mac
 
 class ModalButton: ForceButton {
-   lazy var imageView: NSImageView = createImageView()
    var factor: CGFloat { return 0 }
    var onDownYOffset: CGFloat = 0
-   lazy var animator: ElasticEaser2<RoundedRect> = createAnimator()
    var isExapanded: Bool = false
-   typealias Design = (icon: ImageAsset, idleColor: NSColor?, idleFrame: CGRect)
    let design: Design // Stores the look and feel of the modal button
+   lazy var imageView: NSImageView = createImageView()
+   lazy var animator: ElasticEaser2<RoundedRect> = createAnimator()
    init(design: Design) {
       self.design = design
       let style: Button.Style = with(Button.defaultStyle) {

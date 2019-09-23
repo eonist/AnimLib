@@ -23,8 +23,7 @@ extension ModalButton {
          newRect.origin.y -= relativePos
          return newRect
       }()
-      animator.setTargetValue(newRect).start()
-      // Moves the dismissBtn
+      animator.setTargetValue(newRect).start() // Moves the dismissBtn
       if animator.value.origin.y < 30 { // modal in stayMode
          PeekAndPopView.shared.isModalHinged = true
          let y: CGFloat = Swift.max(animator.value.origin.y + animator.value.size.height + 15, DismissButton.revealed.origin.y) // 15 = add some margin

@@ -11,12 +11,9 @@ public class DepthModifier {
       parent.sortSubviews({ viewA, viewB, rawPointer in
          let view = rawPointer?.load(as: NSView.self)
          switch view {
-         case viewA:
-            return ComparisonResult.orderedDescending
-         case viewB:
-            return ComparisonResult.orderedAscending
-         default:
-            return ComparisonResult.orderedSame
+         case viewA: return ComparisonResult.orderedDescending
+         case viewB: return ComparisonResult.orderedAscending
+         default: return ComparisonResult.orderedSame
          }
       }, context: &theView)
    }

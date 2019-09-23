@@ -99,6 +99,7 @@
 		F117658922EDB80000A387B5 /* With_mac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F117658322EDB80000A387B5 /* With_mac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F117658B22EDBF7F00A387B5 /* ElasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117658A22EDBF7F00A387B5 /* ElasticView.swift */; };
 		F117658E22EDBFE700A387B5 /* ElasticView+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117658D22EDBFE700A387B5 /* ElasticView+Event.swift */; };
+		F17F14C22339145F001DDC34 /* ModalButton+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F14C12339145F001DDC34 /* ModalButton+Type.swift */; };
 		F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187162022E5C49F00CF946B /* AppDelegate.swift */; };
 		F187162322E5C4A100CF946B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F187162222E5C4A100CF946B /* Assets.xcassets */; };
 		F187162622E5C4A100CF946B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F187162422E5C4A100CF946B /* MainMenu.xib */; };
@@ -167,6 +168,8 @@
 		F18717B422E86F4800CF946B /* View+EaserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717B322E86F4800CF946B /* View+EaserTest.swift */; };
 		F18717B722E8935900CF946B /* View+SpringerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717B622E8935900CF946B /* View+SpringerTest.swift */; };
 		F18717C022E89BE500CF946B /* Springer+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18717BE22E89BCF00CF946B /* Springer+Type.swift */; };
+		F1972E5D2339188300CE772C /* ForceButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1972E5C2339188300CE772C /* ForceButton+Const.swift */; };
+		F1972E5F2339189800CE772C /* ForceButton+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1972E5E2339189800CE772C /* ForceButton+Enum.swift */; };
 		F1B49548230814B3001F28F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49547230814B3001F28F2 /* MainView.swift */; };
 		F1B4954A230831D5001F28F2 /* ModalButton+Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49549230831D5001F28F2 /* ModalButton+Force.swift */; };
 		F1B4954C23083359001F28F2 /* AppDelegate+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */; };
@@ -203,7 +206,6 @@
 		F1E7870B22F0ECDF002007EE /* DismissButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7870A22F0ECDF002007EE /* DismissButton+Const.swift */; };
 		F1E7870D22F1AE21002007EE /* DismissButton+Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7870C22F1AE21002007EE /* DismissButton+Anim.swift */; };
 		F1E7870F22F1CAA5002007EE /* PeekAndPopView+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7870E22F1CAA5002007EE /* PeekAndPopView+Event.swift */; };
-		F1E7871122F1F358002007EE /* ModalButton+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7871022F1F358002007EE /* ModalButton+Core.swift */; };
 		F1E7871322F1F824002007EE /* NSColorSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E7871222F1F824002007EE /* NSColorSugar.swift */; };
 /* End PBXBuildFile section */
 
@@ -269,6 +271,7 @@
 		F117658322EDB80000A387B5 /* With_mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = With_mac.framework; path = Carthage/Build/Mac/With_mac.framework; sourceTree = "<group>"; };
 		F117658A22EDBF7F00A387B5 /* ElasticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticView.swift; sourceTree = "<group>"; };
 		F117658D22EDBFE700A387B5 /* ElasticView+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElasticView+Event.swift"; sourceTree = "<group>"; };
+		F17F14C12339145F001DDC34 /* ModalButton+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Type.swift"; sourceTree = "<group>"; };
 		F187161D22E5C49F00CF946B /* AnimKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F187162022E5C49F00CF946B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F187162222E5C4A100CF946B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 		F18717B322E86F4800CF946B /* View+EaserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EaserTest.swift"; sourceTree = "<group>"; };
 		F18717B622E8935900CF946B /* View+SpringerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SpringerTest.swift"; sourceTree = "<group>"; };
 		F18717BE22E89BCF00CF946B /* Springer+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Springer+Type.swift"; sourceTree = "<group>"; };
+		F1972E5C2339188300CE772C /* ForceButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceButton+Const.swift"; sourceTree = "<group>"; };
+		F1972E5E2339189800CE772C /* ForceButton+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceButton+Enum.swift"; sourceTree = "<group>"; };
 		F1B49547230814B3001F28F2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F1B49549230831D5001F28F2 /* ModalButton+Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Force.swift"; sourceTree = "<group>"; };
 		F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Create.swift"; sourceTree = "<group>"; };
@@ -384,7 +389,6 @@
 		F1E7870A22F0ECDF002007EE /* DismissButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DismissButton+Const.swift"; sourceTree = "<group>"; };
 		F1E7870C22F1AE21002007EE /* DismissButton+Anim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DismissButton+Anim.swift"; sourceTree = "<group>"; };
 		F1E7870E22F1CAA5002007EE /* PeekAndPopView+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeekAndPopView+Event.swift"; sourceTree = "<group>"; };
-		F1E7871022F1F358002007EE /* ModalButton+Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Core.swift"; sourceTree = "<group>"; };
 		F1E7871222F1F824002007EE /* NSColorSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorSugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -817,7 +821,6 @@
 			isa = PBXGroup;
 			children = (
 				F1E7870722F0EA1C002007EE /* const */,
-				F1E786EE22F08637002007EE /* animation */,
 				F1E786EB22F085EA002007EE /* common */,
 				F1E786C222EEFF23002007EE /* button */,
 				F1E786BE22EEFCD5002007EE /* PeekAndPopView.swift */,
@@ -843,6 +846,8 @@
 				F1E786C322EEFF9E002007EE /* ForceButton.swift */,
 				F1E786CF22EF1982002007EE /* ForceButton+Helper.swift */,
 				F1E786CB22EF0833002007EE /* ForceButton+Type.swift */,
+				F1972E5C2339188300CE772C /* ForceButton+Const.swift */,
+				F1972E5E2339189800CE772C /* ForceButton+Enum.swift */,
 				F1E786CD22EF0860002007EE /* ForceButton+Event.swift */,
 			);
 			path = force;
@@ -852,8 +857,8 @@
 			isa = PBXGroup;
 			children = (
 				F1E786D322EF2DB9002007EE /* ModalButton.swift */,
-				F1E7871022F1F358002007EE /* ModalButton+Core.swift */,
 				F1E786DB22EF7569002007EE /* ModalButton+Const.swift */,
+				F17F14C12339145F001DDC34 /* ModalButton+Type.swift */,
 				F1E786DD22EF763E002007EE /* ModalButton+Setter.swift */,
 				F1E786D522EF4267002007EE /* ModalButton+Event.swift */,
 				F1E786E922F06B99002007EE /* ModalButton+Anim.swift */,
@@ -871,13 +876,6 @@
 				F1B4956823116161001F28F2 /* DepthParser.swift */,
 			);
 			path = common;
-			sourceTree = "<group>";
-		};
-		F1E786EE22F08637002007EE /* animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = animation;
 			sourceTree = "<group>";
 		};
 		F1E786F322F088BC002007EE /* roundedrect */ = {
@@ -1140,8 +1138,9 @@
 				F1E786D422EF2DB9002007EE /* ModalButton.swift in Sources */,
 				F1E786DE22EF763E002007EE /* ModalButton+Setter.swift in Sources */,
 				F1E7870B22F0ECDF002007EE /* DismissButton+Const.swift in Sources */,
+				F1972E5D2339188300CE772C /* ForceButton+Const.swift in Sources */,
 				F1B49567230C90CB001F28F2 /* DepthModifier.swift in Sources */,
-				F1E7871122F1F358002007EE /* ModalButton+Core.swift in Sources */,
+				F17F14C22339145F001DDC34 /* ModalButton+Type.swift in Sources */,
 				F1E786CC22EF0833002007EE /* ForceButton+Type.swift in Sources */,
 				F1E786CE22EF0860002007EE /* ForceButton+Event.swift in Sources */,
 				F1E7870422F0E647002007EE /* DismissButton.swift in Sources */,
@@ -1159,6 +1158,7 @@
 				F1E786D022EF1982002007EE /* ForceButton+Helper.swift in Sources */,
 				F187162122E5C49F00CF946B /* AppDelegate.swift in Sources */,
 				F1E7870F22F1CAA5002007EE /* PeekAndPopView+Event.swift in Sources */,
+				F1972E5F2339189800CE772C /* ForceButton+Enum.swift in Sources */,
 				F1E786C122EEFD3F002007EE /* PeekAndPopView+Create.swift in Sources */,
 				F1E7870922F0EA26002007EE /* Const.swift in Sources */,
 				F1E786DA22EF5A7D002007EE /* ModalButton+Create.swift in Sources */,

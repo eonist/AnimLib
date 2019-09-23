@@ -11,7 +11,6 @@ extension PeekAndPopView {
       guard let curExpandedButton: ModalButton = DepthParser.frontMostView(views: [firstButton, secondButton, thirdButton]) as? ModalButton else { Swift.print("Cant find expanded button"); return }
 //      guard let curExpandedButton: ModalButton = [firstButton, secondButton, thirdButton].first(where: { $0.isExapanded } ) else { Swift.print("Cant find expanded button"); return }
       // 🏀
-         // Generalize the bellow method and add to DepthParser ✅ 
          // use minMax to get front and back instead 👈
          // hide other buttons, when expansion is complete
          // unihide other btns when expansion is dismissed
