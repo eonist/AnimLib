@@ -80,7 +80,6 @@ extension ModalButton {
 //         Swift.print("modal leave")
          animator.direct = false
          animator.setTargetValue(self.idle).start()
-         
          PeekAndPopView.shared.dismissButton.animator.setTargetValue(DismissButton.hidden.origin.y).start() // promptBtn, anim bellow screen
       }
       self.isExapanded = false

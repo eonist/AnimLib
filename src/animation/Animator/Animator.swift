@@ -36,4 +36,3 @@ public class Animator: FrameAnimator {
       super.init(AnimProxy.shared)
    }
 }
-
