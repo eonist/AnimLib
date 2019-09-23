@@ -15,9 +15,10 @@ public class Animator: FrameAnimator {
    public var initValues: InitValues
    var easing: EasingEquation
    /**
-    * - Parameter initValues: The initial values of the animation (dur:0.5, from:0, to:1)
-    * - Parameter easing: Variable for holding the easing method
-    * - Parameter onFrame: This call-back variable is called on each frame-tick
+    * - Parameters:
+    *   - initValues: The initial values of the animation (dur:0.5, from:0, to:1)
+    *   - easing: Variable for holding the easing method
+    *   - onFrame: This call-back variable is called on each frame-tick
     * ## Examples:
     * Animator((0.5, 0, 1), .easeInOut) { progress in view.frame.origin.x += 100 * progress }.start() // Animates a frame 100px in 0.5 seconds with an easeInOut easing curve
     * let animator: Animator = .init()
@@ -35,3 +36,4 @@ public class Animator: FrameAnimator {
       super.init(AnimProxy.shared)
    }
 }
+

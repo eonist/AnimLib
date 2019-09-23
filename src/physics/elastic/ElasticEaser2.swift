@@ -5,11 +5,11 @@ public class ElasticEaser2<T: Advancable>: Easer<RoundedRect> {
    public typealias Frame = (min: CGFloat, len: CGFloat) // Fixme:⚠️️ rename to  boundries
    var maskFrame: Frame // Represents the visible part of the content
    var limit: CGFloat = 200
-   //var result:AnimState5<T> // Output value, this is the value that external callers can use, its the var value after friction etc has been applied, it cannot be set from outside but can only be read from outside
+   // var result:AnimState5<T> // Output value, this is the value that external callers can use, its the var value after friction etc has been applied, it cannot be set from outside but can only be read from outside
    public init(state: AnimState<RoundedRect> = RoundedRect.defaults, easing: RoundedRect = RoundedRect.defaultEasing, maskFrame: Frame, onFrame:@escaping FrameTickSignature) {
-      //self.result = state//set init result
+      // self.result = state//set init result
       self.maskFrame = maskFrame
-      //(state, easing, onFrame)
+      // (state, easing, onFrame)
       super.init(state, easing, onFrame)
    }
    /**

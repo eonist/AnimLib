@@ -22,10 +22,11 @@ public class RubberBand: Mover {
    var result: CGFloat = 0 // Output value, this is the value that external callers can use, it's the var value after friction etc has been applied, it cannot be set from outside but can only be read from outside
    var hasStopped: Bool = true // Indicates that the motion has stopped //Fixme: ⚠️️ try to move this into the mover
    /**
-    * - Parameter callBack: Called on every FPS tick
-    * - Parameter maskFrame: Represents the visible part of the content
-    * - Parameter contentFrame: Represents the total size of the content
-    * - Parameter config: Contains the configuration of the elastic effect (friction, springyness, limit etc)
+    * - Parameters:
+    *   - callBack: Called on every FPS tick
+    *   - maskFrame: Represents the visible part of the content
+    *   - contentFrame: Represents the total size of the content
+    *   - config: Contains the configuration of the elastic effect (friction, springyness, limit etc)
     * ## Examples:
     * .init(thumbFrameAnim,(min: self.frame.origin.y, len: self.frame.size.height),(min: self.frame.origin.y, len: 100),RubberBand.defaultConfig)
     */

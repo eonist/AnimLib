@@ -11,7 +11,9 @@ extension CGSize {
       return CGSize(width: self.width.interpolate(to.width, scalar), height: self.height.interpolate(to.height, scalar))
    }
 }
-
+/**
+ * Operators
+ */
 extension CGSize {
    public static func + (a: CGSize, b: CGSize) -> CGSize { return .init(width: a.width + b.width, height: a.height + b.height) }
    public static func - (a: CGSize, b: CGSize) -> CGSize { return .init(width: a.width - b.width, height: a.height - b.height) }

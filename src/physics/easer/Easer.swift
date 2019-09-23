@@ -23,7 +23,6 @@ public class Easer<T: Advancable>: FrameAnimator, PhysicsAnimKind {
       self.easing = easing
       self.onFrame = onFrame
       super.init()
-      //self.updatePos = updatePosition
    }
    /**
     * - Abstract: This is called on every frame tick (60 FPS)

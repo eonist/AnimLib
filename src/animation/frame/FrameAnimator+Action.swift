@@ -23,13 +23,10 @@ extension FrameAnimator {
     */
    @objc public func stop() {
       animProxy.animators.removeFirst(self)
-      //
       #if os(iOS)
-      //
       animProxy.displayLink.isPaused = true
       animProxy.displayLink.invalidate()
-//      open func remove(from runloop: RunLoop, forMode mode: RunLoop.Mode)
-      //
+      //open func remove(from runloop: RunLoop, forMode mode: RunLoop.Mode)
       #elseif os(macOS)
       if animProxy.animators.isEmpty && CVDisplayLinkIsRunning(animProxy.displayLink) {
          CVDisplayLinkStop(animProxy.displayLink) // Stops the frame ticker if there is no active running animators

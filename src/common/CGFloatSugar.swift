@@ -18,9 +18,10 @@ extension CGFloat {
    }
    /**
     * Linearly interpolation (lerp)
-    * - Parameter: a: start number
-    * - Parameter: b: end number
-    * - Parameter: fraction: interpolation value (between 0 - 1) could also be named scalar
+    * - Parameters:
+    *   - a: start number
+    *   - b: end number
+    *   - fraction: interpolation value (between 0 - 1) could also be named scalar
     * ## Examples:
     * interpolate(5, 15, 0.5) //10
     * interpolate(a: -150.0, b: -375.0, fraction: 0.1)//-172.5, also works on negative values 👌

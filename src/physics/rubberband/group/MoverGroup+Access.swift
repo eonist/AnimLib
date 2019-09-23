@@ -36,9 +36,3 @@ extension MoverGroup {
       yMover.updatePosition(direct)
    }
 }
-//extension MoverGroup {
-//    var isDirectlyManipulating: Bool {
-//        get { fatalError("deprecated")/*return xMover.isDirectlyManipulating || yMover.isDirectlyManipulating*/ }
-//        set { xMover.isDirectlyManipulating = newValue; yMover.isDirectlyManipulating = newValue; fatalError("deprecated") }
-//    }
-//}

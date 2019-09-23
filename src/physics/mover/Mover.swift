@@ -5,9 +5,10 @@ public class Mover: FrameAnimator {
    var velocity: CGFloat
    var callBack: FrameTick
    /**
-    * - Parameter value: the value that should be applied to the target
-    * - Parameter velocity: The amount increased on each frame-tick of the animation
-    * - Parameter callback: the closure method that is called on every "frame-tick" and changes the property, you can use a var closure or a regular method, probably even an inline closure
+    * - Parameters:
+    *   - value: the value that should be applied to the target
+    *   - velocity: The amount increased on each frame-tick of the animation
+    *   - callback: the closure method that is called on every "frame-tick" and changes the property, you can use a var closure or a regular method, probably even an inline closure
     */
    init(_ animatable: AnimProxyKind, _ callBack:@escaping FrameTick, _ value: CGFloat, _ velocity: CGFloat = 0) {
       self.value = value
