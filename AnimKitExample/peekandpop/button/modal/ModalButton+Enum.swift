@@ -1,6 +1,6 @@
 import Foundation
 /**
- * Setter
+ * Enum
  */
 extension ModalButton {
    enum FocusState {

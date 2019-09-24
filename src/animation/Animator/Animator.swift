@@ -7,7 +7,7 @@ import Foundation
 public class Animator: FrameAnimator {
    /**
     * - Abstract, this is needed in order to know when the animation is complete
-    * - Remark: You need to set this to zero if you want to reset the animation
+    * - Note: You need to set this to zero if you want to reset the animation
     */
    public var currentFrameCount: CGFloat = 0
    public var completed: Completed = {} // Completion call-back

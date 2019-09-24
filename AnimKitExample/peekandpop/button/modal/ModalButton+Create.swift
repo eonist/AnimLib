@@ -15,7 +15,7 @@ extension ModalButton {
       return .init(state: initAnimState,
                    easing: easing,
                    maskFrame: maskFrame,
-                   onFrame: self.onElasticFrameAnim)
+                   onFrame: self.onFrameTick)
    }
    /**
     * Creates an ImageView

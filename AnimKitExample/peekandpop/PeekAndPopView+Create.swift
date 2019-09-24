@@ -10,7 +10,7 @@ extension PeekAndPopView {
    func createFirstButton() -> ModalButton {
       let frame: CGRect = {
          let size = ModalButton.initial.rect.size
-         let alignmentPoint = Align.alignmentPoint(size, canvasSize: ModalButton.winContentFrame.size, canvasAlign: .topCenter, objectAlign: .topCenter, offset: .init(x: 0, y: 60))
+         let alignmentPoint = Align.alignmentPoint(size, canvasSize: ModalButton.winContentFrame.size, canvasAlign: .topCenter, objectAlign: .topCenter, offset: .init(x: 0, y: ModalButton.margin))
          return .init(origin: alignmentPoint, size: size)
       }()
       let design: ModalButton.Design = (.eye, Colors.Initial.first.color, frame)
@@ -18,10 +18,6 @@ extension PeekAndPopView {
          addSubview($0)
       }
    }
-   //Autolayout code
-//         btn.applyAnchorAndSize(to: self, width: 80, height: 80, align: .centerCenter, alignTo: .topCenter, offset: .init(x: 0, y: y) )
-//         $0.anchorAndSize(to: self, width: 100, height: 24, align: .topLeft, alignTo: .topLeft)
-//         $0.upInsideCallBack = {Swift.print("upinside")}
    /**
     * Second button
     */
@@ -42,7 +38,7 @@ extension PeekAndPopView {
    func createThirdButton() -> ModalButton {
       let frame: CGRect = {
          let size = ModalButton.initial.rect.size
-         let alignmentPoint = Align.alignmentPoint(size, canvasSize: ModalButton.winContentFrame.size, canvasAlign: .bottomCenter, objectAlign: .bottomCenter, offset: .init(x: 0, y: -60))
+         let alignmentPoint = Align.alignmentPoint(size, canvasSize: ModalButton.winContentFrame.size, canvasAlign: .bottomCenter, objectAlign: .bottomCenter, offset: .init(x: 0, y: -ModalButton.margin))
          return .init(origin: alignmentPoint, size: size)
       }()
       let design: ModalButton.Design = (.calculator, Colors.Initial.third.color, frame)
@@ -53,7 +49,7 @@ extension PeekAndPopView {
    /**
     * Creates the Prompt Button
     */
-   func createPromptButton() -> DismissButton {
+   func createDismissButton() -> DismissButton {
       let style: TextButton.TextButtonStyle = with(TextButton.defaultTextButtonStyle) {
          $0.borderWidth = 0
          $0.borderColor = .clear
@@ -69,3 +65,8 @@ extension PeekAndPopView {
       }
    }
 }
+
+//Autolayout code
+//         btn.applyAnchorAndSize(to: self, width: 80, height: 80, align: .centerCenter, alignTo: .topCenter, offset: .init(x: 0, y: y) )
+//         $0.anchorAndSize(to: self, width: 100, height: 24, align: .topLeft, alignTo: .topLeft)
+//         $0.upInsideCallBack = {Swift.print("upinside")}

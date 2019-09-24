@@ -16,6 +16,7 @@ extension ModalButton {
     */
    override open func mouseDragged(with event: NSEvent) {
       guard isExapanded else { return }
+      self.hideOtherButtons(isHidden: true) // hide other buttons
       let newRect: RoundedRect = {
          let p: CGPoint = self.superview!.convert((window?.mouseLocationOutsideOfEventStream)!, from: nil)//self.convert(event.locationInWindow, from: nil)
          let relativePos: CGFloat = self.onDownYOffset - p.y
@@ -24,11 +25,11 @@ extension ModalButton {
          return newRect
       }()
       animator.setTargetValue(newRect).start() // Moves the dismissBtn
-      if animator.value.origin.y < 30 { // modal in stayMode
+      if animator.value.origin.y < 30 { // Modal in stayMode
          PeekAndPopView.shared.isModalHinged = true
          let y: CGFloat = Swift.max(animator.value.origin.y + animator.value.size.height + 15, DismissButton.revealed.origin.y) // 15 = add some margin
          PeekAndPopView.shared.dismissButton.animator.setTargetValue(y).start() // you could do modalBtn.layer.origin + getHeight etc.
-      } else if animator.value.origin.y > 30 {// modal in leaveMode
+      } else if animator.value.origin.y > 30 { // Modal in leaveMode
          PeekAndPopView.shared.isModalHinged = false
          PeekAndPopView.shared.dismissButton.animator.setTargetValue(DismissButton.hidden.origin.y).start() //anim bellow screen
       }

@@ -8,7 +8,7 @@ extension ModalButton {
     * onFrameTick
     * - Note: it seems we don't need `disableAnim {}`, but maybe in the future
     */
-   func onElasticFrameAnim(value: RoundedRect) {
+   func onFrameTick(value: RoundedRect) {
       self.frame = value.rect
       self.layer?.cornerRadius = value.fillet
    }

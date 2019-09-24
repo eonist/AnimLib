@@ -8,6 +8,6 @@ extension ForceButton {
       let pressure: CGFloat = .init(pressure)
       if stage == 0 { return 0 }
       else if stage == 1 { return pressure / 2 }
-      else /*if stage == 2*/ { return 0.5 + (pressure / 2) }
+      else { return 0.5 + (pressure / 2) } /*if stage == 2*/
    }
 }

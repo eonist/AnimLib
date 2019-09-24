@@ -9,10 +9,10 @@ open class PeekAndPopView: NSView {
    override open var isFlipped: Bool { return true } // TopLeft orientation
    var isModalHinged: Bool = false // This is set to true if modal is released above a sertion threshold (modal.y < 30) threshold
    // UI
-   lazy var firstButton: ModalButton = createFirstButton() // createModalButton(btn: FirstButton())
-   lazy var secondButton: ModalButton = createSecondButton() // createModalButton(btn: FirstButton())
-   lazy var thirdButton: ModalButton = createThirdButton() //
-   lazy var dismissButton: DismissButton = createPromptButton()
+   lazy var firstButton: ModalButton = createFirstButton()
+   lazy var secondButton: ModalButton = createSecondButton()
+   lazy var thirdButton: ModalButton = createThirdButton()
+   lazy var dismissButton: DismissButton = createDismissButton()
    override public init(frame: CGRect) {
       super.init(frame: frame)
       Swift.print("PeekAndPopView.init()")

@@ -27,4 +27,3 @@ extension ModalButton {
       Swift.print("stageChange curStage:  \(curStage) prevStage:  \(prevStage)")
    }
 }
-
