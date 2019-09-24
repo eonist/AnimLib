@@ -14,11 +14,9 @@ extension ModalButton {
                self?.hideOtherButtons(isHidden: false) // hide other buttons
             }
             self.animator.setTargetValue(self.idle).start()
-            self.isExapanded = false
-            
+            self.isExpanded = false
             if let color = design.idleColor { self.style.backgroundColor = color; self.backgroundColor = color } //.white
          }
-//         hideOtherButtons(isHidden: false)
       } else if stage == 1 && self.prevStage == 0 { // idle mode
          if !PeekAndPopView.shared.isModalHinged {
             self.animator.direct = false
@@ -26,14 +24,13 @@ extension ModalButton {
                self?.hideOtherButtons(isHidden: false) // hide other buttons
             }
             self.animator.setTargetValue(self.click).start()
-            self.isExapanded = false
+            self.isExpanded = false
             if let color = Colors.click.color { self.style.backgroundColor = color; self.backgroundColor = color } //.white
          }
-//         hideOtherButtons(isHidden: false)
       } else if stage == 2 { // Expanded mode
          self.superview?.bringSubviewToFront(self) // change depth of view
          self.animator.direct = true
-         self.isExapanded = true
+         self.isExpanded = true
          self.animator.onComplete = { [weak self] in
             self?.hideOtherButtons(isHidden: true) // hide other buttons
          }
@@ -94,6 +91,6 @@ extension ModalButton {
          // hide other
          hideOtherButtons(isHidden: false)
       }
-      self.isExapanded = false
+      self.isExpanded = false
    }
 }

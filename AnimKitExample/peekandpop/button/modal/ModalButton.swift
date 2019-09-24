@@ -5,12 +5,11 @@ import AnimKit
 import With_mac
 
 class ModalButton: ForceButton {
-   var factor: CGFloat { return 0 }
-   var onDownYOffset: CGFloat = 0
-   var isExapanded: Bool = false
+   var onDownYOffset: CGFloat = 0 // Used in conjunction with the mouseDragged feature
+   var isExpanded: Bool = false // Only allow user to drag the modalButton if modalButton is in expanded mode
    let design: Design // Stores the look and feel of the modal button
-   lazy var imageView: NSImageView = createImageView()
-   lazy var animator: ElasticEaser2<RoundedRect> = createAnimator()
+   lazy var imageView: NSImageView = createImageView() // Has the iconography .pdf
+   lazy var animator: ElasticEaser2<RoundedRect> = createAnimator() // The animation motor that drives the animation
    /**
     * - Parameter design: The style of the ModalButton
     */

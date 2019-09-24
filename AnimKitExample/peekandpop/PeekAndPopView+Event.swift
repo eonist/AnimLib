@@ -1,8 +1,10 @@
 import Cocoa
-
+/**
+ * Button events
+ */
 extension PeekAndPopView {
    /**
-    * click dismissbutton
+    * on click dismissButton
     */
    func onDismissButtonClick() {
       guard let curExpandedButton: ModalButton = DepthParser.frontMostView(views: [firstButton, secondButton, thirdButton]) as? ModalButton else { Swift.print("Cant find expanded button"); return }

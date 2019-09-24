@@ -12,10 +12,7 @@ extension ModalButton {
       let epsilon: RoundedRect = .init(rect: .init(x: 0.002, y: 0.002, width: 0.002, height: 0.002), fillet: 0.002)
       let initAnimState: AnimState<RoundedRect> = .init(self.idle, self.idle, .zero, .zero, epsilon)
       let maskFrame = (min: self.window!.contentView!.frame.origin.y, len: self.window!.contentView!.frame.size.height)
-      return .init(state: initAnimState,
-                   easing: easing,
-                   maskFrame: maskFrame,
-                   onFrame: self.onFrameTick)
+      return .init(state: initAnimState, easing: easing, maskFrame: maskFrame, onFrame: self.onFrameTick)
    }
    /**
     * Creates an ImageView

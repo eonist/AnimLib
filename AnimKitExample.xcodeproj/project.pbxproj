@@ -171,6 +171,7 @@
 		F1972E5D2339188300CE772C /* ForceButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1972E5C2339188300CE772C /* ForceButton+Const.swift */; };
 		F1972E5F2339189800CE772C /* ForceButton+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1972E5E2339189800CE772C /* ForceButton+Enum.swift */; };
 		F1972E69233A80AD00CE772C /* ModalButton+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1972E68233A80AD00CE772C /* ModalButton+Helper.swift */; };
+		F1972E6B233A9DC400CE772C /* NSWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1972E6A233A9DC400CE772C /* NSWindow+Extension.swift */; };
 		F1B49548230814B3001F28F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49547230814B3001F28F2 /* MainView.swift */; };
 		F1B4954A230831D5001F28F2 /* ModalButton+Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B49549230831D5001F28F2 /* ModalButton+Force.swift */; };
 		F1B4954C23083359001F28F2 /* AppDelegate+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */; };
@@ -194,7 +195,6 @@
 		F1E786D622EF4267002007EE /* ModalButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D522EF4267002007EE /* ModalButton+Event.swift */; };
 		F1E786DA22EF5A7D002007EE /* ModalButton+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */; };
 		F1E786DC22EF7569002007EE /* ModalButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786DB22EF7569002007EE /* ModalButton+Const.swift */; };
-		F1E786DE22EF763E002007EE /* ModalButton+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786DD22EF763E002007EE /* ModalButton+Enum.swift */; };
 		F1E786E122F0691D002007EE /* ElasticEaser2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786DF22F068FD002007EE /* ElasticEaser2.swift */; };
 		F1E786E722F069AC002007EE /* ElasticEaser2+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786E222F06938002007EE /* ElasticEaser2+Helper.swift */; };
 		F1E786EA22F06B99002007EE /* ModalButton+Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E786E922F06B99002007EE /* ModalButton+Anim.swift */; };
@@ -350,6 +350,7 @@
 		F1972E5C2339188300CE772C /* ForceButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceButton+Const.swift"; sourceTree = "<group>"; };
 		F1972E5E2339189800CE772C /* ForceButton+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForceButton+Enum.swift"; sourceTree = "<group>"; };
 		F1972E68233A80AD00CE772C /* ModalButton+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Helper.swift"; sourceTree = "<group>"; };
+		F1972E6A233A9DC400CE772C /* NSWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extension.swift"; sourceTree = "<group>"; };
 		F1B49547230814B3001F28F2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F1B49549230831D5001F28F2 /* ModalButton+Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Force.swift"; sourceTree = "<group>"; };
 		F1B4954B23083359001F28F2 /* AppDelegate+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Create.swift"; sourceTree = "<group>"; };
@@ -378,7 +379,6 @@
 		F1E786D522EF4267002007EE /* ModalButton+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Event.swift"; sourceTree = "<group>"; };
 		F1E786D922EF5A7D002007EE /* ModalButton+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Create.swift"; sourceTree = "<group>"; };
 		F1E786DB22EF7569002007EE /* ModalButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Const.swift"; sourceTree = "<group>"; };
-		F1E786DD22EF763E002007EE /* ModalButton+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Enum.swift"; sourceTree = "<group>"; };
 		F1E786DF22F068FD002007EE /* ElasticEaser2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticEaser2.swift; sourceTree = "<group>"; };
 		F1E786E222F06938002007EE /* ElasticEaser2+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElasticEaser2+Helper.swift"; sourceTree = "<group>"; };
 		F1E786E922F06B99002007EE /* ModalButton+Anim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalButton+Anim.swift"; sourceTree = "<group>"; };
@@ -861,7 +861,6 @@
 				F1E786D322EF2DB9002007EE /* ModalButton.swift */,
 				F1E786DB22EF7569002007EE /* ModalButton+Const.swift */,
 				F17F14C12339145F001DDC34 /* ModalButton+Type.swift */,
-				F1E786DD22EF763E002007EE /* ModalButton+Enum.swift */,
 				F1E786D522EF4267002007EE /* ModalButton+Event.swift */,
 				F1E786E922F06B99002007EE /* ModalButton+Anim.swift */,
 				F1B49549230831D5001F28F2 /* ModalButton+Force.swift */,
@@ -877,6 +876,7 @@
 				F1E7871222F1F824002007EE /* NSColorSugar.swift */,
 				F1B49566230C90CB001F28F2 /* DepthModifier.swift */,
 				F1B4956823116161001F28F2 /* DepthParser.swift */,
+				F1972E6A233A9DC400CE772C /* NSWindow+Extension.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1139,13 +1139,13 @@
 				F18716E122E5C92F00CF946B /* View.swift in Sources */,
 				F1E786EA22F06B99002007EE /* ModalButton+Anim.swift in Sources */,
 				F1E786D422EF2DB9002007EE /* ModalButton.swift in Sources */,
-				F1E786DE22EF763E002007EE /* ModalButton+Enum.swift in Sources */,
 				F1E7870B22F0ECDF002007EE /* DismissButton+Const.swift in Sources */,
 				F1972E5D2339188300CE772C /* ForceButton+Const.swift in Sources */,
 				F1B49567230C90CB001F28F2 /* DepthModifier.swift in Sources */,
 				F17F14C22339145F001DDC34 /* ModalButton+Type.swift in Sources */,
 				F1E786CC22EF0833002007EE /* ForceButton+Type.swift in Sources */,
 				F1E786CE22EF0860002007EE /* ForceButton+Event.swift in Sources */,
+				F1972E6B233A9DC400CE772C /* NSWindow+Extension.swift in Sources */,
 				F1E7870422F0E647002007EE /* DismissButton.swift in Sources */,
 				F187171D22E776EA00CF946B /* View+BounceTest.swift in Sources */,
 				F18717B722E8935900CF946B /* View+SpringerTest.swift in Sources */,

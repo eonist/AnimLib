@@ -14,7 +14,7 @@ extension ModalButton {
  * - Fixme: ⚠️️ Maybe put inside an enum? Enum Const {} etc ?
  */
 extension ModalButton {
-   static let radius: CGFloat = 100 // the button radius
+   static let radius: CGFloat = 100 // the button radius (Initial state)
    static let initial: RoundedRect = .init(rect: .init(x: 0, y: 0, width: radius, height: radius), fillet: 20)
 }
 /**
@@ -44,26 +44,13 @@ extension ModalButton {
     * Expanded
     */
    static var expanded: RoundedRect {
-      let winFrame: CGRect = ModalButton.winContentFrame
+      let winFrame: CGRect = NSWindow.winContentFrame
       let size: CGSize = .init(width: winFrame.size.width - 80, height: winFrame.size.height - 100)
       let x: CGFloat = winFrame.size.width / 2 - size.width / 2
       let y: CGFloat = winFrame.size.height / 2 - size.height / 2
       let rect: CGRect = .init(origin: .init(x: x, y: y), size: size)
       let fillet: CGFloat = 20
       return .init(rect: rect, fillet: fillet)
-   }
-}
-/**
- * Helper
- * - Fixme: ⚠️️ move to common etc, NSWindow+Extension etc
- */
-extension ModalButton {
-   /**
-    * Returns window contentview frame (Convenient way to get content rect)
-    */
-   public static var winContentFrame: CGRect {
-      let win: NSWindow = NSApp.windows.first!
-      return NSWindow.contentRect(forFrameRect: win.frame, styleMask: win.styleMask)
    }
 }
 /**

@@ -15,7 +15,7 @@ extension ModalButton {
     * Mouse dragged
     */
    override open func mouseDragged(with event: NSEvent) {
-      guard isExapanded else { return }
+      guard isExpanded else { return }
       self.hideOtherButtons(isHidden: true) // hide other buttons
       let newRect: RoundedRect = {
          let p: CGPoint = self.superview!.convert((window?.mouseLocationOutsideOfEventStream)!, from: nil)//self.convert(event.locationInWindow, from: nil)

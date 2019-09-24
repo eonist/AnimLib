@@ -20,8 +20,8 @@ open class PeekAndPopView: NSView {
       self.layer?.backgroundColor = Colors.background.color?.cgColor
       _ = firstButton
       _ = secondButton
-      _ = dismissButton
       _ = thirdButton
+      _ = dismissButton
    }
    /**
     * Boilerplate

@@ -10,13 +10,11 @@ extension PeekAndPopView {
    func createFirstButton() -> ModalButton {
       let frame: CGRect = {
          let size = ModalButton.initial.rect.size
-         let alignmentPoint = Align.alignmentPoint(size, canvasSize: ModalButton.winContentFrame.size, canvasAlign: .topCenter, objectAlign: .topCenter, offset: .init(x: 0, y: ModalButton.margin))
+         let alignmentPoint = Align.alignmentPoint(size, canvasSize: NSWindow.winContentFrame.size, canvasAlign: .topCenter, objectAlign: .topCenter, offset: .init(x: 0, y: ModalButton.margin))
          return .init(origin: alignmentPoint, size: size)
       }()
       let design: ModalButton.Design = (.eye, Colors.Initial.first.color, frame)
-      return with(.init(design: design)) {
-         addSubview($0)
-      }
+      return with(.init(design: design)) { addSubview($0) }
    }
    /**
     * Second button
@@ -24,13 +22,11 @@ extension PeekAndPopView {
    func createSecondButton() -> ModalButton {
       let frame: CGRect = {
          let size = ModalButton.initial.rect.size
-         let alignmentPoint = Align.alignmentPoint(size, canvasSize: ModalButton.winContentFrame.size, canvasAlign: .centerCenter, objectAlign: .centerCenter, offset: .init(x: 0, y: 0))
+         let alignmentPoint = Align.alignmentPoint(size, canvasSize: NSWindow.winContentFrame.size, canvasAlign: .centerCenter, objectAlign: .centerCenter, offset: .init(x: 0, y: 0))
          return .init(origin: alignmentPoint, size: size)
       }()
       let design: ModalButton.Design = (.bolt, Colors.Initial.second.color, frame)
-      return with(.init(design: design)) {
-         addSubview($0)
-      }
+      return with(.init(design: design)) { addSubview($0) }
    }
    /**
     * Third button
@@ -38,13 +34,11 @@ extension PeekAndPopView {
    func createThirdButton() -> ModalButton {
       let frame: CGRect = {
          let size = ModalButton.initial.rect.size
-         let alignmentPoint = Align.alignmentPoint(size, canvasSize: ModalButton.winContentFrame.size, canvasAlign: .bottomCenter, objectAlign: .bottomCenter, offset: .init(x: 0, y: -ModalButton.margin))
+         let alignmentPoint = Align.alignmentPoint(size, canvasSize: NSWindow.winContentFrame.size, canvasAlign: .bottomCenter, objectAlign: .bottomCenter, offset: .init(x: 0, y: -ModalButton.margin))
          return .init(origin: alignmentPoint, size: size)
       }()
       let design: ModalButton.Design = (.calculator, Colors.Initial.third.color, frame)
-      return with(.init(design: design)) {
-         addSubview($0)
-      }
+      return with(.init(design: design)) { addSubview($0) }
    }
    /**
     * Creates the Prompt Button
