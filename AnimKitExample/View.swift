@@ -2,11 +2,11 @@ import Cocoa
 import AnimKit
 
 open class View: NSView {
-   override open var isFlipped: Bool { return true } /* TopLeft orientation */
+   override open var isFlipped: Bool { return true } // TopLeft orientation
    override public init(frame: CGRect) {
       super.init(frame: frame)
       Swift.print("Hello world")
-      self.wantsLayer = true /* if true then view is layer backed */
+      self.wantsLayer = true // if true then view is layer backed
 //      testAnimation()
 //      zoomBackAndForthAnimTest()
 //      easer4Test()
